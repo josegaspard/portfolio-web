@@ -1,0 +1,26 @@
+import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { Media } from './entities/media.entity';
+
+@Injectable()
+export class MediaService {
+    constructor(
+        @InjectRepository(Media)
+        private mediaRepository: Repository<Media>,
+    ) { }
+
+    async findAll() {
+        return this.mediaRepository.find({ order: { createdAt: 'DESC' } });
+    }
+
+    async create(data: Partial<Media>) {
+        const media = this.mediaRepository.create(data);
+        return this.mediaRepository.save(media);
+    }
+
+    async remove(id: number) {
+        return this.mediaRepository.delete(id);
+    }
+}
+

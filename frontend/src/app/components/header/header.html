@@ -1,0 +1,66 @@
+<header class="header" [class.scrolled]="isScrolled">
+    <div class="container header-container">
+        <!-- Logo - Left Side -->
+        <a href="#" class="logo">JG.</a>
+
+        <!-- Main Navigation - Center/Right -->
+        <nav class="main-nav">
+            <!-- Desktop Navigation -->
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link" [innerHTML]="t('nav_about')"></a></li>
+                <li><a href="#experience" class="nav-link" [innerHTML]="t('nav_experience')"></a></li>
+                <li><a href="#portfolio" class="nav-link" [innerHTML]="t('nav_portfolio')"></a></li>
+                <li><a routerLink="/blog" routerLinkActive="active" class="nav-link" [innerHTML]="t('nav_blog')"></a></li>
+                <li><a href="#contact" class="nav-link" [innerHTML]="t('nav_contact')"></a></li>
+            </ul>
+
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn" [class.active]="currentLang === 'es'" (click)="setLanguage('es')"
+                    title="Español">
+                    <img src="https://flagcdn.com/w40/mx.png" alt="Español" class="flag">
+                </button>
+                <button class="lang-btn" [class.active]="currentLang === 'en'" (click)="setLanguage('en')"
+                    title="English">
+                    <img src="https://flagcdn.com/w40/us.png" alt="English" class="flag">
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Button - Right Side -->
+        <div class="mobile-menu-btn" [class.active]="isMobileMenuOpen" (click)="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" [class.active]="isMobileMenuOpen">
+        <div class="mobile-menu-close" (click)="toggleMobileMenu()"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-list">
+            <li><a href="#about" class="mobile-nav-link" (click)="toggleMobileMenu()" [innerHTML]="t('nav_about')"></a>
+            </li>
+            <li><a href="#experience" class="mobile-nav-link" (click)="toggleMobileMenu()"
+                    [innerHTML]="t('nav_experience')"></a></li>
+            <li><a href="#portfolio" class="mobile-nav-link" (click)="toggleMobileMenu()"
+                    [innerHTML]="t('nav_portfolio')"></a></li>
+            <li><a href="#contact" class="mobile-nav-link" (click)="toggleMobileMenu()"
+                    [innerHTML]="t('nav_contact')"></a></li>
+        </ul>
+
+        <!-- Language Switcher in Mobile Menu -->
+        <div class="mobile-language-switcher">
+            <button class="lang-btn-mobile" [class.active]="currentLang === 'es'" (click)="setLanguage('es')"
+                title="Español">
+                <img src="https://flagcdn.com/w40/mx.png" alt="Español" class="flag">
+                <span>Español</span>
+            </button>
+            <button class="lang-btn-mobile" [class.active]="currentLang === 'en'" (click)="setLanguage('en')"
+                title="English">
+                <img src="https://flagcdn.com/w40/us.png" alt="English" class="flag">
+                <span>English</span>
+            </button>
+        </div>
+    </div>
+</header>

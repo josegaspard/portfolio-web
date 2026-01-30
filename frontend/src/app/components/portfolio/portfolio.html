@@ -1,0 +1,45 @@
+<section class="section" id="portfolio">
+    <div class="container">
+        <h2 class="section-title-2line" data-aos="fade-up">
+            <span class="title-line-white">Mi</span>
+            <span class="title-line-gradient">Portafolio</span>
+        </h2>
+        <p class="text-xl" data-aos="fade-up" data-aos-delay="100" [innerHTML]="t('portfolio_subtitle')"></p>
+
+        <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="200">
+            <button class="filter-btn" [class.active]="currentFilter() === 'all'" (click)="setFilter('all')"
+                [innerHTML]="t('filter_all')"></button>
+            <button class="filter-btn" [class.active]="currentFilter() === 'seo'" (click)="setFilter('seo')"
+                [innerHTML]="t('filter_seo')"></button>
+            <button class="filter-btn" [class.active]="currentFilter() === 'programming'"
+                (click)="setFilter('programming')" [innerHTML]="t('filter_programming')"></button>
+            <button class="filter-btn" [class.active]="currentFilter() === 'growth'" (click)="setFilter('growth')"
+                [innerHTML]="t('filter_growth')"></button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div *ngFor="let project of filteredProjects(); let i = index" class="portfolio-item" data-aos="fade-up"
+                [attr.data-aos-delay]="100 + (i * 50)">
+                <div class="portfolio-image">
+                    <img [src]="project.image" [alt]="project.title" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-actions">
+                            <button class="btn-icon" (click)="openModal(project.modalId)"
+                                [title]="t('view_more_details')">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                            <a *ngIf="project.link !== '#'" [href]="project.link" target="_blank" class="btn-icon"
+                                title="Visitar Sitio">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category" [innerHTML]="t(project.categoryKey)"></span>
+                    <h3 class="portfolio-name">{{project.title}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

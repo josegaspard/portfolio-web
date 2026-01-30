@@ -1,0 +1,52 @@
+<section class="section experience-section" id="experience">
+    <div class="container">
+        <!-- Section Header -->
+        <h2 class="section-title-2line" data-aos="fade-up">
+            <span class="title-line-white">Mi Evolución</span>
+            <span class="title-line-gradient">Profesional</span>
+        </h2>
+        <p class="text-xl experience-subtitle" data-aos="fade-up" data-aos-delay="100"
+            [innerHTML]="t('experience_subtitle')"></p>
+
+        <!-- Premium Vertical Timeline -->
+        <div class="timeline-premium">
+            <div class="timeline-line"></div>
+
+            <div *ngFor="let exp of experiences; let i = index" class="timeline-item-premium"
+                [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'" [attr.data-aos-delay]="100 + (i * 50)">
+
+                <!-- Timeline Dot -->
+                <div class="timeline-dot-premium">
+                    <div class="dot-pulse"></div>
+                    <img [src]="exp.image" [alt]="exp.company" class="company-logo-dot">
+                </div>
+
+                <!-- Timeline Card -->
+                <div class="timeline-card-premium glass-premium" (click)="openModal(exp.modalId)">
+                    <!-- Card Header with Logo -->
+                    <div class="card-header-premium">
+                        <img [src]="exp.image" [alt]="exp.company" class="company-logo-large">
+                        <div class="header-text">
+                            <h3 class="company-name-premium">{{exp.company}}</h3>
+                            <span class="date-badge-premium">{{exp.date}}</span>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body-premium">
+                        <h4 class="role-title-premium" [innerHTML]="t(exp.titleKey)"></h4>
+                        <p class="role-description-premium" [innerHTML]="t(exp.descKey)"></p>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="card-footer-premium">
+                        <span class="view-details-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Ver detalles completos
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

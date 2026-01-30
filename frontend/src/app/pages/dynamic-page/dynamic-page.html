@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<main class="page-container" *ngIf="content; else loadingState">
+    <!-- Hero Section for the Page -->
+    <section class="page-hero" [style.backgroundImage]="content.coverImage ? 'url(' + content.coverImage + ')' : ''">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 data-aos="fade-up" class="page-title">{{ content.title }}</h1>
+            <div class="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+                <a routerLink="/">{{ content.type === 'post' ? 'Blog' : 'Inicio' }}</a> / <span class="highlight">{{
+                    content.title }}</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Content Rendering -->
+    <article class="page-content container py-section">
+        <div [innerHTML]="content.blocks" data-aos="fade-up" class="rich-text"></div>
+    </article>
+</main>
+
+<ng-template #loadingState>
+    <div class="loading-full">
+        <div class="spinner"></div>
+    </div>
+</ng-template>
+
+<app-footer></app-footer>

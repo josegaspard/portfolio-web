@@ -1,0 +1,40 @@
+<footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <h2 class="footer-logo">JG<span>.</span></h2>
+            <p class="footer-bio" [innerHTML]="t('footer_bio')"></p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Secciones</h4>
+            <ul>
+                <li><a href="#about">{{ t('nav_about') }}</a></li>
+                <li><a href="#experience">{{ t('nav_experience') }}</a></li>
+                <li><a href="#portfolio">{{ t('nav_portfolio') }}</a></li>
+                <li><a href="#contact">{{ t('nav_contact') }}</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a>{{ t('seo_expert') }}</a></li>
+                <li><a>{{ t('web_development') }}</a></li>
+                <li><a>{{ t('plugins_dev') }}</a></li>
+                <li><a>{{ t('growth_strategies') }}</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p><i class="fas fa-envelope mr-2"></i> hola@josegaspard.dev</p>
+            <p><i class="fas fa-map-marker-alt mr-2"></i> Ciudad de México, México</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; {{ currentYear }} José Gaspard - Experto SEO y Desarrollador Web. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

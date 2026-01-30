@@ -1,0 +1,44 @@
+<app-header></app-header>
+
+<main class="page-container">
+    <section class="page-hero blog-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 data-aos="fade-up">Blog & Insights</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">Compartiendo conocimientos sobre SEO,
+                Programación y Marketing Digital.</p>
+        </div>
+    </section>
+
+    <section class="py-section container">
+        <div class="blog-grid" *ngIf="!loading; else loadingState">
+            <div class="blog-card" *ngFor="let post of posts; let i = index" data-aos="fade-up"
+                [attr.data-aos-delay]="i * 100">
+                <div class="blog-card-image">
+                    <img [src]="post.coverImage || 'https://josegaspard.dev/img/portfolio/jungle.jpg'"
+                        [alt]="post.title">
+                </div>
+                <div class="blog-card-content">
+                    <span class="category">{{ post.type | uppercase }}</span>
+                    <h3>{{ post.title }}</h3>
+                    <p class="excerpt">{{ post.seo?.metaDescription }}</p>
+                    <a [routerLink]="['/', post.slug]" class="btn btn-link">Leer más <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="empty-state" *ngIf="posts.length === 0">
+                <p>Aún no hay publicaciones. ¡Vuelve pronto!</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<ng-template #loadingState>
+    <div class="loading-container py-5 text-center">
+        <div class="spinner"></div>
+        <p>Cargando posts...</p>
+    </div>
+</ng-template>
+
+<app-footer></app-footer>

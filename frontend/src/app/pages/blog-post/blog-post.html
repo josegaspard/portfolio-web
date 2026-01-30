@@ -1,0 +1,165 @@
+<article class="blog-post-container" *ngIf="post">
+    <!-- Hero Section -->
+    <header class="post-hero">
+        <div class="container">
+            <div class="post-breadcrumbs">
+                <a href="/">Inicio</a>
+                <span>/</span>
+                <a href="/blog">Blog</a>
+                <span>/</span>
+                <span>{{ post.category }}</span>
+            </div>
+
+            <h1 class="post-title">{{ post.title }}</h1>
+            <p class="post-subtitle">{{ post.subtitle }}</p>
+
+            <div class="post-meta">
+                <div class="author-info">
+                    <div class="author-avatar">
+                        <img src="https://josegaspard.dev/img/portfolio/josegaspard.jpg" alt="{{ post.author }}">
+                    </div>
+                    <div class="author-details">
+                        <span class="author-name">{{ post.author }}</span>
+                        <!-- authorRole might handle safely if missing in interface -->
+                        <span class="author-role">SEO Architect</span>
+                    </div>
+                </div>
+                <div class="post-stats">
+                    <span class="post-date">
+                        <i class="far fa-calendar"></i>
+                        {{ post.publishDate | date }}
+                    </span>
+                    <span class="post-reading-time">
+                        <i class="far fa-clock"></i>
+                        {{ post.readingTime }} min lectura
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3-Column Layout -->
+    <div class="post-content-wrapper">
+        <div class="container post-grid">
+            <!-- Left Sidebar: Table of Contents -->
+            <aside class="post-sidebar-left">
+                <div class="toc-sticky">
+                    <h3 class="toc-title">Tabla de Contenidos</h3>
+                    <nav class="toc-nav">
+                        <ul>
+                            <li><a href="#section-1">Introducción</a></li>
+                            <li><a href="#section-2">Conceptos Clave</a></li>
+                            <li><a href="#section-3">Implementación</a></li>
+                            <li><a href="#section-4">Resultados</a></li>
+                            <li><a href="#section-5">Conclusión</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="reading-progress">
+                        <div class="progress-label">Progreso de Lectura</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" [style.width]="readingProgress + '%'"></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="post-main-content">
+                <div class="post-featured-image">
+                    <img [src]="post.featuredImage" [alt]="post.title">
+                </div>
+
+                <div class="post-body" [innerHTML]="safeContent"></div>
+
+                <!-- Tags -->
+                <div class="post-tags">
+                    <span class="tag" *ngFor="let tag of post.tags">
+                        <i class="fas fa-tag"></i>
+                        {{ tag }}
+                    </span>
+                </div>
+
+                <!-- Share Buttons -->
+                <div class="post-share">
+                    <h4>Compartir este artículo</h4>
+                    <div class="share-buttons">
+                        <button class="share-btn twitter">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                        </button>
+                        <button class="share-btn linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </button>
+                        <button class="share-btn facebook">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </button>
+                        <button class="share-btn copy">
+                            <i class="fas fa-link"></i>
+                            Copiar Link
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Author Bio -->
+                <div class="author-bio glass-premium">
+                    <img src="https://josegaspard.dev/img/portfolio/josegaspard.jpg" alt="{{ post.author }}"
+                        class="bio-avatar">
+                    <div class="bio-content">
+                        <h4>Sobre {{ post.author }}</h4>
+                        <p>SEO Architect & Full-Stack Engineer con 15+ años de experiencia transformando estrategias
+                            digitales en éxitos medibles.</p>
+                        <div class="bio-social">
+                            <a href="#" class="bio-social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="bio-social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="bio-social-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right Sidebar: Sticky Elements -->
+            <aside class="post-sidebar-right">
+                <div class="sidebar-sticky">
+                    <!-- Social Share Sticky -->
+                    <div class="social-share-sticky">
+                        <button class="share-icon" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="share-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                        <button class="share-icon" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </button>
+                        <button class="share-icon" title="Copiar">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+
+                    <!-- CTA Card -->
+                    <div class="cta-card glass-premium">
+                        <h4>¿Necesitas ayuda con SEO?</h4>
+                        <p>Agenda una consultoría gratuita y descubre cómo puedo ayudarte a dominar tu mercado.</p>
+                        <a href="#contact" class="btn btn-primary btn-block">Agendar Consultoría</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Related Posts (Simplified for now since we rely on IDs) -->
+    <section class="related-posts" *ngIf="post.relatedPosts?.length">
+        <div class="container">
+            <h3 class="section-title-2line">
+                <span class="title-line-white">Artículos</span>
+                <span class="title-line-gradient">Relacionados</span>
+            </h3>
+            <div class="related-posts-grid">
+                <!-- TODO: Fetch related posts from service by ID -->
+            </div>
+        </div>
+    </section>
+</article>

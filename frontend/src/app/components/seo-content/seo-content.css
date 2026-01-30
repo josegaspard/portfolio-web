@@ -1,0 +1,54 @@
+.seo-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.pillar-card {
+    padding: 3rem 2rem;
+    border-radius: 30px;
+    position: relative;
+    transition: var(--transition-medium);
+    overflow: hidden;
+}
+
+.pillar-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-primary);
+}
+
+.pillar-number {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    font-size: 8rem;
+    font-weight: 900;
+    color: white;
+    opacity: 0.03;
+    line-height: 1;
+}
+
+.pillar-icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.pillar-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.pillar-text {
+    line-height: 1.8;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .pillar-card {
+        padding: 2.5rem 1.5rem;
+    }
+}

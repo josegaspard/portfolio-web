@@ -1,0 +1,87 @@
+<section class="section" id="contact">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2 class="section-title-2line">
+                <span class="title-line-white">Contacto</span>
+                <span class="title-line-gradient">Profesional</span>
+            </h2>
+            <p class="text-xl text-gray-400" [innerHTML]="t('contact_subtitle')"></p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-card">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>{{ t('email_label') }}</h4>
+                            <p>hola@josegaspard.dev</p>
+                            <p>josegaspardhernani@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item mt-6">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>{{ t('phone_label') }}</h4>
+                            <p>+51 927 650 573 (Perú)</p>
+                            <p>+52 553 121 2956 (México)</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item mt-6">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>{{ t('location_label') }}</h4>
+                            <p [innerHTML]="t('location_value')"></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item mt-6">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>{{ t('availability_label') }}</h4>
+                            <p [innerHTML]="t('availability_value')"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container" data-aos="fade-left">
+                <form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" [(ngModel)]="formData.name" placeholder="Tu nombre completo"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Professional Email</label>
+                            <input type="email" name="email" [(ngModel)]="formData.email" placeholder="tu@email.com"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Company (Optional)</label>
+                        <input type="text" name="company" [(ngModel)]="formData.company"
+                            placeholder="Nombre de tu empresa">
+                    </div>
+                    <div class="form-group">
+                        <label>Service of Interest</label>
+                        <select name="service" [(ngModel)]="formData.service" required>
+                            <option value="">Select a service</option>
+                            <option value="SEO">SEO Technical Engineering</option>
+                            <option value="Web Development">High-Performance Web Architecture</option>
+                            <option value="Growth">Growth Hacking & Strategy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" [(ngModel)]="formData.message" rows="5"
+                            placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" [disabled]="!contactForm.form.valid">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

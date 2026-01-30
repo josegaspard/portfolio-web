@@ -1,0 +1,71 @@
+<div class="modal-root" [class.active]="activeModal">
+    <div class="modal-overlay" (click)="close()"></div>
+    <div class="modal-container" *ngIf="activeModal">
+        <button class="modal-close" (click)="close()"><i class="fas fa-times"></i></button>
+
+        <div class="modal-header">
+            <h2 [innerHTML]="t(getPrefix(activeModal) + '_title')"></h2>
+            <p class="modal-subtitle" [innerHTML]="t(getPrefix(activeModal) + '_subtitle')"></p>
+
+            <div class="modal-stats">
+                <div class="modal-stat"
+                    *ngIf="t(getPrefix(activeModal) + '_stat_1_label') !== (getPrefix(activeModal) + '_stat_1_label')">
+                    <span class="stat-value" [innerHTML]="t(getPrefix(activeModal) + '_stat_1_value')"></span>
+                    <span class="stat-label" [innerHTML]="t(getPrefix(activeModal) + '_stat_1_label')"></span>
+                </div>
+                <div class="modal-stat"
+                    *ngIf="t(getPrefix(activeModal) + '_stat_2_label') !== (getPrefix(activeModal) + '_stat_2_label')">
+                    <span class="stat-value" [innerHTML]="t(getPrefix(activeModal) + '_stat_2_value')"></span>
+                    <span class="stat-label" [innerHTML]="t(getPrefix(activeModal) + '_stat_2_label')"></span>
+                </div>
+                <div class="modal-stat">
+                    <span class="stat-value" [innerHTML]="t(getPrefix(activeModal) + '_stat_3_value')"></span>
+                    <span class="stat-label" [innerHTML]="t(getPrefix(activeModal) + '_stat_3_label')"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-section"
+                *ngIf="t(getPrefix(activeModal) + '_challenge_title') !== (getPrefix(activeModal) + '_challenge_title')">
+                <h3 [innerHTML]="t(getPrefix(activeModal) + '_challenge_title')"></h3>
+                <p [innerHTML]="t(getPrefix(activeModal) + '_challenge_desc')"></p>
+            </div>
+
+            <div class="modal-section"
+                *ngIf="t(getPrefix(activeModal) + '_strategy_title') !== (getPrefix(activeModal) + '_strategy_title')">
+                <h3 [innerHTML]="t(getPrefix(activeModal) + '_strategy_title')"></h3>
+                <ul>
+                    <li [innerHTML]="t(getPrefix(activeModal) + '_strategy_1')"></li>
+                    <li [innerHTML]="t(getPrefix(activeModal) + '_strategy_2')"></li>
+                    <li *ngIf="t(getPrefix(activeModal) + '_strategy_3') !== (getPrefix(activeModal) + '_strategy_3')"
+                        [innerHTML]="t(getPrefix(activeModal) + '_strategy_3')"></li>
+                    <li *ngIf="t(getPrefix(activeModal) + '_strategy_4') !== (getPrefix(activeModal) + '_strategy_4')"
+                        [innerHTML]="t(getPrefix(activeModal) + '_strategy_4')"></li>
+                </ul>
+            </div>
+
+            <div class="modal-section"
+                *ngIf="t(getPrefix(activeModal) + '_results_title') !== (getPrefix(activeModal) + '_results_title')">
+                <h3 [innerHTML]="t(getPrefix(activeModal) + '_results_title')"></h3>
+                <ul>
+                    <li [innerHTML]="t(getPrefix(activeModal) + '_result_1')"></li>
+                    <li [innerHTML]="t(getPrefix(activeModal) + '_result_2')"></li>
+                    <li *ngIf="t(getPrefix(activeModal) + '_result_3') !== (getPrefix(activeModal) + '_result_3')"
+                        [innerHTML]="t(getPrefix(activeModal) + '_result_3')"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <h4 [innerHTML]="t(getPrefix(activeModal) + '_tech_title')"></h4>
+            <div class="tags">
+                <!-- Generic tags for now, or extracted from dictionary if added -->
+                <span class="tag">SEO</span>
+                <span class="tag">Web Development</span>
+            </div>
+            <a *ngIf="t(getPrefix(activeModal) + '_button') !== (getPrefix(activeModal) + '_button')" class="btn"
+                [innerHTML]="t(getPrefix(activeModal) + '_button')"></a>
+        </div>
+    </div>
+</div>
