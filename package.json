@@ -1,12 +1,11 @@
 {
-  "name": "josegaspard-backend",
+  "name": "josegaspard-portfolio",
   "version": "1.0.0",
-  "description": "Backend API for Jose Gaspard Portfolio",
-  "main": "backend/dist/main.js",
+  "description": "Full-stack portfolio - Frontend (Next.js) + Backend (NestJS)",
   "scripts": {
-    "build": "cd backend && npm install && npm run build",
-    "start": "cd backend && npm run start:prod",
-    "start:prod": "cd backend && node dist/main.js"
+    "build": "chmod +x build.sh && ./build.sh",
+    "start": "chmod +x start.sh && ./start.sh",
+    "install-all": "cd backend && npm install && cd ../frontend-next && npm install"
   },
   "engines": {
     "node": ">=18.0.0"
