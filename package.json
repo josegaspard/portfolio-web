@@ -1,16 +1,12 @@
 {
-  "name": "josegaspard-web-monorepo",
+  "name": "josegaspard-backend",
   "version": "1.0.0",
-  "private": true,
+  "description": "Backend API for Jose Gaspard Portfolio",
+  "main": "backend/dist/main.js",
   "scripts": {
-    "build": "echo 'This is a monorepo root'"
-  },
-  "dependencies": {
-    "next": "^14.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@types/aos": "^3.0.7",
-    "aos": "^2.3.4"
+    "build": "cd backend && npm install && npm run build",
+    "start": "cd backend && npm run start:prod",
+    "start:prod": "cd backend && node dist/main.js"
   },
   "engines": {
     "node": ">=18.0.0"
