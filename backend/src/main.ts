@@ -17,17 +17,21 @@ async function bootstrap() {
         fontSrc: ["'self'", "https://fonts.gstatic.com"],
         imgSrc: ["'self'", "data:", "https:", "http:"],
         scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"], // Next.js requires unsafe-eval
-        connectSrc: ["'self'", "http://localhost:3000", "http://localhost:4000"],
+        connectSrc: ["'self'", "http://localhost:3000", "http://localhost:4000", process.env.FRONTEND_URL || "https://josegaspard.dev"],
       },
     },
     crossOriginEmbedderPolicy: false, // Disable for external images
   }));
 
   // ===== CORS CONFIGURATION =====
+  const frontEndUrl = process.env.FRONTEND_URL || 'https://josegaspard.dev';
   const whitelist = [
     'http://localhost:3000',
     'http://localhost:4000',
     'http://192.168.1.84:3000',
+    frontEndUrl,
+    'https://josegaspard.dev',
+    'https://www.josegaspard.dev'
   ];
 
   app.enableCors({
