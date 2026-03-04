@@ -1,0 +1,255 @@
+/* [project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/app/admin/messages/messages.css [app-client] (css) */
+.messages-page {
+  animation: .4s fadeIn;
+}
+
+.unread-badge {
+  color: #ef4444;
+  background: #ef44441a;
+  border: 1px solid #ef44444d;
+  border-radius: 100px;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.messages-grid {
+  grid-template-columns: 400px 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  display: grid;
+}
+
+.messages-list {
+  background: #fff;
+  border-radius: 12px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  box-shadow: 0 1px 3px #0000001a;
+}
+
+.message-item {
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 1.5rem;
+  transition: all .2s;
+}
+
+.message-item:hover {
+  background: #f8fafc;
+}
+
+.message-item.active {
+  background: #3b82f60d;
+  border-left: 4px solid #3b82f6;
+}
+
+.message-item.unread {
+  background: #3b82f605;
+}
+
+.message-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.message-header strong {
+  color: #1e293b;
+  font-size: 1rem;
+}
+
+.unread-dot {
+  background: #3b82f6;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.message-service {
+  color: #3b82f6;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.message-preview {
+  color: #64748b;
+  margin-bottom: .5rem;
+  font-size: .875rem;
+}
+
+.message-date {
+  color: #94a3b8;
+  font-size: .75rem;
+}
+
+.message-detail {
+  background: #fff;
+  border-radius: 12px;
+  min-height: 500px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px #0000001a;
+}
+
+.detail-header h3 {
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.detail-meta {
+  border-bottom: 1px solid #e2e8f0;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+}
+
+.detail-meta span {
+  color: #64748b;
+  align-items: center;
+  gap: .5rem;
+  font-size: .875rem;
+  display: flex;
+}
+
+.detail-meta i {
+  color: #3b82f6;
+}
+
+.detail-body h4 {
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.detail-body p {
+  color: #334155;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.admin-reply-display {
+  background: #10b9810d;
+  border: 1px solid #10b98133;
+  border-radius: 12px;
+  margin-top: 2rem;
+  padding: 1.5rem;
+}
+
+.admin-reply-display h4 {
+  color: #10b981;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.admin-reply-display p {
+  color: #334155;
+  margin: 0;
+  font-size: .9375rem;
+}
+
+.reply-form {
+  margin-top: 2rem;
+}
+
+.reply-form h4 {
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.reply-form textarea {
+  resize: vertical;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: .9375rem;
+}
+
+.reply-form textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px #3b82f61a;
+}
+
+.btn-send-reply {
+  color: #fff;
+  cursor: pointer;
+  background: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem 1.5rem;
+  font-weight: 600;
+  transition: all .2s;
+  display: flex;
+}
+
+.btn-send-reply:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.empty-state {
+  color: #94a3b8;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  display: flex;
+}
+
+.empty-state i {
+  opacity: .3;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.loading {
+  color: #64748b;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  font-size: 1.1rem;
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .messages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .messages-list {
+    max-height: 400px;
+  }
+}
+
+/*# sourceMappingURL=2078d_scratch_josegaspard-web_frontend-next_src_app_admin_messages_messages_8781668b.css.map*/

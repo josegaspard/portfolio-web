@@ -1,0 +1,3 @@
+module.exports=[25983,a=>{"use strict";var b=a.i(70883);function c(){return(0,b.jsxs)("div",{style:{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",minHeight:"400px",gap:"1rem"},children:[(0,b.jsx)("div",{style:{width:"48px",height:"48px",border:"4px solid rgba(102, 126, 234, 0.1)",borderTopColor:"#667eea",borderRadius:"50%",animation:"spin 1s linear infinite"}}),(0,b.jsx)("p",{style:{color:"#64748b",fontSize:"14px",fontWeight:500},children:"Cargando proyecto..."})]})}a.s(["default",()=>c])}];
+
+//# sourceMappingURL=12d90_josegaspard-web_frontend-next_src_app_portafolio_%5Bslug%5D_loading_tsx_7af55738._.js.map

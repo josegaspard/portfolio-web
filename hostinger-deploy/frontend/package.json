@@ -1,0 +1,37 @@
+{
+  "name": "frontend-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:static": "next build && next export",
+    "start": "next start",
+    "lint": "eslint",
+    "deploy:hostinger": "npm run build && echo 'Build complete. Upload .next/, public/, package.json, next.config.mjs to Hostinger'"
+  },
+  "dependencies": {
+    "@react-spring/web": "^10.0.3",
+    "@types/aos": "^3.0.7",
+    "aos": "^2.3.4",
+    "framer-motion": "^12.29.0",
+    "gsap": "^3.14.2",
+    "isomorphic-dompurify": "^2.35.0",
+    "lottie-react": "^2.4.1",
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-hot-toast": "^2.6.0",
+    "react-intersection-observer": "^10.0.2"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^16.1.4",
+    "@types/dompurify": "^3.0.5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,324 @@
+/* [project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/app/(public)/blog/blog-archive.css [app-client] (css) */
+.blog-archive-page {
+  background: #0a0a0a;
+  min-height: 100vh;
+}
+
+.archive-hero {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  padding: 10rem 0 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.archive-hero:before {
+  content: "";
+  background: radial-gradient(circle, #667eea1a, #0000);
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.archive-title {
+  background: linear-gradient(135deg, #fff, #667eea);
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -3px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+}
+
+.archive-subtitle {
+  color: #ffffffb3;
+  max-width: 700px;
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: 1.7;
+}
+
+.archive-filters {
+  background: #ffffff05;
+  border-bottom: 1px solid #ffffff0d;
+  padding: 3rem 0;
+}
+
+.filter-buttons {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.filter-btn {
+  color: #ffffffb3;
+  cursor: pointer;
+  background: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  border-radius: 50px;
+  padding: .875rem 2rem;
+  font-size: .9375rem;
+  font-weight: 600;
+  transition: all .3s cubic-bezier(.16, 1, .3, 1);
+}
+
+.filter-btn:hover {
+  color: #fff;
+  background: #ffffff14;
+  border-color: #fff3;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  color: #fff;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-color: #0000;
+  box-shadow: 0 8px 24px #667eea4d;
+}
+
+.archive-posts {
+  padding: 6rem 0;
+}
+
+.posts-grid {
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 3rem;
+  display: grid;
+}
+
+.post-card {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: #ffffff08;
+  border: 1px solid #ffffff14;
+  border-radius: 24px;
+  transition: all .4s cubic-bezier(.16, 1, .3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.post-card:before {
+  content: "";
+  opacity: 0;
+  background: linear-gradient(135deg, #667eea1a, #8b5cf61a);
+  width: 100%;
+  height: 100%;
+  transition: opacity .4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.post-card:hover {
+  border-color: #667eea66;
+  transform: translateY(-12px);
+  box-shadow: 0 24px 48px #667eea33;
+}
+
+.post-card:hover:before {
+  opacity: 1;
+}
+
+.post-card-image {
+  width: 100%;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.post-card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform .6s cubic-bezier(.16, 1, .3, 1);
+}
+
+.post-card:hover .post-card-image img {
+  transform: scale(1.1);
+}
+
+.post-card-content {
+  z-index: 1;
+  padding: 2rem;
+  position: relative;
+}
+
+.post-card-meta {
+  color: #fff9;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+  display: flex;
+}
+
+.post-card-category {
+  color: #667eea;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #667eea26;
+  border: 1px solid #667eea4d;
+  border-radius: 50px;
+  padding: .375rem 1rem;
+  font-size: .75rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.post-card-date {
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.post-card-date i {
+  color: #667eea;
+}
+
+.post-card-title {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: color .3s;
+}
+
+.post-card:hover .post-card-title {
+  color: #667eea;
+}
+
+.post-card-excerpt {
+  color: #ffffffb3;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.post-card-footer {
+  border-top: 1px solid #ffffff14;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  display: flex;
+}
+
+.post-card-author {
+  color: #ffffffb3;
+  align-items: center;
+  gap: .75rem;
+  font-size: .9375rem;
+  display: flex;
+}
+
+.post-card-author i {
+  color: #667eea;
+}
+
+.post-card-read-time {
+  color: #fff9;
+  align-items: center;
+  gap: .5rem;
+  font-size: .875rem;
+  display: flex;
+}
+
+.post-card-read-time i {
+  color: #667eea;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.loading-state i {
+  color: #667eea;
+  font-size: 3rem;
+  animation: 1s linear infinite spin;
+}
+
+.loading-state p {
+  color: #fff9;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.empty-state i {
+  color: #fff3;
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+}
+
+.empty-state h3 {
+  color: #fff;
+  margin-bottom: .75rem;
+  font-size: 1.5rem;
+}
+
+.empty-state p {
+  color: #fff9;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .archive-hero {
+    padding: 8rem 0 4rem;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .post-card-content {
+    padding: 1.5rem;
+  }
+
+  .post-card-title {
+    font-size: 1.25rem;
+  }
+
+  .filter-buttons {
+    gap: .75rem;
+  }
+
+  .filter-btn {
+    padding: .75rem 1.5rem;
+    font-size: .875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-card-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .75rem;
+  }
+
+  .post-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=12d90_josegaspard-web_frontend-next_src_app_%28public%29_blog_blog-archive_29a6ea24.css.map*/

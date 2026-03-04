@@ -1,0 +1,188 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/About/About.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  {
+    "path": "static/chunks/2078d_scratch_josegaspard-web_frontend-next_src_components_About_About_5d8ef60c.css",
+    "included": [
+      "[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/About/About.css [app-client] (css)"
+    ]
+  },
+  "static/chunks/2078d_scratch_josegaspard-web_frontend-next_src_components_About_About_tsx_beb4cdd5._.js",
+  "static/chunks/2078d_scratch_josegaspard-web_frontend-next_src_components_About_About_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/About/About.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/SeoContent/SeoContent.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  {
+    "path": "static/chunks/12d90_josegaspard-web_frontend-next_src_components_SeoContent_SeoContent_3b810ee8.css",
+    "included": [
+      "[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/SeoContent/SeoContent.css [app-client] (css)"
+    ]
+  },
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_SeoContent_SeoContent_tsx_825b72a8._.js",
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_SeoContent_SeoContent_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/SeoContent/SeoContent.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Comparison/Comparison.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  {
+    "path": "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Comparison_Comparison_4be079bb.css",
+    "included": [
+      "[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Comparison/Comparison.css [app-client] (css)"
+    ]
+  },
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Comparison_Comparison_tsx_6c820060._.js",
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Comparison_Comparison_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Comparison/Comparison.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/ComparisonTable/ComparisonTable.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  {
+    "path": "static/chunks/b2875_frontend-next_src_components_ComparisonTable_ComparisonTable_bc7523f9.css",
+    "included": [
+      "[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/ComparisonTable/ComparisonTable.css [app-client] (css)"
+    ]
+  },
+  "static/chunks/b2875_frontend-next_src_components_ComparisonTable_ComparisonTable_tsx_576b6800._.js",
+  "static/chunks/b2875_frontend-next_src_components_ComparisonTable_ComparisonTable_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/ComparisonTable/ComparisonTable.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/VisualBoard/VisualBoard.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  {
+    "path": "static/chunks/12d90_josegaspard-web_frontend-next_src_components_VisualBoard_VisualBoard_ed0c34a4.css",
+    "included": [
+      "[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/VisualBoard/VisualBoard.css [app-client] (css)"
+    ]
+  },
+  "static/chunks/b2875_frontend-next_src_components_VisualBoard_VisualBoard_tsx_46c24372._.js",
+  "static/chunks/b2875_frontend-next_src_components_VisualBoard_VisualBoard_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/VisualBoard/VisualBoard.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Portfolio/Portfolio.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  {
+    "path": "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Portfolio_Portfolio_5aacf411.css",
+    "included": [
+      "[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Portfolio/Portfolio.css [app-client] (css)"
+    ]
+  },
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Portfolio_Portfolio_tsx_abaa624e._.js",
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Portfolio_Portfolio_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Portfolio/Portfolio.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Testimonials/Testimonials.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  "static/chunks/b2875_frontend-next_src_components_Testimonials_Testimonials_tsx_434fddc5._.js",
+  "static/chunks/b2875_frontend-next_src_components_Testimonials_Testimonials_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Testimonials/Testimonials.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Experience/Experience.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  {
+    "path": "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Experience_Experience_eacc69bc.css",
+    "included": [
+      "[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Experience/Experience.css [app-client] (css)"
+    ]
+  },
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Experience_Experience_tsx_0f43ccc0._.js",
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Experience_Experience_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Experience/Experience.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Pricing/Pricing.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Pricing_Pricing_tsx_b18d420e._.js",
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Pricing_Pricing_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Pricing/Pricing.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Faq/Faq.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  "static/chunks/2078d_scratch_josegaspard-web_frontend-next_src_components_Faq_Faq_tsx_47c42732._.js",
+  "static/chunks/2078d_scratch_josegaspard-web_frontend-next_src_components_Faq_Faq_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Faq/Faq.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Contact/Contact.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  {
+    "path": "static/chunks/2078d_scratch_josegaspard-web_frontend-next_src_components_Contact_Contact_383b4cb0.css",
+    "included": [
+      "[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Contact/Contact.css [app-client] (css)"
+    ]
+  },
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Contact_Contact_tsx_70f4c0ef._.js",
+  "static/chunks/12d90_josegaspard-web_frontend-next_src_components_Contact_Contact_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Contact/Contact.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Modal/Modal.tsx [app-client] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  {
+    "path": "static/chunks/2078d_scratch_josegaspard-web_frontend-next_src_components_Modal_Modal_434b9295.css",
+    "included": [
+      "[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Modal/Modal.css [app-client] (css)"
+    ]
+  },
+  "static/chunks/2078d_scratch_josegaspard-web_frontend-next_src_components_Modal_Modal_tsx_4b4a838a._.js",
+  "static/chunks/2078d_scratch_josegaspard-web_frontend-next_src_components_Modal_Modal_tsx_1975c13b._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Modal/Modal.tsx [app-client] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+]);

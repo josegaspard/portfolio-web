@@ -1,0 +1,224 @@
+/* [project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/app/admin/admin-layout.css [app-client] (css) */
+:root {
+  --sidebar-width: 260px;
+  --sidebar-bg: #1e293b;
+  --sidebar-text: #94a3b8;
+  --sidebar-text-active: #fff;
+  --sidebar-accent: #3b82f6;
+  --topbar-height: 64px;
+  --bg-main: #f1f5f9;
+  --border-color: #e2e8f0;
+}
+
+.admin-shell {
+  background-color: var(--bg-main);
+  color: #0f172a;
+  height: 100vh;
+  font-family: Inter, sans-serif;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid #ffffff0d;
+  flex-direction: column;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.sidebar-header {
+  height: var(--topbar-height);
+  border-bottom: 1px solid #ffffff0d;
+  align-items: center;
+  padding: 0 1.5rem;
+  display: flex;
+}
+
+.logo-text {
+  color: #fff;
+  letter-spacing: -.5px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 1.5rem 1rem;
+  overflow-y: auto;
+}
+
+.nav-group {
+  margin-bottom: 2rem;
+}
+
+.nav-label {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #64748b;
+  margin-bottom: .75rem;
+  padding-left: .75rem;
+  font-size: .75rem;
+  font-weight: 600;
+  display: block;
+}
+
+.nav-item {
+  color: var(--sidebar-text);
+  border-radius: 8px;
+  align-items: center;
+  margin-bottom: .25rem;
+  padding: .75rem 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s;
+  display: flex;
+}
+
+.nav-item i {
+  text-align: center;
+  width: 20px;
+  margin-right: .75rem;
+  font-size: 1.1em;
+}
+
+.nav-item:hover {
+  color: #fff;
+  background-color: #ffffff0d;
+}
+
+.nav-item.active {
+  background-color: var(--sidebar-accent);
+  color: #fff;
+}
+
+.sidebar-footer {
+  background: #0000001a;
+  border-top: 1px solid #ffffff0d;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+}
+
+.user-profile {
+  align-items: center;
+  gap: .75rem;
+  display: flex;
+}
+
+.avatar {
+  color: #fff;
+  background: #475569;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  font-size: .9em;
+  display: flex;
+}
+
+.user-info {
+  flex-direction: column;
+  display: flex;
+}
+
+.name {
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.role {
+  color: #94a3b8;
+  font-size: .75rem;
+}
+
+.btn-logout {
+  color: #ef4444;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  padding: .5rem;
+  transition: background .2s;
+}
+
+.btn-logout:hover {
+  background: #ef44441a;
+}
+
+.main-area {
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.topbar {
+  height: var(--topbar-height);
+  border-bottom: 1px solid var(--border-color);
+  background: #fff;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  display: flex;
+}
+
+.breadcrumbs {
+  color: #64748b;
+  align-items: center;
+  gap: .5rem;
+  font-size: .875rem;
+  display: flex;
+}
+
+.crumb.active {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.actions {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.btn-icon {
+  color: #64748b;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.1em;
+}
+
+.btn-view-site {
+  color: var(--sidebar-accent);
+  background: #3b82f60d;
+  border: 1px solid #3b82f61a;
+  border-radius: 6px;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .2s;
+  display: flex;
+}
+
+.btn-view-site:hover {
+  background: #3b82f61a;
+}
+
+.scrollable-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/*# sourceMappingURL=2078d_scratch_josegaspard-web_frontend-next_src_app_admin_admin-layout_c4577ebf.css.map*/

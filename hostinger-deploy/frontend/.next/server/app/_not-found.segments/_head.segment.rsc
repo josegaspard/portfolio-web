@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[64822,["/_next/static/chunks/b2cbeeebf1e05df5.js","/_next/static/chunks/f5cf058c1a2d82d8.js"],"ViewportBoundary"]
+3:I[64822,["/_next/static/chunks/b2cbeeebf1e05df5.js","/_next/static/chunks/f5cf058c1a2d82d8.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[65507,["/_next/static/chunks/b2cbeeebf1e05df5.js","/_next/static/chunks/f5cf058c1a2d82d8.js"],"IconMark"]
+0:{"buildId":"wbXRxbXqzoTds9NRtS1TA","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"José Gaspard - Experto SEO y Desarrollador Web en México"}],["$","meta","1",{"name":"description","content":"Especialista en SEO Técnico, Link Building y Desarrollo Web a medida. He ayudado a empresas en México y LATAM a alcanzar millones de visitas orgánicas."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}

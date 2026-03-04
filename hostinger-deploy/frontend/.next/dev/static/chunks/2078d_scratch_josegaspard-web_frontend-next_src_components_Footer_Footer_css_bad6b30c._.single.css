@@ -1,0 +1,87 @@
+/* [project]/.gemini/antigravity/scratch/josegaspard-web/frontend-next/src/components/Footer/Footer.css [app-client] (css) */
+.footer {
+  background: #030712;
+  border-top: 1px solid #ffffff0d;
+  padding: 100px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-grid {
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 50px;
+  padding-bottom: 80px;
+  display: grid;
+}
+
+.footer-logo {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.footer-logo span {
+  color: var(--color-primary);
+}
+
+.footer-bio {
+  color: var(--color-text-light);
+  max-width: 300px;
+  line-height: 1.8;
+}
+
+.footer h4 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-links ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--color-text-light);
+  transition: var(--transition-short);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+  padding-left: 5px;
+}
+
+.footer-contact p {
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: var(--color-text-light);
+  border-top: 1px solid #ffffff0d;
+  padding: 30px 0;
+  font-size: .9rem;
+}
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/*# sourceMappingURL=2078d_scratch_josegaspard-web_frontend-next_src_components_Footer_Footer_css_bad6b30c._.single.css.map*/
