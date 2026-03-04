@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+3:I[64822,["/portfolio-web/_next/static/chunks/b2cbeeebf1e05df5.js","/portfolio-web/_next/static/chunks/f5cf058c1a2d82d8.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+:HL["/portfolio-web/_next/static/chunks/e99f2b1f40b8bde9.css","style"]
+:HL["/portfolio-web/_next/static/chunks/da236891c6fd47ac.css","style"]
+0:{"buildId":"AwdEdbgeT6RafoixyZeIj","rsc":["$","$1","c",{"children":["$L2",[["$","link","0",{"rel":"stylesheet","href":"/portfolio-web/_next/static/chunks/e99f2b1f40b8bde9.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/portfolio-web/_next/static/chunks/da236891c6fd47ac.css","precedence":"next"}],["$","script","script-0",{"src":"/portfolio-web/_next/static/chunks/6bd541dac514a2ad.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
+2:E{"digest":"NEXT_HTTP_ERROR_FALLBACK;404"}
