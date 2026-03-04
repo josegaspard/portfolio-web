@@ -25,13 +25,17 @@ npm run build
 npm run start
 ```
 
-## 🚀 1-Click Hostinger Git Deployment
+## 🚀 Despliegue Manual en Hostinger (Recomendado)
 
-Este repositorio está configurado para desplegarse automáticamente en los planes **Hostinger Business** o **Cloud** utilizando la función **Apps Web Node.js** a través de tu repositorio de GitHub. 
+Debido a que este repositorio es un **Monorepo** (Frontend y Backend conviven juntos), la función de "Auto-Deploy desde Git" de Hostinger fallará porque solo busca frameworks en la carpeta principal.
 
-Cada vez que hagas un push a `main`, Hostinger descargará el código, ejecutará `npm install` y gracias a los scripts `postinstall`, compilará el código de producción automáticamente.
+Para desplegar tu web, sube los archivos `.zip` compilados manualmente:
 
-### Pasos en hPanel de Hostinger:
+1. Ve a **hPanel > Administrador de Archivos**.
+2. Crea tus aplicaciones Node.js (Frontend y Backend).
+3. Sube y extrae el archivo `backend-dist.zip` en la carpeta `/backend`.
+4. Sube y extrae el archivo `frontend-next-dist.zip` en la carpeta `/frontend-next`.
+5. Ejecuta `npm install` en ambas apps y dales a iniciar.
 1. Asegúrate de tener conectada tu cuenta de GitHub a Hostinger (Menú Avanzado \> Git).
 2. Ve a **"Node.js Apps"** y crea dos aplicaciones.
 
