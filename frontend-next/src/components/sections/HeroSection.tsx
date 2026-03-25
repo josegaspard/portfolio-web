@@ -1,224 +1,294 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-const FLOATING_METRICS = [
-  { label: 'Core Web Vitals', value: '98/100', top: '12%', left: '2%', delay: 0.8 },
-  { label: 'Organic Traffic', value: '+300%', top: '8%', right: '5%', delay: 1.0 },
-  { label: 'Authority Links', value: 'DA 85+', top: '35%', right: '0%', delay: 1.2 },
-  { label: 'Top Rankings', value: '#1', bottom: '38%', right: '3%', delay: 1.4 },
-  { label: 'Backend Speed', value: '100ms', bottom: '18%', right: '8%', delay: 1.6 },
-  { label: 'Performance', value: 'Optimized', bottom: '12%', left: '5%', delay: 1.8 },
-  { label: 'Search Console', value: 'Verified', top: '55%', left: '0%', delay: 2.0 },
-  { label: 'Clean Code', value: 'A+', top: '28%', left: '1%', delay: 2.2 },
+const STATS = [
+  { value: '15+', label: 'Años' },
+  { value: '200+', label: 'Proyectos' },
+  { value: '+300%', label: 'ROI' },
+  { value: '98', label: 'Web Vitals' },
 ];
 
+const LOGOS = ['Google', 'Canva', 'PayPal', 'Fiverr', 'Warner'];
+
 export function HeroSection() {
-  const [visible, setVisible] = useState(false);
-  const [metricsVisible, setMetricsVisible] = useState(false);
+  const [step, setStep] = useState(0);
 
   useEffect(() => {
-    setVisible(true);
-    const timer = setTimeout(() => setMetricsVisible(true), 600);
-    return () => clearTimeout(timer);
+    // Staggered entrance: 0→1→2→3→4→5
+    const timers = [
+      setTimeout(() => setStep(1), 100),
+      setTimeout(() => setStep(2), 350),
+      setTimeout(() => setStep(3), 600),
+      setTimeout(() => setStep(4), 850),
+      setTimeout(() => setStep(5), 1100),
+      setTimeout(() => setStep(6), 1400),
+    ];
+    return () => timers.forEach(clearTimeout);
   }, []);
 
-  return (
-    <section className="hero" style={{ position: 'relative' }}>
-      {/* Animated background blobs */}
-      <div className="blob blob-1" />
-      <div className="blob blob-2" />
-      <div className="blob blob-3" />
+  const show = (n: number) => ({
+    opacity: step >= n ? 1 : 0,
+    transform: step >= n ? 'translateY(0)' : 'translateY(32px)',
+    transition: 'all 0.9s cubic-bezier(0.16, 1, 0.3, 1)',
+  });
 
-      {/* Dot grid pattern overlay */}
+  return (
+    <section style={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      position: 'relative',
+      overflow: 'hidden',
+      padding: '120px 0 80px',
+    }}>
+      {/* === BACKGROUND === */}
+      {/* Gradient orbs */}
+      <div style={{
+        position: 'absolute', top: '-20%', right: '-10%',
+        width: 700, height: 700, borderRadius: '50%',
+        background: 'radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%)',
+        filter: 'blur(80px)', pointerEvents: 'none',
+        animation: 'float 25s ease-in-out infinite',
+      }} />
+      <div style={{
+        position: 'absolute', bottom: '-15%', left: '-10%',
+        width: 500, height: 500, borderRadius: '50%',
+        background: 'radial-gradient(circle, rgba(168,85,247,0.10) 0%, transparent 70%)',
+        filter: 'blur(80px)', pointerEvents: 'none',
+        animation: 'float 20s ease-in-out infinite reverse',
+      }} />
+      {/* Grid dots */}
       <div style={{
         position: 'absolute', inset: 0,
-        backgroundImage: 'radial-gradient(rgba(99, 102, 241, 0.06) 1px, transparent 1px)',
-        backgroundSize: '40px 40px',
-        opacity: 0.5,
-        pointerEvents: 'none',
-        zIndex: 1,
+        backgroundImage: 'radial-gradient(circle, rgba(99,102,241,0.04) 1px, transparent 1px)',
+        backgroundSize: '32px 32px', pointerEvents: 'none',
       }} />
 
-      {/* Floating metric badges — desktop only */}
-      {FLOATING_METRICS.map((metric, i) => (
-        <div
-          key={metric.label}
-          style={{
-            position: 'absolute',
-            top: metric.top,
-            left: metric.left,
-            right: metric.right,
-            bottom: metric.bottom,
-            zIndex: 3,
-            opacity: metricsVisible ? 1 : 0,
-            transform: metricsVisible ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.9)',
-            transition: `all 0.7s cubic-bezier(0.4, 0, 0.2, 1) ${metric.delay}s`,
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            padding: '8px 16px',
-            borderRadius: '9999px',
-            background: 'rgba(17, 24, 39, 0.6)',
-            border: '1px solid rgba(99, 102, 241, 0.2)',
-            backdropFilter: 'blur(12px)',
-            WebkitBackdropFilter: 'blur(12px)',
-            fontSize: '0.72rem',
-            fontWeight: 500,
-            color: 'var(--text-secondary)',
-            whiteSpace: 'nowrap',
-            pointerEvents: 'none',
-            animation: metricsVisible ? `float ${18 + i * 2}s ease-in-out infinite ${i * 0.5}s` : 'none',
-          }}
-          className="hero-floating-metric"
-        >
-          <span style={{
-            fontWeight: 800,
-            fontSize: '0.78rem',
-            background: 'var(--gradient)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}>
-            {metric.value}
-          </span>
-          {metric.label}
-        </div>
-      ))}
-
-      <div className="container hero-content" style={{ position: 'relative', zIndex: 4 }}>
-        {/* Availability badge */}
+      {/* === CONTENT === */}
+      <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <div style={{
-          opacity: visible ? 1 : 0,
-          transform: visible ? 'translateY(0)' : 'translateY(20px)',
-          transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
-        }}>
-          <span className="section-badge">
-            <span style={{
-              width: 8, height: 8, borderRadius: '50%',
-              background: '#10b981',
-              display: 'inline-block',
-              boxShadow: '0 0 8px rgba(16, 185, 129, 0.6)',
-              animation: 'glow 2s ease-in-out infinite',
-              flexShrink: 0,
-            }} />
-            Disponible para proyectos &middot; Arquitecto SEO &amp; Ingeniero Full-Stack
-          </span>
-        </div>
-
-        {/* Profile photo placeholder + heading row */}
-        <div style={{
-          display: 'flex',
+          display: 'grid',
+          gridTemplateColumns: '1fr 400px',
+          gap: 60,
           alignItems: 'center',
-          gap: '32px',
-          flexWrap: 'wrap',
-          marginBottom: '8px',
-          opacity: visible ? 1 : 0,
-          transform: visible ? 'translateY(0)' : 'translateY(30px)',
-          transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s',
-        }}>
-          {/* Profile photo placeholder */}
-          <div style={{
-            width: 160,
-            height: 160,
-            borderRadius: '50%',
-            background: 'linear-gradient(135deg, #6366f1, #a855f7)',
-            border: '3px solid rgba(99,102,241,0.3)',
-            boxShadow: '0 0 40px rgba(99,102,241,0.2)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexShrink: 0,
-            position: 'relative',
-          }}>
-            <span style={{
-              fontSize: '3.2rem',
+        }} className="hero-grid">
+
+          {/* LEFT: Text */}
+          <div>
+            {/* Badge */}
+            <div style={show(1)}>
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', gap: 10,
+                padding: '8px 20px', borderRadius: 9999,
+                background: 'rgba(99,102,241,0.06)',
+                border: '1px solid rgba(99,102,241,0.2)',
+                fontSize: '0.85rem', fontWeight: 600,
+                color: '#818cf8', backdropFilter: 'blur(8px)',
+                marginBottom: 28,
+              }}>
+                <span style={{
+                  width: 8, height: 8, borderRadius: '50%',
+                  background: '#10b981',
+                  boxShadow: '0 0 12px rgba(16,185,129,0.6)',
+                  animation: 'glow 2s ease-in-out infinite',
+                }} />
+                Disponible para proyectos
+              </span>
+            </div>
+
+            {/* H1 */}
+            <h1 style={{
+              fontSize: 'clamp(2.8rem, 6vw, 4.2rem)',
               fontWeight: 900,
-              color: '#fff',
-              letterSpacing: '-0.02em',
-              lineHeight: 1,
-            }}>JG</span>
-            {/* Outer glow ring */}
+              lineHeight: 1.08,
+              letterSpacing: '-0.04em',
+              marginBottom: 24,
+              ...show(2),
+            }}>
+              Transformo{' '}
+              <span style={{
+                background: 'linear-gradient(135deg, #818cf8, #a78bfa, #c084fc)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>Búsquedas</span>
+              <br />en{' '}
+              <span style={{
+                background: 'linear-gradient(135deg, #c084fc, #e879f9, #f472b6)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>Ingresos</span>
+            </h1>
+
+            {/* Subtitle */}
+            <p style={{
+              fontSize: '1.15rem', lineHeight: 1.8,
+              color: '#9ca3af', maxWidth: 520,
+              marginBottom: 40,
+              ...show(3),
+            }}>
+              Consultor SEO y desarrollador full-stack con +15 años de experiencia.
+              Ayudo a empresas a dominar Google con SEO técnico, link building
+              y desarrollo web de alto rendimiento.
+            </p>
+
+            {/* CTAs */}
+            <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 56, ...show(4) }}>
+              <Link href="/portafolio/" className="btn btn-primary btn-lg">
+                Ver mis proyectos
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </Link>
+              <Link href="/contact/" className="btn btn-secondary btn-lg">
+                Agendar consulta
+              </Link>
+            </div>
+
+            {/* Stats */}
+            <div style={{ display: 'flex', gap: 40, flexWrap: 'wrap', ...show(5) }}>
+              {STATS.map((s) => (
+                <div key={s.label}>
+                  <div style={{
+                    fontSize: '2rem', fontWeight: 900, lineHeight: 1.1,
+                    background: 'linear-gradient(135deg, #818cf8, #c084fc)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}>{s.value}</div>
+                  <div style={{ fontSize: '0.8rem', color: '#6b7280', marginTop: 4, fontWeight: 500 }}>{s.label}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* Trusted by logos */}
+            <div style={{ marginTop: 48, ...show(6) }}>
+              <div style={{ fontSize: '0.75rem', color: '#4b5563', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 600, marginBottom: 16 }}>
+                Ha trabajado con
+              </div>
+              <div style={{ display: 'flex', gap: 28, alignItems: 'center', flexWrap: 'wrap' }}>
+                {LOGOS.map((name) => (
+                  <span key={name} style={{
+                    fontSize: '0.9rem', fontWeight: 700,
+                    color: '#374151', letterSpacing: '0.02em',
+                    transition: 'color 0.3s ease',
+                  }}>{name}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT: Photo */}
+          <div style={{
+            display: 'flex', justifyContent: 'center', alignItems: 'center',
+            position: 'relative',
+            opacity: step >= 2 ? 1 : 0,
+            transform: step >= 2 ? 'scale(1)' : 'scale(0.9)',
+            transition: 'all 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s',
+          }}>
+            {/* Glow behind photo */}
             <div style={{
               position: 'absolute',
-              inset: '-6px',
+              width: 340, height: 340,
               borderRadius: '50%',
-              border: '2px solid rgba(99,102,241,0.15)',
-              animation: 'glow 3s ease-in-out infinite',
+              background: 'radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)',
+              filter: 'blur(40px)',
+              animation: 'float 8s ease-in-out infinite',
             }} />
-          </div>
-        </div>
 
-        {/* H1 */}
-        <h1 style={{
-          opacity: visible ? 1 : 0,
-          transform: visible ? 'translateY(0)' : 'translateY(30px)',
-          transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s',
-        }}>
-          Transformo{' '}
-          <span className="gradient-text">Búsquedas</span>
-          <br />
-          en <span className="gradient-text">Ingresos</span>
-        </h1>
+            {/* Outer ring */}
+            <div style={{
+              position: 'absolute',
+              width: 320, height: 320,
+              borderRadius: '50%',
+              border: '1px solid rgba(99,102,241,0.12)',
+              animation: 'float 12s ease-in-out infinite reverse',
+            }} />
 
-        {/* Subtitle */}
-        <p className="hero-subtitle" style={{
-          opacity: visible ? 1 : 0,
-          transform: visible ? 'translateY(0)' : 'translateY(30px)',
-          transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.35s',
-        }}>
-          Estrategias de SEO técnico avanzado combinadas con desarrollo full-stack de alto rendimiento
-          para empresas que buscan dominar su mercado digital. Consultor SEO, programador
-          y desarrollador web con +15 años de experiencia en México y LATAM.
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="hero-buttons" style={{
-          opacity: visible ? 1 : 0,
-          transform: visible ? 'translateY(0)' : 'translateY(30px)',
-          transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s',
-        }}>
-          <Link href="/portafolio/" className="btn btn-primary btn-lg">
-            Ver Portafolio
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </Link>
-          <Link href="/contact/" className="btn btn-secondary btn-lg">
-            Agendar Consulta
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
-
-        {/* Stats row */}
-        <div className="hero-stats" style={{
-          opacity: visible ? 1 : 0,
-          transform: visible ? 'translateY(0)' : 'translateY(30px)',
-          transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.65s',
-        }}>
-          {[
-            { value: '15+', label: 'Años de Experiencia' },
-            { value: '200+', label: 'Proyectos Exitosos' },
-            { value: '+300%', label: 'ROI Promedio' },
-          ].map((stat) => (
-            <div key={stat.label}>
-              <div className="hero-stat-value">{stat.value}</div>
-              <div className="hero-stat-label">{stat.label}</div>
+            {/* Photo container */}
+            <div style={{
+              width: 280, height: 280,
+              borderRadius: '50%',
+              overflow: 'hidden',
+              border: '3px solid rgba(99,102,241,0.25)',
+              boxShadow: '0 0 60px rgba(99,102,241,0.15), 0 20px 40px rgba(0,0,0,0.3)',
+              position: 'relative',
+              zIndex: 2,
+            }}>
+              <Image
+                src="/img/josegaspard.png"
+                alt="José Gaspard - Consultor SEO y Desarrollador Web en México"
+                width={280}
+                height={280}
+                priority
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              />
             </div>
-          ))}
+
+            {/* Floating badges around photo */}
+            <div style={{
+              position: 'absolute', top: 10, right: -20,
+              padding: '8px 16px', borderRadius: 9999,
+              background: 'rgba(17,24,39,0.7)',
+              border: '1px solid rgba(99,102,241,0.2)',
+              backdropFilter: 'blur(12px)',
+              fontSize: '0.75rem', fontWeight: 600,
+              color: '#9ca3af',
+              animation: 'float 6s ease-in-out infinite',
+              opacity: step >= 5 ? 1 : 0,
+              transition: 'opacity 0.8s ease 1.2s',
+            }}>
+              <span style={{ color: '#818cf8', fontWeight: 800 }}>98/100</span> Web Vitals
+            </div>
+
+            <div style={{
+              position: 'absolute', bottom: 20, left: -30,
+              padding: '8px 16px', borderRadius: 9999,
+              background: 'rgba(17,24,39,0.7)',
+              border: '1px solid rgba(168,85,247,0.2)',
+              backdropFilter: 'blur(12px)',
+              fontSize: '0.75rem', fontWeight: 600,
+              color: '#9ca3af',
+              animation: 'float 7s ease-in-out infinite 2s',
+              opacity: step >= 5 ? 1 : 0,
+              transition: 'opacity 0.8s ease 1.5s',
+            }}>
+              <span style={{ color: '#c084fc', fontWeight: 800 }}>#1</span> Rankings
+            </div>
+
+            <div style={{
+              position: 'absolute', bottom: -10, right: 10,
+              padding: '8px 16px', borderRadius: 9999,
+              background: 'rgba(17,24,39,0.7)',
+              border: '1px solid rgba(16,185,129,0.2)',
+              backdropFilter: 'blur(12px)',
+              fontSize: '0.75rem', fontWeight: 600,
+              color: '#9ca3af',
+              animation: 'float 8s ease-in-out infinite 1s',
+              opacity: step >= 5 ? 1 : 0,
+              transition: 'opacity 0.8s ease 1.8s',
+            }}>
+              <span style={{ color: '#34d399', fontWeight: 800 }}>+300%</span> Traffic
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Hide floating metrics on mobile/tablet */}
+      {/* Responsive */}
       <style>{`
-        .hero-floating-metric {
-          display: none !important;
-        }
-        @media (min-width: 1025px) {
-          .hero-floating-metric {
-            display: flex !important;
+        @media (max-width: 900px) {
+          .hero-grid {
+            grid-template-columns: 1fr !important;
+            gap: 40px !important;
+            text-align: center;
+          }
+          .hero-grid > div:last-child {
+            order: -1;
+          }
+          .hero-grid > div:last-child > div:nth-child(3) {
+            width: 220px !important;
+            height: 220px !important;
           }
         }
       `}</style>
