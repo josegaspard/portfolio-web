@@ -34,13 +34,12 @@ export function HeroSection() {
   });
 
   return (
-    <section style={{
-      minHeight: '100dvh',
+    <section className="hero-section" style={{
       display: 'flex',
       alignItems: 'center',
       position: 'relative',
       overflow: 'hidden',
-      padding: '80px 0 32px',
+      padding: '30px 0 32px',
     }}>
       {/* === BACKGROUND === */}
       <div style={{
@@ -258,6 +257,9 @@ export function HeroSection() {
 
       {/* Responsive styles */}
       <style>{`
+        .hero-section {
+          padding-top: 70px;
+        }
         .hero-grid {
           display: grid;
           grid-template-columns: 1fr 280px;
@@ -265,9 +267,13 @@ export function HeroSection() {
           align-items: center;
         }
         @media (max-width: 900px) {
+          .hero-section {
+            padding-top: 56px !important;
+            padding-bottom: 20px !important;
+          }
           .hero-grid {
             grid-template-columns: 1fr !important;
-            gap: 12px !important;
+            gap: 8px !important;
             text-align: center;
           }
           .hero-grid > div:first-child {
@@ -279,67 +285,83 @@ export function HeroSection() {
             order: -1;
           }
           .hero-photo {
-            width: 100px !important;
-            height: 100px !important;
+            width: 90px !important;
+            height: 90px !important;
           }
           .hero-glow {
-            width: 120px !important;
-            height: 120px !important;
-          }
-          .hero-h1 {
-            font-size: 2rem !important;
-            margin-bottom: 10px !important;
-          }
-          .hero-subtitle {
-            font-size: 0.9rem !important;
-            margin-bottom: 6px !important;
-          }
-          .hero-trust {
-            font-size: 0.72rem !important;
-            margin-bottom: 16px !important;
-            gap: 8px !important;
-          }
-          .hero-ctas {
-            margin-bottom: 20px !important;
-            gap: 10px !important;
-          }
-          .hero-ctas a {
-            padding: 10px 20px !important;
-            font-size: 0.85rem !important;
-          }
-          .hero-stats-row {
-            gap: 16px !important;
-            margin-bottom: 10px !important;
-          }
-          .hero-stats-row > div > div:first-child {
-            font-size: 1.2rem !important;
-          }
-          .hero-stats-row > div > div:last-child {
-            font-size: 0.65rem !important;
-          }
-          .hero-logos {
-            font-size: 0.65rem !important;
-            gap: 12px !important;
+            width: 110px !important;
+            height: 110px !important;
           }
           .hero-badge {
-            font-size: 0.72rem !important;
-            padding: 4px 12px !important;
-            margin-bottom: 10px !important;
+            font-size: 0.7rem !important;
+            padding: 4px 10px !important;
+            margin-bottom: 6px !important;
+          }
+          .hero-h1 {
+            font-size: 1.8rem !important;
+            margin-bottom: 8px !important;
+            line-height: 1.1 !important;
+          }
+          .hero-subtitle {
+            font-size: 0.82rem !important;
+            margin-bottom: 4px !important;
+            line-height: 1.5 !important;
+          }
+          .hero-trust {
+            font-size: 0.68rem !important;
+            margin-bottom: 12px !important;
+            gap: 6px !important;
+            justify-content: center;
+          }
+          .hero-ctas {
+            margin-bottom: 14px !important;
+            gap: 8px !important;
+            justify-content: center;
+            width: 100%;
+          }
+          .hero-ctas a {
+            padding: 10px 18px !important;
+            font-size: 0.82rem !important;
+            flex: 1;
+            justify-content: center;
+          }
+          .hero-stats-row {
+            gap: 14px !important;
+            margin-bottom: 8px !important;
+            justify-content: center;
+          }
+          .hero-stats-row > div > div:first-child {
+            font-size: 1.1rem !important;
+          }
+          .hero-stats-row > div > div:last-child {
+            font-size: 0.6rem !important;
+          }
+          .hero-logos {
+            font-size: 0.6rem !important;
+            gap: 8px !important;
+            justify-content: center;
           }
         }
         @media (max-width: 380px) {
+          .hero-section {
+            padding-top: 50px !important;
+          }
           .hero-photo {
-            width: 80px !important;
-            height: 80px !important;
+            width: 70px !important;
+            height: 70px !important;
           }
           .hero-h1 {
-            font-size: 1.7rem !important;
+            font-size: 1.5rem !important;
           }
-          .hero-stats-row {
-            gap: 12px !important;
+          .hero-subtitle {
+            font-size: 0.78rem !important;
           }
           .hero-stats-row > div > div:first-child {
-            font-size: 1rem !important;
+            font-size: 0.95rem !important;
+          }
+          .hero-ctas a {
+            padding: 8px 14px !important;
+            font-size: 0.78rem !important;
           }
         }
       `}</style>
