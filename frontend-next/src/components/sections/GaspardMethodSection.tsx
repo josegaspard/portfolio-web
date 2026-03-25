@@ -125,16 +125,18 @@ export function GaspardMethodSection() {
               key={col.title}
               className="glass-card"
               style={{
-                padding: '36px 28px',
+                padding: '28px 20px',
                 textAlign: 'center',
                 position: 'relative',
+                overflow: 'visible',
                 ...stagger(i + 1),
                 ...(col.highlighted
                   ? {
-                      borderColor: 'rgba(99, 102, 241, 0.4)',
+                      borderColor: 'rgba(59, 130, 246, 0.4)',
                       background:
-                        'linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.06))',
-                      boxShadow: '0 0 40px rgba(99,102,241,0.12), 0 20px 40px rgba(0,0,0,0.2)',
+                        'linear-gradient(135deg, rgba(59,130,246,0.08), rgba(6,182,212,0.06))',
+                      boxShadow: '0 0 30px rgba(59,130,246,0.1), 0 12px 32px rgba(0,0,0,0.2)',
+                      marginTop: 14,
                     }
                   : {}),
               }}

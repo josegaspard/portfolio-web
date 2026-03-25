@@ -132,7 +132,6 @@ ul, ol { list-style: none; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: all var(--duration) var(--ease);
-  overflow: hidden;
 }
 
 .glass-card:hover {
