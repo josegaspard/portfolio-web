@@ -11,6 +11,7 @@ const ADMIN_LINKS = [
   { href: '/admin/media/', label: 'Media' },
   { href: '/admin/messages/', label: 'Mensajes' },
   { href: '/admin/analytics/', label: 'Analytics' },
+  { href: '/admin/seo/', label: 'SEO' },
   { href: '/admin/settings/', label: 'Configuración' },
 ];
 

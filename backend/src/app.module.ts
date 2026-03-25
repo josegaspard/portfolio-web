@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
@@ -23,6 +23,9 @@ import { Subscriber } from './newsletter/entities/subscriber.entity';
 import { Comment } from './comments/entities/comment.entity';
 import { ContactMessage } from './contact-messages/contact-message.entity';
 import { NewsletterSubscriber } from './newsletter/newsletter-subscriber.entity';
+import { AuditLog } from './common/audit-log.entity';
+import { AuditLogService } from './common/audit-log.service';
+import { SecurityMiddleware } from './common/security.middleware';
 
 @Module({
   imports: [
@@ -43,9 +46,11 @@ import { NewsletterSubscriber } from './newsletter/newsletter-subscriber.entity'
         Comment,
         ContactMessage,
         NewsletterSubscriber,
+        AuditLog,
       ],
       synchronize: true,
     }),
+    TypeOrmModule.forFeature([AuditLog]),
 
     ContentModule,
     AuthModule,
@@ -59,6 +64,11 @@ import { NewsletterSubscriber } from './newsletter/newsletter-subscriber.entity'
     EmailModule,  // ACTIVADO
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, AuditLogService],
+  exports: [AuditLogService],
 })
-export class AppModule { }
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer.apply(SecurityMiddleware).forRoutes('*');
+  }
+}

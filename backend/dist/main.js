@@ -46,20 +46,28 @@ async function bootstrap() {
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization'],
     });
-    const limiter = (0, express_rate_limit_1.default)({
+    const globalLimiter = (0, express_rate_limit_1.default)({
         windowMs: 15 * 60 * 1000,
         max: 100,
         message: 'Too many requests from this IP, please try again later.',
         standardHeaders: true,
         legacyHeaders: false,
     });
-    app.use(limiter);
+    app.use(globalLimiter);
+    const authLimiter = (0, express_rate_limit_1.default)({
+        windowMs: 1 * 60 * 1000,
+        max: 5,
+        message: 'Too many authentication requests, please try again later.',
+        standardHeaders: true,
+        legacyHeaders: false,
+    });
+    app.use('/auth', authLimiter);
     app.use((0, express_1.json)({ limit: '10mb' }));
     app.use((0, express_1.urlencoded)({ limit: '10mb', extended: true }));
     const port = process.env.PORT || 4000;
     await app.listen(port);
-    console.log(`🚀 Backend running on http://localhost:${port}`);
-    console.log(`🔒 Security: Helmet enabled, CORS configured, Rate limiting active`);
+    console.log(`Backend running on http://localhost:${port}`);
+    console.log(`Security: Helmet enabled, CORS configured, Rate limiting active`);
 }
 bootstrap().catch((err) => {
     logger_service_1.Logger.error('Failed to start server', err.stack, 'Bootstrap');
