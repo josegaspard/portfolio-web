@@ -84,7 +84,7 @@ export function HeroSection() {
                 fontSize: '0.82rem', fontWeight: 600,
                 color: '#60a5fa', backdropFilter: 'blur(8px)',
                 marginBottom: 20,
-              }}>
+              }} className="hero-badge">
                 <span style={{
                   width: 7, height: 7, borderRadius: '50%',
                   background: '#10b981',
@@ -96,7 +96,7 @@ export function HeroSection() {
             </div>
 
             {/* H1 */}
-            <h1 style={{
+            <h1 className="hero-h1" style={{
               fontSize: 'clamp(2.4rem, 5.5vw, 3.8rem)',
               fontWeight: 900,
               lineHeight: 1.08,
@@ -121,7 +121,7 @@ export function HeroSection() {
             </h1>
 
             {/* Subtitle */}
-            <p style={{
+            <p className="hero-subtitle" style={{
               fontSize: '1.05rem', lineHeight: 1.7,
               color: '#9ca3af', maxWidth: 500,
               marginBottom: 12,
@@ -133,7 +133,7 @@ export function HeroSection() {
             </p>
 
             {/* CTA trust text */}
-            <p style={{
+            <p className="hero-trust" style={{
               fontSize: '0.82rem', color: '#6b7280',
               marginBottom: 28,
               display: 'flex', gap: 12, flexWrap: 'wrap',
@@ -145,7 +145,7 @@ export function HeroSection() {
             </p>
 
             {/* CTAs */}
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 36, ...show(4) }}>
+            <div className="hero-ctas" style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 36, ...show(4) }}>
               <Link href="/contact/" style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
                 padding: '12px 28px', borderRadius: 12,
@@ -182,7 +182,7 @@ export function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', marginBottom: 16, ...show(5) }}>
+            <div className="hero-stats-row" style={{ display: 'flex', gap: 24, flexWrap: 'wrap', marginBottom: 16, ...show(5) }}>
               {STATS.map((s) => (
                 <div key={s.label}>
                   <div style={{
@@ -199,7 +199,7 @@ export function HeroSection() {
 
             {/* Trust row - company logos */}
             <div style={{ ...show(6) }}>
-              <div style={{
+              <div className="hero-logos" style={{
                 display: 'flex', gap: 20, alignItems: 'center', flexWrap: 'wrap',
                 fontSize: '0.72rem', color: '#4b5563', textTransform: 'uppercase',
                 letterSpacing: '0.06em', fontWeight: 600,
@@ -224,7 +224,7 @@ export function HeroSection() {
             transition: 'all 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s',
           }}>
             {/* Glow behind photo */}
-            <div style={{
+            <div className="hero-glow" style={{
               position: 'absolute',
               width: 280, height: 280,
               borderRadius: '50%',
@@ -267,7 +267,7 @@ export function HeroSection() {
         @media (max-width: 900px) {
           .hero-grid {
             grid-template-columns: 1fr !important;
-            gap: 16px !important;
+            gap: 12px !important;
             text-align: center;
           }
           .hero-grid > div:first-child {
@@ -279,14 +279,67 @@ export function HeroSection() {
             order: -1;
           }
           .hero-photo {
-            width: 130px !important;
-            height: 130px !important;
+            width: 100px !important;
+            height: 100px !important;
+          }
+          .hero-glow {
+            width: 120px !important;
+            height: 120px !important;
+          }
+          .hero-h1 {
+            font-size: 2rem !important;
+            margin-bottom: 10px !important;
+          }
+          .hero-subtitle {
+            font-size: 0.9rem !important;
+            margin-bottom: 6px !important;
+          }
+          .hero-trust {
+            font-size: 0.72rem !important;
+            margin-bottom: 16px !important;
+            gap: 8px !important;
+          }
+          .hero-ctas {
+            margin-bottom: 20px !important;
+            gap: 10px !important;
+          }
+          .hero-ctas a {
+            padding: 10px 20px !important;
+            font-size: 0.85rem !important;
+          }
+          .hero-stats-row {
+            gap: 16px !important;
+            margin-bottom: 10px !important;
+          }
+          .hero-stats-row > div > div:first-child {
+            font-size: 1.2rem !important;
+          }
+          .hero-stats-row > div > div:last-child {
+            font-size: 0.65rem !important;
+          }
+          .hero-logos {
+            font-size: 0.65rem !important;
+            gap: 12px !important;
+          }
+          .hero-badge {
+            font-size: 0.72rem !important;
+            padding: 4px 12px !important;
+            margin-bottom: 10px !important;
           }
         }
-        @media (max-width: 480px) {
+        @media (max-width: 380px) {
           .hero-photo {
-            width: 110px !important;
-            height: 110px !important;
+            width: 80px !important;
+            height: 80px !important;
+          }
+          .hero-h1 {
+            font-size: 1.7rem !important;
+          }
+          .hero-stats-row {
+            gap: 12px !important;
+          }
+          .hero-stats-row > div > div:first-child {
+            font-size: 1rem !important;
           }
         }
       `}</style>
