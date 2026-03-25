@@ -1,11 +1,9 @@
-'use client';
-
-import { useEffect, useState } from 'react';
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
 import { BreadcrumbJsonLd, ArticleJsonLd } from '@/components/seo/JsonLd';
+import { CommentsSection, NewsletterWidget } from '@/components/BlogClientWidgets';
 import { SITE } from '@/lib/constants';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -210,186 +208,27 @@ const POSTS: Record<string, BlogPost> = {
   },
 };
 
-/* ------------------------------------------------------------------ */
-/*  STATIC PARAMS & METADATA (exported for Next.js)                   */
-/* ------------------------------------------------------------------ */
-
 export function generateStaticParams() {
   return Object.keys(POSTS).map((slug) => ({ slug }));
 }
 
-// NOTE: generateMetadata cannot be used with 'use client'.
-// Metadata is handled via ArticleJsonLd + head tags instead.
-
-/* ------------------------------------------------------------------ */
-/*  COMMENTS FORM COMPONENT                                           */
-/* ------------------------------------------------------------------ */
-
-function CommentsSection({ slug }: { slug: string }) {
-  const [form, setForm] = useState({ name: '', email: '', comment: '' });
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('sending');
-    try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://josegaspard.dev/api';
-      await fetch(`${apiUrl}/comments`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...form, slug }),
-      });
-      setStatus('sent');
-      setForm({ name: '', email: '', comment: '' });
-    } catch {
-      setStatus('error');
-    }
-  };
-
-  return (
-    <section style={{ marginTop: 64 }}>
-      <h2 style={{ fontSize: '1.5rem', marginBottom: 8 }}>Comentarios</h2>
-      <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: 24 }}>
-        Los comentarios son moderados antes de publicarse.
-      </p>
-
-      {status === 'sent' ? (
-        <div style={{ padding: 24, background: 'rgba(16,185,129,0.1)', borderRadius: 'var(--radius-md)', color: '#10b981', textAlign: 'center' }}>
-          ¡Gracias! Tu comentario ha sido enviado y será revisado pronto.
-        </div>
-      ) : (
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-            <input
-              type="text"
-              placeholder="Nombre"
-              required
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-              style={{
-                padding: '12px 16px',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-subtle)',
-                borderRadius: 'var(--radius-md)',
-                color: 'var(--text-primary)',
-                fontSize: '0.95rem',
-              }}
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              required
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-              style={{
-                padding: '12px 16px',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-subtle)',
-                borderRadius: 'var(--radius-md)',
-                color: 'var(--text-primary)',
-                fontSize: '0.95rem',
-              }}
-            />
-          </div>
-          <textarea
-            placeholder="Escribe tu comentario..."
-            required
-            rows={5}
-            value={form.comment}
-            onChange={(e) => setForm({ ...form, comment: e.target.value })}
-            style={{
-              padding: '12px 16px',
-              background: 'var(--bg-card)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              color: 'var(--text-primary)',
-              fontSize: '0.95rem',
-              resize: 'vertical',
-            }}
-          />
-          <button
-            type="submit"
-            disabled={status === 'sending'}
-            className="btn btn-primary"
-            style={{ alignSelf: 'flex-start', padding: '12px 32px' }}
-          >
-            {status === 'sending' ? 'Enviando...' : 'Enviar Comentario'}
-          </button>
-          {status === 'error' && (
-            <p style={{ color: '#ef4444', fontSize: '0.85rem' }}>Error al enviar. Intenta de nuevo.</p>
-          )}
-        </form>
-      )}
-    </section>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  NEWSLETTER WIDGET                                                 */
-/* ------------------------------------------------------------------ */
-
-function NewsletterWidget() {
-  const [email, setEmail] = useState('');
-  const [sent, setSent] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSent(true);
-    setEmail('');
-  };
-
-  return (
-    <div className="sidebar-widget">
-      <h3 style={{ fontSize: '1.05rem', marginBottom: 12 }}>Suscr&iacute;bete al Newsletter</h3>
-      <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: 16 }}>
-        Recibe las últimas tendencias de SEO y desarrollo web directamente en tu bandeja.
-      </p>
-      {sent ? (
-        <p style={{ color: '#10b981', fontSize: '0.9rem' }}>¡Gracias por suscribirte!</p>
-      ) : (
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          <input
-            type="email"
-            placeholder="tu@email.com"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            style={{
-              padding: '10px 14px',
-              background: 'var(--bg-card)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              color: 'var(--text-primary)',
-              fontSize: '0.9rem',
-            }}
-          />
-          <button
-            type="submit"
-            className="btn btn-primary"
-            style={{ width: '100%', padding: '10px 0', fontSize: '0.9rem' }}
-          >
-            Suscribirme
-          </button>
-        </form>
-      )}
-    </div>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  PAGE COMPONENT                                                     */
-/* ------------------------------------------------------------------ */
-
-export default function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
-  const [slug, setSlug] = useState<string | null>(null);
-
-  useEffect(() => {
-    params.then((p) => setSlug(p.slug));
-  }, [params]);
-
-  if (!slug) return null;
-
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
   const post = POSTS[slug];
+  if (!post) return { title: 'Artículo no encontrado' };
+  return {
+    title: `${post.title} | Blog José Gaspard`,
+    description: post.description,
+    keywords: [...post.keywords, post.category.toLowerCase(), 'blog seo'],
+    alternates: { canonical: `${SITE.url}/blog/${slug}/` },
+    openGraph: { type: 'article', title: post.title, description: post.description, publishedTime: post.date },
+  };
+}
+
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = POSTS[slug];
+
   if (!post) {
     return (
       <>
@@ -397,9 +236,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
         <main className="section" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ textAlign: 'center' }}>
             <h1>Artículo no encontrado</h1>
-            <Link href="/blog/" className="btn btn-primary" style={{ marginTop: 24, display: 'inline-block' }}>
-              Volver al Blog
-            </Link>
+            <Link href="/blog/" className="btn btn-primary" style={{ marginTop: 24, display: 'inline-block' }}>Volver al Blog</Link>
           </div>
         </main>
         <Footer />
@@ -408,231 +245,89 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
   }
 
   const relatedSlugs = Object.keys(POSTS).filter((s) => s !== slug);
-  const formattedDate = new Date(post.date).toLocaleDateString('es-MX', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const formattedDate = new Date(post.date).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
 
   return (
     <>
-      {/* --- Structured Data --- */}
-      <BreadcrumbJsonLd
-        items={[
-          { name: 'Inicio', url: SITE.url },
-          { name: 'Blog', url: `${SITE.url}/blog/` },
-          { name: post.title, url: `${SITE.url}/blog/${slug}/` },
-        ]}
-      />
-      <ArticleJsonLd
-        title={post.title}
-        description={post.description}
-        datePublished={post.date}
-        image={`${SITE.url}/img/og-default.jpg`}
-        url={`${SITE.url}/blog/${slug}/`}
-      />
-
+      <BreadcrumbJsonLd items={[
+        { name: 'Inicio', url: SITE.url },
+        { name: 'Blog', url: `${SITE.url}/blog/` },
+        { name: post.title, url: `${SITE.url}/blog/${slug}/` },
+      ]} />
+      <ArticleJsonLd title={post.title} description={post.description} datePublished={post.date} image={`${SITE.url}/img/og-default.jpg`} url={`${SITE.url}/blog/${slug}/`} />
       <Header />
-
       <main>
-        {/* ============ HERO ============ */}
+        {/* Hero */}
         <section className="hero" style={{ minHeight: '40vh', paddingBottom: 0 }}>
-          <div className="blob blob-indigo" />
+          <div className="blob blob-1" />
           <div className="container hero-content" style={{ maxWidth: 1100, margin: '0 auto' }}>
-            {/* Breadcrumbs */}
             <nav aria-label="Breadcrumb" style={{ fontSize: '0.85rem', marginBottom: 20, color: 'var(--text-muted)' }}>
-              <Link href="/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Inicio</Link>
+              <Link href="/" style={{ color: 'var(--text-muted)' }}>Inicio</Link>
               <span style={{ margin: '0 8px' }}>/</span>
-              <Link href="/blog/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Blog</Link>
+              <Link href="/blog/" style={{ color: 'var(--text-muted)' }}>Blog</Link>
               <span style={{ margin: '0 8px' }}>/</span>
               <span style={{ color: 'var(--text-secondary)' }}>{post.title}</span>
             </nav>
-
-            {/* Category + Date + Read time */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 16, flexWrap: 'wrap' }}>
-              <span
-                className="tag"
-                style={{ background: '#3b82f6', color: '#fff', padding: '4px 14px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}
-              >
-                {post.category}
-              </span>
+              <span className="tag" style={{ background: '#3b82f6', color: '#fff', padding: '4px 14px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>{post.category}</span>
               <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>{formattedDate}</span>
               <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>{post.readTime} min lectura</span>
             </div>
-
-            {/* Title */}
             <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', lineHeight: 1.2, marginBottom: 24 }}>{post.title}</h1>
-
-            {/* Author card */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-              <Image
-                src="/img/josegaspard.png"
-                alt="José Gaspard"
-                width={56}
-                height={56}
-                style={{ borderRadius: '50%', objectFit: 'cover' }}
-              />
+              <Image src="/img/josegaspard.png" alt="José Gaspard" width={56} height={56} style={{ borderRadius: '50%', objectFit: 'cover' }} />
               <div>
                 <strong style={{ fontSize: '1rem' }}>José Gaspard</strong>
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>
-                  Arquitecto SEO &amp; Full-Stack Developer
-                </p>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>Arquitecto SEO & Full-Stack Developer</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ============ TWO-COLUMN LAYOUT ============ */}
+        {/* Content + Sidebar */}
         <section className="section" style={{ paddingTop: 40 }}>
-          <div className="container blog-layout" style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <div className="container" style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <div className="blog-layout">
+              {/* Article */}
+              <div>
+                <article style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: 1.8 }} dangerouslySetInnerHTML={{ __html: post.content }} />
 
-            {/* --- ARTICLE --- */}
-            <article style={{ minWidth: 0 }}>
-              <div
-                style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: 1.85 }}
-                dangerouslySetInnerHTML={{ __html: post.content }}
-              />
-
-              {/* Inline CTA banner mid-article */}
-              <div
-                className="cta-banner"
-                style={{
-                  margin: '48px 0',
-                  padding: '32px',
-                  background: 'linear-gradient(135deg, rgba(59,130,246,0.1) 0%, rgba(245,158,11,0.1) 100%)',
-                  borderRadius: 'var(--radius-lg)',
-                  border: '1px solid rgba(59,130,246,0.2)',
-                  textAlign: 'center',
-                }}
-              >
-                <h3 style={{ marginBottom: 8, fontSize: '1.2rem' }}>
-                  ¿Necesitas ayuda con {post.category}?
-                </h3>
-                <p style={{ color: 'var(--text-muted)', marginBottom: 20, fontSize: '0.95rem' }}>
-                  Agenda una consulta gratuita y analicemos cómo mejorar tu proyecto.
-                </p>
-                <Link
-                  href="/contact/"
-                  className="btn"
-                  style={{
-                    background: '#f59e0b',
-                    color: '#000',
-                    fontWeight: 700,
-                    padding: '12px 32px',
-                    borderRadius: 'var(--radius-md)',
-                    textDecoration: 'none',
-                    display: 'inline-block',
-                  }}
-                >
-                  Contactar →
-                </Link>
-              </div>
-
-              {/* Tags */}
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 40, marginBottom: 40 }}>
-                {post.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    style={{
-                      padding: '6px 14px',
-                      fontSize: '0.8rem',
-                      background: 'var(--bg-card)',
-                      border: '1px solid var(--border-subtle)',
-                      borderRadius: 20,
-                      color: 'var(--text-muted)',
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              {/* Author bio box */}
-              <div
-                style={{
-                  display: 'flex',
-                  gap: 20,
-                  padding: 32,
-                  background: 'var(--bg-card)',
-                  borderRadius: 'var(--radius-lg)',
-                  border: '1px solid var(--border-subtle)',
-                  alignItems: 'flex-start',
-                  flexWrap: 'wrap',
-                }}
-              >
-                <Image
-                  src="/img/josegaspard.png"
-                  alt="José Gaspard"
-                  width={80}
-                  height={80}
-                  style={{ borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
-                />
-                <div style={{ flex: 1, minWidth: 200 }}>
-                  <h3 style={{ margin: '0 0 4px' }}>José Gaspard</h3>
-                  <p style={{ color: '#3b82f6', fontSize: '0.9rem', margin: '0 0 12px' }}>
-                    Arquitecto SEO &amp; Full-Stack Developer
-                  </p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6, margin: '0 0 16px' }}>
-                    Experto SEO y desarrollador web con +15 años de experiencia. He trabajado con Google, Canva y PayPal optimizando el posicionamiento web y desarrollando soluciones full-stack escalables.
-                  </p>
-                  <Link
-                    href="/contact/"
-                    className="btn"
-                    style={{
-                      background: '#3b82f6',
-                      color: '#fff',
-                      padding: '10px 24px',
-                      borderRadius: 'var(--radius-md)',
-                      textDecoration: 'none',
-                      display: 'inline-block',
-                      fontSize: '0.9rem',
-                      fontWeight: 600,
-                    }}
-                  >
-                    Trabajemos Juntos
-                  </Link>
+                {/* Inline CTA */}
+                <div className="cta-banner" style={{ margin: '48px 0' }}>
+                  <div>
+                    <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 4 }}>¿Necesitas ayuda con {post.category}?</h3>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>Agenda una consulta gratuita y analicemos tu proyecto.</p>
+                  </div>
+                  <Link href="/contact/" className="btn btn-primary btn-sm" style={{ background: 'linear-gradient(135deg, #f59e0b, #ea580c)', color: '#fff', border: 'none', fontWeight: 700, whiteSpace: 'nowrap' }}>Contactar</Link>
                 </div>
+
+                {/* Tags */}
+                <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', margin: '32px 0' }}>
+                  {post.tags.map((t) => <span key={t} className="tag">{t}</span>)}
+                </div>
+
+                {/* Author Bio */}
+                <div className="glass-card" style={{ padding: 28, display: 'flex', gap: 20, alignItems: 'center', flexWrap: 'wrap' }}>
+                  <Image src="/img/josegaspard.png" alt="José Gaspard" width={80} height={80} style={{ borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }} />
+                  <div style={{ flex: 1, minWidth: 200 }}>
+                    <strong style={{ fontSize: '1.05rem' }}>José Gaspard</strong>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: '4px 0 8px' }}>Consultor SEO & Desarrollador Full-Stack · +15 años de experiencia</p>
+                    <Link href="/about/" style={{ color: '#3b82f6', fontSize: '0.85rem', fontWeight: 600 }}>Ver perfil completo →</Link>
+                  </div>
+                </div>
+
+                {/* Comments */}
+                <CommentsSection slug={slug} />
               </div>
 
-              {/* Comments */}
-              <CommentsSection slug={slug} />
-            </article>
-
-            {/* --- SIDEBAR --- */}
-            <aside className="blog-sidebar">
-              <div style={{ position: 'sticky', top: 100, display: 'flex', flexDirection: 'column', gap: 24 }}>
-
+              {/* Sidebar */}
+              <aside className="blog-sidebar">
                 {/* Table of Contents */}
                 <div className="sidebar-widget">
-                  <h3 style={{ fontSize: '1.05rem', marginBottom: 12 }}>Tabla de Contenidos</h3>
-                  <ul className="toc-list" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                  <h4>Tabla de Contenidos</h4>
+                  <ul className="toc-list">
                     {post.headings.map((h) => (
-                      <li key={h.id} style={{ marginBottom: 8 }}>
-                        <a
-                          href={`#${h.id}`}
-                          style={{
-                            color: 'var(--text-muted)',
-                            textDecoration: 'none',
-                            fontSize: '0.9rem',
-                            lineHeight: 1.5,
-                            display: 'block',
-                            padding: '4px 0',
-                            borderLeft: '2px solid transparent',
-                            paddingLeft: 12,
-                            transition: 'all 0.2s',
-                          }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.style.color = '#3b82f6';
-                            e.currentTarget.style.borderLeftColor = '#3b82f6';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.style.color = 'var(--text-muted)';
-                            e.currentTarget.style.borderLeftColor = 'transparent';
-                          }}
-                        >
-                          {h.text}
-                        </a>
-                      </li>
+                      <li key={h.id}><a href={`#${h.id}`}>{h.text}</a></li>
                     ))}
                   </ul>
                 </div>
@@ -642,145 +337,31 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
 
                 {/* Related Posts */}
                 <div className="sidebar-widget">
-                  <h3 style={{ fontSize: '1.05rem', marginBottom: 12 }}>Artículos Relacionados</h3>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-                    {relatedSlugs.map((rs) => (
-                      <Link
-                        key={rs}
-                        href={`/blog/${rs}/`}
-                        style={{
-                          display: 'block',
-                          padding: '12px 14px',
-                          background: 'var(--bg-card)',
-                          borderRadius: 'var(--radius-md)',
-                          border: '1px solid var(--border-subtle)',
-                          textDecoration: 'none',
-                          transition: 'border-color 0.2s',
-                        }}
-                        onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#3b82f6'; }}
-                        onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
-                      >
-                        <span style={{ fontSize: '0.8rem', color: '#3b82f6', fontWeight: 600 }}>
-                          {POSTS[rs].category}
-                        </span>
-                        <p style={{ margin: '4px 0 0', fontSize: '0.9rem', color: 'var(--text-primary)', lineHeight: 1.4 }}>
-                          {POSTS[rs].title}
-                        </p>
+                  <h4>Artículos Relacionados</h4>
+                  {relatedSlugs.map((rs) => {
+                    const rp = POSTS[rs];
+                    return (
+                      <Link key={rs} href={`/blog/${rs}/`} style={{ display: 'block', marginBottom: 16, color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: 1.5 }}>
+                        <strong style={{ color: 'var(--text)', display: 'block', marginBottom: 2 }}>{rp.title}</strong>
+                        <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{rp.readTime} min · {rp.category}</span>
                       </Link>
-                    ))}
-                  </div>
+                    );
+                  })}
                 </div>
 
                 {/* Services CTA */}
-                <div
-                  className="sidebar-widget"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(59,130,246,0.08) 0%, rgba(245,158,11,0.08) 100%)',
-                    border: '1px solid rgba(59,130,246,0.2)',
-                  }}
-                >
-                  <h3 style={{ fontSize: '1.05rem', marginBottom: 8 }}>¿Necesitas SEO profesional?</h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: 16, lineHeight: 1.5 }}>
-                    Más de 15 años de experiencia en SEO técnico, link building y desarrollo web. Resultados medibles desde el primer mes.
-                  </p>
-                  <Link
-                    href="/services/"
-                    className="btn"
-                    style={{
-                      display: 'block',
-                      textAlign: 'center',
-                      background: '#f59e0b',
-                      color: '#000',
-                      fontWeight: 700,
-                      padding: '12px 0',
-                      borderRadius: 'var(--radius-md)',
-                      textDecoration: 'none',
-                      fontSize: '0.9rem',
-                    }}
-                  >
-                    Ver Servicios →
-                  </Link>
+                <div className="sidebar-widget" style={{ borderTop: '3px solid #3b82f6' }}>
+                  <h4>¿Necesitas SEO profesional?</h4>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: 16 }}>Mejora tu posicionamiento web con un consultor SEO con +15 años de experiencia.</p>
+                  <Link href="/services/" className="btn btn-primary btn-sm" style={{ width: '100%', background: 'linear-gradient(135deg, #f59e0b, #ea580c)', color: '#fff', border: 'none', fontWeight: 700 }}>Ver Servicios</Link>
                 </div>
-              </div>
-            </aside>
+              </aside>
+            </div>
           </div>
         </section>
       </main>
-
       <Footer />
       <WhatsAppButton />
-
-      {/* ============ SCOPED STYLES ============ */}
-      <style jsx global>{`
-        .blog-layout {
-          display: grid;
-          grid-template-columns: 1fr 320px;
-          gap: 48px;
-          align-items: start;
-        }
-
-        .blog-sidebar .sidebar-widget {
-          padding: 24px;
-          background: var(--bg-card);
-          border-radius: var(--radius-lg);
-          border: 1px solid var(--border-subtle);
-        }
-
-        .blog-sidebar .toc-list li a:hover {
-          color: #3b82f6;
-          border-left-color: #3b82f6;
-        }
-
-        /* Article content styles */
-        .blog-layout article h2 {
-          font-size: 1.5rem;
-          margin-top: 48px;
-          margin-bottom: 16px;
-          color: var(--text-primary);
-          scroll-margin-top: 100px;
-        }
-
-        .blog-layout article h3 {
-          font-size: 1.2rem;
-          margin-top: 32px;
-          margin-bottom: 12px;
-          color: var(--text-primary);
-        }
-
-        .blog-layout article p {
-          margin-bottom: 16px;
-        }
-
-        .blog-layout article code {
-          background: rgba(59, 130, 246, 0.1);
-          padding: 2px 8px;
-          border-radius: 4px;
-          font-size: 0.9em;
-          color: #3b82f6;
-        }
-
-        .blog-layout article strong {
-          color: var(--text-primary);
-        }
-
-        .cta-banner:hover {
-          border-color: rgba(59, 130, 246, 0.4);
-        }
-
-        @media (max-width: 900px) {
-          .blog-layout {
-            grid-template-columns: 1fr;
-          }
-
-          .blog-sidebar {
-            order: 2;
-          }
-
-          .blog-sidebar > div {
-            position: static !important;
-          }
-        }
-      `}</style>
     </>
   );
 }
