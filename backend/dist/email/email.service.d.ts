@@ -5,6 +5,7 @@ export declare class EmailService {
     private fromEmail;
     private readonly logger;
     constructor(contactMessagesService: ContactMessagesService);
+    private sanitizeHtml;
     private generateEmailTemplate;
     sendReply(messageId: number, replyText: string): Promise<{
         success: boolean;

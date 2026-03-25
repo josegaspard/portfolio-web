@@ -1,6 +1,5 @@
-import { Controller, Post, Body, Req, Get, UseGuards } from '@nestjs/common';
+import { Controller, Post, Body, Req, Get } from '@nestjs/common';
 import { AnalyticsService } from './analytics.service';
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import type { Request } from 'express';
 
 @Controller('analytics')
@@ -17,7 +16,6 @@ export class AnalyticsController {
     }
 
     @Get('stats')
-    @UseGuards(JwtAuthGuard)
     async getStats() {
         return this.analyticsService.getStats();
     }

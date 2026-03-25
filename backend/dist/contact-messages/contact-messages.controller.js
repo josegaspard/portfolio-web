@@ -15,7 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ContactMessagesController = void 0;
 const common_1 = require("@nestjs/common");
 const contact_messages_service_1 = require("./contact-messages.service");
-const jwt_auth_guard_1 = require("../auth/jwt-auth.guard");
 let ContactMessagesController = class ContactMessagesController {
     contactMessagesService;
     constructor(contactMessagesService) {
@@ -56,7 +55,6 @@ __decorate([
 ], ContactMessagesController.prototype, "findAll", null);
 __decorate([
     (0, common_1.Get)(':id'),
-    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
     __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
@@ -79,7 +77,6 @@ __decorate([
 ], ContactMessagesController.prototype, "reply", null);
 __decorate([
     (0, common_1.Delete)(':id'),
-    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
     __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
