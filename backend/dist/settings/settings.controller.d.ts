@@ -7,4 +7,9 @@ export declare class SettingsController {
         key: string;
         value: string;
     }): Promise<import("./entities/setting.entity").Setting>;
+    clearCache(): {
+        message: string;
+        success: boolean;
+        timestamp: Date;
+    };
 }

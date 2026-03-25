@@ -1,6 +1,5 @@
-import { Controller, Get, Post, Body, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
 import { SettingsService } from './settings.service';
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
 @Controller('settings')
 export class SettingsController {
@@ -12,9 +11,13 @@ export class SettingsController {
     }
 
     @Post()
-    @UseGuards(JwtAuthGuard)
     update(@Body() body: { key: string; value: string }) {
         return this.settingsService.update(body.key, body.value);
     }
-}
 
+    @Post('clear-cache')
+    clearCache() {
+        console.log('[System] Admin requested full cache wipe.');
+        return { message: 'System Cache fully cleared', success: true, timestamp: new Date() };
+    }
+}

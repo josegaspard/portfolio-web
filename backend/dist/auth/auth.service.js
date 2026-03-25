@@ -52,7 +52,7 @@ const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const user_entity_1 = require("./entities/user.entity");
 const bcrypt = __importStar(require("bcrypt"));
-const { authenticator } = require('otplib');
+const otplib_1 = require("otplib");
 const logger_service_1 = require("../common/logger.service");
 const loginAttempts = new Map();
 const activeSessions = new Map();
@@ -113,11 +113,11 @@ let AuthService = class AuthService {
                     tempToken,
                 };
             }
-            const isValid = authenticator.verify({
+            const otpResult = await (0, otplib_1.verify)({
                 token: twoFactorCode,
                 secret: user.twoFactorSecret,
             });
-            if (!isValid) {
+            if (!otpResult.valid) {
                 throw new common_1.UnauthorizedException('Invalid 2FA code');
             }
         }
@@ -161,11 +161,11 @@ let AuthService = class AuthService {
         if (!user || !user.twoFactorEnabled) {
             throw new common_1.UnauthorizedException('2FA is not enabled for this user');
         }
-        const isValid = authenticator.verify({
+        const otpResult = await (0, otplib_1.verify)({
             token: twoFactorCode,
             secret: user.twoFactorSecret,
         });
-        if (!isValid) {
+        if (!otpResult.valid) {
             throw new common_1.UnauthorizedException('Invalid 2FA code');
         }
         await this.updateLoginMetadata(user, ip);
@@ -200,9 +200,12 @@ let AuthService = class AuthService {
         if (user.twoFactorEnabled) {
             throw new common_1.BadRequestException('2FA is already enabled');
         }
-        const secret = authenticator.generateSecret();
-        const appName = 'JoseGaspardPortfolio';
-        const otpauthUrl = authenticator.keyuri(user.username, appName, secret);
+        const secret = (0, otplib_1.generateSecret)();
+        const otpauthUrl = (0, otplib_1.generateURI)({
+            issuer: 'JoseGaspardPortfolio',
+            label: user.username,
+            secret,
+        });
         user.twoFactorSecret = secret;
         await this.userRepository.save(user);
         return {
@@ -215,11 +218,11 @@ let AuthService = class AuthService {
         if (!user || !user.twoFactorSecret) {
             throw new common_1.BadRequestException('2FA setup not initiated');
         }
-        const isValid = authenticator.verify({
+        const otpResult = await (0, otplib_1.verify)({
             token,
             secret: user.twoFactorSecret,
         });
-        if (!isValid) {
+        if (!otpResult.valid) {
             throw new common_1.BadRequestException('Invalid 2FA code. Try again.');
         }
         user.twoFactorEnabled = true;

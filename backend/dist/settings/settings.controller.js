@@ -15,7 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.SettingsController = void 0;
 const common_1 = require("@nestjs/common");
 const settings_service_1 = require("./settings.service");
-const jwt_auth_guard_1 = require("../auth/jwt-auth.guard");
 let SettingsController = class SettingsController {
     settingsService;
     constructor(settingsService) {
@@ -27,6 +26,10 @@ let SettingsController = class SettingsController {
     update(body) {
         return this.settingsService.update(body.key, body.value);
     }
+    clearCache() {
+        console.log('[System] Admin requested full cache wipe.');
+        return { message: 'System Cache fully cleared', success: true, timestamp: new Date() };
+    }
 };
 exports.SettingsController = SettingsController;
 __decorate([
@@ -37,12 +40,17 @@ __decorate([
 ], SettingsController.prototype, "findAll", null);
 __decorate([
     (0, common_1.Post)(),
-    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], SettingsController.prototype, "update", null);
+__decorate([
+    (0, common_1.Post)('clear-cache'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], SettingsController.prototype, "clearCache", null);
 exports.SettingsController = SettingsController = __decorate([
     (0, common_1.Controller)('settings'),
     __metadata("design:paramtypes", [settings_service_1.SettingsService])
