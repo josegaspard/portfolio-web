@@ -65,8 +65,40 @@ export default function HomePage() {
       />
       <BreadcrumbJsonLd items={[{ name: 'Inicio', url: 'https://josegaspard.dev' }]} />
       <Header />
+      {/* Social Proof Bar */}
+      <div className="proof-bar" style={{ marginTop: 56 }}>
+        <span>🏆 <strong>+200</strong> proyectos exitosos</span>
+        <span>⭐ <strong>Google, Canva, PayPal</strong></span>
+        <span>📈 <strong>+300%</strong> ROI promedio</span>
+        <span>🌎 México, España, LATAM</span>
+      </div>
       <main>
         <HeroSection />
+
+        {/* Trust Badges */}
+        <div className="trust-badges">
+          <div className="trust-badge">
+            <div className="trust-badge-icon">🔒</div>
+            <span>Consulta 100% Gratuita</span>
+          </div>
+          <div className="trust-badge">
+            <div className="trust-badge-icon">⚡</div>
+            <span>Resultados en 90 Días</span>
+          </div>
+          <div className="trust-badge">
+            <div className="trust-badge-icon">📊</div>
+            <span>Reportes Mensuales</span>
+          </div>
+          <div className="trust-badge">
+            <div className="trust-badge-icon">🤝</div>
+            <span>Sin Contratos Largos</span>
+          </div>
+          <div className="trust-badge">
+            <div className="trust-badge-icon">🏅</div>
+            <span>+15 Años Experiencia</span>
+          </div>
+        </div>
+
         <AboutSection />
         <ExperienceSection />
         <ServicesSection />

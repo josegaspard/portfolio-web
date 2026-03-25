@@ -298,7 +298,7 @@ export function GaspardMethodSection() {
             Ventajas del <span className="gradient-text">Enfoque Híbrido</span>
           </h3>
 
-          <div className="grid-2" style={{ gap: '24px' }}>
+          <div className="grid-2 advantage-grid" style={{ gap: '24px' }}>
             {ADVANTAGES.map((adv, i) => (
               <div
                 key={adv.title}
@@ -335,18 +335,25 @@ export function GaspardMethodSection() {
         </div>
       </div>
 
-      {/* Responsive: stack columns on mobile */}
+      {/* Responsive */}
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .method-columns {
             grid-template-columns: 1fr !important;
-            gap: 20px !important;
+            gap: 14px !important;
           }
-        }
-        @media (min-width: 769px) and (max-width: 1024px) {
-          .method-columns {
+          .method-columns > div {
+            padding: 20px 16px !important;
+          }
+          .method-columns h3 {
+            font-size: 1.05rem !important;
+          }
+          .method-columns p {
+            font-size: 0.85rem !important;
+          }
+          .advantage-grid {
             grid-template-columns: 1fr !important;
-            gap: 20px !important;
+            gap: 12px !important;
           }
         }
       `}</style>

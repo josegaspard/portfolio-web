@@ -35,13 +35,12 @@ export function HeroSection() {
 
   return (
     <section style={{
-      minHeight: '100vh',
-      maxHeight: '100vh',
+      minHeight: '100dvh',
       display: 'flex',
       alignItems: 'center',
       position: 'relative',
       overflow: 'hidden',
-      padding: '100px 0 40px',
+      padding: '80px 0 32px',
     }}>
       {/* === BACKGROUND === */}
       <div style={{
@@ -183,11 +182,11 @@ export function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap', marginBottom: 20, ...show(5) }}>
+            <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', marginBottom: 16, ...show(5) }}>
               {STATS.map((s) => (
                 <div key={s.label}>
                   <div style={{
-                    fontSize: '1.7rem', fontWeight: 900, lineHeight: 1.1,
+                    fontSize: 'clamp(1.3rem, 3vw, 1.7rem)', fontWeight: 900, lineHeight: 1.1,
                     background: 'linear-gradient(135deg, #3b82f6, #06b6d4)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
@@ -261,14 +260,14 @@ export function HeroSection() {
       <style>{`
         .hero-grid {
           display: grid;
-          grid-template-columns: 1fr 300px;
-          gap: 48px;
+          grid-template-columns: 1fr 280px;
+          gap: 40px;
           align-items: center;
         }
         @media (max-width: 900px) {
           .hero-grid {
             grid-template-columns: 1fr !important;
-            gap: 24px !important;
+            gap: 16px !important;
             text-align: center;
           }
           .hero-grid > div:first-child {
@@ -280,14 +279,14 @@ export function HeroSection() {
             order: -1;
           }
           .hero-photo {
-            width: 160px !important;
-            height: 160px !important;
+            width: 130px !important;
+            height: 130px !important;
           }
         }
-        @media (max-width: 600px) {
+        @media (max-width: 480px) {
           .hero-photo {
-            width: 160px !important;
-            height: 160px !important;
+            width: 110px !important;
+            height: 110px !important;
           }
         }
       `}</style>
