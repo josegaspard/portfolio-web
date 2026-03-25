@@ -966,3 +966,240 @@ article code {
 
 article ul, article ol { padding-left: 24px; margin-bottom: 20px; }
 article li { margin-bottom: 8px; list-style: disc; color: var(--text-secondary); }
+
+/* ==================================================================
+   ENHANCED COLOR ACCENTS
+   ================================================================== */
+
+/* Gradient border effect for highlighted cards */
+.gradient-border {
+  position: relative;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  padding: 1.5px;
+  background: var(--gradient);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Colored accent cards */
+.accent-green { border-color: rgba(16, 185, 129, 0.3); }
+.accent-green:hover { border-color: rgba(16, 185, 129, 0.5); box-shadow: 0 0 30px rgba(16, 185, 129, 0.1); }
+
+.accent-cyan { border-color: rgba(6, 182, 212, 0.3); }
+.accent-cyan:hover { border-color: rgba(6, 182, 212, 0.5); box-shadow: 0 0 30px rgba(6, 182, 212, 0.1); }
+
+.accent-pink { border-color: rgba(236, 72, 153, 0.3); }
+.accent-pink:hover { border-color: rgba(236, 72, 153, 0.5); box-shadow: 0 0 30px rgba(236, 72, 153, 0.1); }
+
+.accent-amber { border-color: rgba(245, 158, 11, 0.3); }
+.accent-amber:hover { border-color: rgba(245, 158, 11, 0.5); box-shadow: 0 0 30px rgba(245, 158, 11, 0.1); }
+
+/* Floating metric pills (hero) */
+.floating-pill {
+  position: absolute;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  animation: floatPill 6s ease-in-out infinite;
+  display: none;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .floating-pill { display: flex; align-items: center; gap: 8px; }
+}
+
+@keyframes floatPill {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Profile photo container */
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  border: 3px solid rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.2), 0 0 80px rgba(99, 102, 241, 0.1);
+  flex-shrink: 0;
+}
+
+/* Comparison table */
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.comparison-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  background: rgba(17, 24, 39, 0.5);
+  border-bottom: 1px solid var(--border);
+}
+
+.comparison-table td {
+  padding: 14px 20px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.comparison-table tr:last-child td { border-bottom: none; }
+
+.comparison-table .check { color: var(--green); font-weight: 700; }
+.comparison-table .cross { color: #ef4444; font-weight: 700; opacity: 0.5; }
+.comparison-table .hybrid-col { background: rgba(99, 102, 241, 0.04); }
+
+/* Result badges */
+.result-badge {
+  display: inline-flex;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.result-badge.success {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #10b981;
+}
+
+.result-badge.danger {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+/* Growth board metric card */
+.metric-card {
+  padding: 24px;
+  text-align: center;
+  position: relative;
+}
+
+.metric-card .metric-value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 12px;
+}
+
+.metric-card .metric-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.metric-card .metric-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+/* Alternating section backgrounds */
+.section-alt { background: var(--bg-alt); }
+
+/* Speaker event card */
+.event-card {
+  padding: 48px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.04), rgba(168,85,247,0.04));
+  position: relative;
+  overflow: hidden;
+}
+
+.event-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 1.5px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.4), rgba(168,85,247,0.4), rgba(236,72,153,0.3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) { .event-card { padding: 28px 20px; } }
+
+/* Advantage cards */
+.advantage-card {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all var(--duration) var(--ease);
+}
+
+.advantage-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--glow-indigo);
+}
+
+.advantage-card .advantage-icon {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.advantage-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.advantage-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}

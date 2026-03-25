@@ -2,10 +2,12 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { AboutSection } from '@/components/sections/AboutSection';
 import { ExperienceSection } from '@/components/sections/ExperienceSection';
 import { ServicesSection } from '@/components/sections/ServicesSection';
+import { GaspardMethodSection } from '@/components/sections/GaspardMethodSection';
 import { PortfolioSection } from '@/components/sections/PortfolioSection';
+import { GrowthBoardSection } from '@/components/sections/GrowthBoardSection';
+import { SpeakerSection } from '@/components/sections/SpeakerSection';
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 import { SkillsSection } from '@/components/sections/SkillsSection';
-import { SpeakerSection } from '@/components/sections/SpeakerSection';
 import { FAQSection } from '@/components/sections/FAQSection';
 import { ContactSection } from '@/components/sections/ContactSection';
 import { CTASection } from '@/components/sections/CTASection';
@@ -20,24 +22,44 @@ export default function HomePage() {
       <FAQPageJsonLd
         faqs={[
           {
-            question: '¿Qué diferencia a tu consultoría SEO de una agencia tradicional?',
+            question: '¿Que diferencia a tu consultoria SEO de una agencia tradicional?',
             answer:
-              'Mi enfoque combina ingeniería de software personalizada con estrategias de crecimiento basadas en datos. No solo optimizo contenido; reestructuro tu arquitectura digital para dominar el LCP y otros Core Web Vitals mientras escalo tu autoridad.',
+              'Mi enfoque combina ingenieria de software personalizada con estrategias de crecimiento basadas en datos. No solo optimizo contenido; reestructuro tu arquitectura digital para dominar el LCP y otros Core Web Vitals mientras escalo tu autoridad.',
           },
           {
-            question: '¿Cuánto tiempo toma ver resultados reales en SEO?',
+            question: '¿Cuanto tiempo toma ver resultados reales en SEO?',
             answer:
-              'Los primeros resultados técnicos son visibles en 2-4 semanas. Mejoras significativas en rankings entre 3-6 meses. ROI completo típicamente en 6-12 meses dependiendo de la competencia del mercado.',
+              'Los primeros resultados tecnicos son visibles en 2-4 semanas. Mejoras significativas en rankings entre 3-6 meses. ROI completo tipicamente en 6-12 meses dependiendo de la competencia del mercado.',
           },
           {
-            question: '¿Ofreces servicios de desarrollo web además de SEO?',
+            question: '¿Ofreces servicios de desarrollo web ademas de SEO?',
             answer:
-              'Sí, soy desarrollador full-stack con experiencia en Next.js, NestJS, Node.js, PHP y WordPress. Desarrollo sitios web de alto rendimiento optimizados para SEO desde el código.',
+              'Si, soy desarrollador full-stack con experiencia en Next.js, NestJS, Node.js, PHP y WordPress. Desarrollo sitios web de alto rendimiento optimizados para SEO desde el codigo.',
           },
           {
-            question: '¿Trabajas con empresas de cualquier tamaño?',
+            question: '¿Trabajas con empresas de cualquier tamano?',
             answer:
-              'Trabajo con startups, PyMEs y grandes corporaciones. He colaborado con empresas como Google, Canva y PayPal, así como con emprendedores que inician su presencia digital.',
+              'Trabajo con startups, PyMEs y grandes corporaciones. He colaborado con empresas como Google, Canva y PayPal, asi como con emprendedores que inician su presencia digital.',
+          },
+          {
+            question: '¿Que es el Metodo Gaspard y como puede ayudar a mi negocio?',
+            answer:
+              'El Metodo Gaspard es mi framework propietario que integra SEO tecnico, desarrollo web de alto rendimiento y estrategia de contenido basada en datos. Combina lo mejor de la ingenieria de software con growth marketing para generar resultados medibles y sostenibles.',
+          },
+          {
+            question: '¿Cual es tu proceso de trabajo con nuevos clientes?',
+            answer:
+              'Inicio con una auditoria tecnica completa de tu sitio, analisis de competencia y definicion de KPIs. Luego presento un roadmap personalizado con acciones priorizadas por impacto. Cada mes entrego reportes detallados con metricas de progreso.',
+          },
+          {
+            question: '¿Puedes ayudar con SEO internacional y multilingue?',
+            answer:
+              'Si, tengo experiencia implementando estrategias de SEO internacional con hreflang, estructuras de URL optimizadas y contenido localizado para mercados en LATAM, Estados Unidos y Europa.',
+          },
+          {
+            question: '¿Ofreces capacitaciones o charlas para equipos de marketing?',
+            answer:
+              'Si, imparto workshops y conferencias sobre SEO tecnico, desarrollo web y growth marketing. He sido speaker en eventos de Google y otras plataformas tecnologicas a nivel internacional.',
           },
         ]}
       />
@@ -48,7 +70,9 @@ export default function HomePage() {
         <AboutSection />
         <ExperienceSection />
         <ServicesSection />
+        <GaspardMethodSection />
         <PortfolioSection />
+        <GrowthBoardSection />
         <SpeakerSection />
         <TestimonialsSection />
         <SkillsSection />
