@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { AboutSection } from '@/components/sections/AboutSection';
 import { ExperienceSection } from '@/components/sections/ExperienceSection';
@@ -15,6 +16,32 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
 import { FAQPageJsonLd, BreadcrumbJsonLd } from '@/components/seo/JsonLd';
+
+export const metadata: Metadata = {
+  title: 'José Gaspard | Consultor SEO y Desarrollador Web en México — Agencia SEO',
+  description: 'Consultor SEO y desarrollador web full-stack en Ciudad de México. Servicio de SEO técnico, link building, optimización SEO y desarrollo web profesional. +15 años de experiencia con Google, Canva y PayPal. Agencia SEO con resultados comprobados.',
+  keywords: [
+    'consultor seo', 'consultor seo méxico', 'agencia seo', 'servicio de seo',
+    'empresa de seo', 'optimización seo', 'posicionamiento web', 'seo técnico',
+    'desarrollador web', 'programador', 'desarrollo web profesional', 'link building',
+    'marketing digital', 'desarrollador backend', 'José Gaspard',
+    'consultor seo ciudad de méxico', 'experto seo méxico',
+  ],
+  alternates: { canonical: 'https://josegaspard.dev/' },
+  openGraph: {
+    title: 'José Gaspard | Consultor SEO y Desarrollador Web en México',
+    description: 'Servicio de SEO técnico, link building y desarrollo web profesional. +15 años transformando búsquedas en ingresos para empresas en México y LATAM.',
+    url: 'https://josegaspard.dev/',
+    type: 'website',
+    images: [{ url: 'https://josegaspard.dev/img/josegaspard.png', width: 1200, height: 630, alt: 'José Gaspard - Consultor SEO' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'José Gaspard | Consultor SEO y Desarrollador Web',
+    description: 'Servicio de SEO técnico y desarrollo web. +15 años de experiencia en México y LATAM.',
+    images: ['https://josegaspard.dev/img/josegaspard.png'],
+  },
+};
 
 export default function HomePage() {
   return (
