@@ -1,6 +1,7 @@
-import { Controller, Post, Get, Body, Delete, Param } from '@nestjs/common';
+import { Controller, Post, Get, Body, Delete, Param, UseGuards } from '@nestjs/common';
 import { NewsletterService } from './newsletter.service';
 import { NewsletterSubscriber } from './newsletter-subscriber.entity';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
 @Controller('newsletter')
 export class NewsletterController {
@@ -12,11 +13,13 @@ export class NewsletterController {
     }
 
     @Get('subscribers')
+    @UseGuards(JwtAuthGuard)
     async getSubscribers(): Promise<NewsletterSubscriber[]> {
         return this.newsletterService.findAll();
     }
 
     @Get('stats')
+    @UseGuards(JwtAuthGuard)
     async getStats() {
         return this.newsletterService.getStats();
     }

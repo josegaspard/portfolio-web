@@ -17,7 +17,8 @@ export class AuthService implements OnModuleInit {
     // Seed admin user if it doesn't exist
     const admin = await this.userRepository.findOneBy({ username: 'admin' });
     if (!admin) {
-      const hashedPassword = await bcrypt.hash('admin123', 10);
+      const defaultPassword = process.env.ADMIN_PASSWORD || 'admin123';
+      const hashedPassword = await bcrypt.hash(defaultPassword, 12);
       const newUser = this.userRepository.create({
         username: 'admin',
         email: 'admin@josegaspard.dev',

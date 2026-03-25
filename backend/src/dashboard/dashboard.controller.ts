@@ -7,7 +7,7 @@ export class DashboardController {
   constructor(private readonly dashboardService: DashboardService) { }
 
   @Get('stats')
-  // Remover autenticación para dashboard
+  @UseGuards(JwtAuthGuard)
   async getStats() {
     return await this.dashboardService.getStats();
   }

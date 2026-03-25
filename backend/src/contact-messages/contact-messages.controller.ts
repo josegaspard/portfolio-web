@@ -13,7 +13,7 @@ export class ContactMessagesController {
     }
 
     @Get()
-    // Remover autenticación para que dashboard pueda leer mensajes
+    @UseGuards(JwtAuthGuard)
     async findAll(): Promise<ContactMessage[]> {
         return this.contactMessagesService.findAll();
     }
@@ -25,13 +25,13 @@ export class ContactMessagesController {
     }
 
     @Put(':id/read')
-    // Remover autenticación para facilitar uso desde dashboard
+    @UseGuards(JwtAuthGuard)
     async markAsRead(@Param('id') id: string): Promise<ContactMessage | null> {
         return this.contactMessagesService.markAsRead(+id);
     }
 
     @Post(':id/reply')
-    // Remover autenticación para facilitar uso desde dashboard
+    @UseGuards(JwtAuthGuard)
     async reply(
         @Param('id') id: string,
         @Body('reply') reply: string,
