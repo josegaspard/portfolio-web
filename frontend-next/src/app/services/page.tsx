@@ -141,6 +141,36 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* Servicios Especializados */}
+        <section className="section" style={{ background: 'var(--bg-alt)' }}>
+          <div className="container">
+            <div className="section-header text-center">
+              <span className="section-badge">Servicios Especializados</span>
+              <h2 className="section-title">Soluciones <span style={{ color: '#3b82f6' }}>a Medida</span></h2>
+              <p style={{ color: 'var(--text-secondary)', maxWidth: 600, margin: '0 auto', lineHeight: 1.7 }}>
+                Cada negocio es único. Explora nuestros servicios especializados y encuentra la solución perfecta para tus necesidades.
+              </p>
+            </div>
+            <div className="grid-3">
+              {[
+                { href: '/services/seo/', icon: '🔍', title: 'SEO Profesional', desc: 'Posicionamiento web, SEO técnico, link building y optimización para dominar Google.' },
+                { href: '/services/desarrollo-web/', icon: '💻', title: 'Desarrollo Web', desc: 'Sitios web profesionales con WordPress, Laravel y tecnologías modernas.' },
+                { href: '/services/desarrollo-aplicaciones/', icon: '📱', title: 'Desarrollo de Apps', desc: 'Aplicaciones web y móviles a medida con Next.js, NestJS y React Native.' },
+                { href: '/services/sem/', icon: '🎯', title: 'Campañas SEM', desc: 'Google Ads y publicidad digital con ROI medible y optimización continua.' },
+                { href: '/services/conferencista/', icon: '🎤', title: 'Conferencista', desc: 'Keynotes, workshops y capacitaciones en SEO, marketing digital y tecnología.' },
+                { href: '/services/asesor-seo/', icon: '🧠', title: 'Asesor SEO Empresarial', desc: 'Consultoría SEO personalizada para PyMEs y corporaciones.' },
+              ].map((s) => (
+                <Link key={s.href} href={s.href} className="glass-card" style={{ padding: '28px 24px', display: 'block', textDecoration: 'none', borderTop: '3px solid #3b82f6' }}>
+                  <div style={{ fontSize: '2rem', marginBottom: 16 }}>{s.icon}</div>
+                  <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 8, color: '#f3f4f6' }}>{s.title}</h3>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: 16 }}>{s.desc}</p>
+                  <span style={{ color: '#3b82f6', fontSize: '0.85rem', fontWeight: 600 }}>Ver más →</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Mid-page CTA Banner */}
         <section style={{
           background: 'linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%)',

@@ -108,10 +108,12 @@ export function Footer() {
           <div>
             <h4 style={{ color: '#e5e7eb', fontSize: '0.9rem', fontWeight: 700, marginBottom: 16 }}>Servicios</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <li><span style={{ color: '#9ca3af', fontSize: '0.88rem' }}>SEO Técnico y Estratégico</span></li>
-              <li><span style={{ color: '#9ca3af', fontSize: '0.88rem' }}>Desarrollo Web Profesional</span></li>
-              <li><span style={{ color: '#9ca3af', fontSize: '0.88rem' }}>Link Building</span></li>
-              <li><span style={{ color: '#9ca3af', fontSize: '0.88rem' }}>Consultoría Digital</span></li>
+              <li><Link href="/services/seo/" style={{ color: '#9ca3af', fontSize: '0.88rem', textDecoration: 'none', transition: 'color 0.3s' }}>SEO Profesional</Link></li>
+              <li><Link href="/services/desarrollo-web/" style={{ color: '#9ca3af', fontSize: '0.88rem', textDecoration: 'none', transition: 'color 0.3s' }}>Desarrollo Web</Link></li>
+              <li><Link href="/services/desarrollo-aplicaciones/" style={{ color: '#9ca3af', fontSize: '0.88rem', textDecoration: 'none', transition: 'color 0.3s' }}>Desarrollo de Apps</Link></li>
+              <li><Link href="/services/sem/" style={{ color: '#9ca3af', fontSize: '0.88rem', textDecoration: 'none', transition: 'color 0.3s' }}>Campañas SEM</Link></li>
+              <li><Link href="/services/conferencista/" style={{ color: '#9ca3af', fontSize: '0.88rem', textDecoration: 'none', transition: 'color 0.3s' }}>Conferencista</Link></li>
+              <li><Link href="/services/asesor-seo/" style={{ color: '#9ca3af', fontSize: '0.88rem', textDecoration: 'none', transition: 'color 0.3s' }}>Asesor SEO</Link></li>
             </ul>
           </div>
 
