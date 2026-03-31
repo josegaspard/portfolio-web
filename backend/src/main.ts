@@ -8,6 +8,9 @@ import { Logger } from './common/logger.service';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  // Set global prefix
+  // app.setGlobalPrefix('api'); // REMOVED: cPanel Passenger already strips /api, so keeping this expects /api/api
+
   // ===== SECURITY HEADERS (Helmet) =====
   app.use(helmet({
     contentSecurityPolicy: {

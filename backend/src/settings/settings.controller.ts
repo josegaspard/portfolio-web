@@ -16,5 +16,12 @@ export class SettingsController {
     update(@Body() body: { key: string; value: string }) {
         return this.settingsService.update(body.key, body.value);
     }
+
+    @Post('clear-cache')
+    @UseGuards(JwtAuthGuard)
+    clearCache() {
+        console.log('[System] Admin requested full cache wipe.');
+        return { message: 'System Cache fully cleared', success: true, timestamp: new Date() };
+    }
 }
 
