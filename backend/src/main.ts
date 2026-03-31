@@ -51,14 +51,24 @@ async function bootstrap() {
   });
 
   // ===== RATE LIMITING (Global) =====
-  const limiter = rateLimit({
+  const globalLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 100, // Limit each IP to 100 requests per windowMs
     message: 'Too many requests from this IP, please try again later.',
     standardHeaders: true,
     legacyHeaders: false,
   });
-  app.use(limiter);
+  app.use(globalLimiter);
+
+  // ===== STRICTER RATE LIMITING FOR AUTH ROUTES =====
+  const authLimiter = rateLimit({
+    windowMs: 1 * 60 * 1000, // 1 minute
+    max: 5, // 5 requests per minute for auth routes
+    message: 'Too many authentication requests, please try again later.',
+    standardHeaders: true,
+    legacyHeaders: false,
+  });
+  app.use('/auth', authLimiter);
 
   // ===== PAYLOAD SIZE LIMITS =====
   app.use(json({ limit: '10mb' }));
@@ -67,8 +77,8 @@ async function bootstrap() {
   // ===== START SERVER =====
   const port = process.env.PORT || 4000;
   await app.listen(port);
-  console.log(`🚀 Backend running on http://localhost:${port}`);
-  console.log(`🔒 Security: Helmet enabled, CORS configured, Rate limiting active`);
+  console.log(`Backend running on http://localhost:${port}`);
+  console.log(`Security: Helmet enabled, CORS configured, Rate limiting active`);
 }
 
 bootstrap().catch((err) => {

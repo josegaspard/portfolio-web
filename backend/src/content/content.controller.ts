@@ -20,7 +20,7 @@ export class ContentController {
   constructor(private readonly contentService: ContentService) { }
 
   @Post()
-  // Remover autenticación para facilitar creación de contenido
+  @UseGuards(JwtAuthGuard)
   create(@Body() createContentDto: CreateContentDto) {
     return this.contentService.create(createContentDto);
   }

@@ -19,4 +19,19 @@ export class User {
 
     @CreateDateColumn()
     createdAt: Date;
+
+    @Column({ nullable: true })
+    twoFactorSecret: string;
+
+    @Column({ default: false })
+    twoFactorEnabled: boolean;
+
+    @Column('simple-json', { nullable: true })
+    knownIps: string[];
+
+    @Column({ nullable: true })
+    lastLoginAt: Date;
+
+    @Column({ nullable: true })
+    lastLoginIp: string;
 }

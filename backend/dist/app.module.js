@@ -32,7 +32,13 @@ const subscriber_entity_1 = require("./newsletter/entities/subscriber.entity");
 const comment_entity_1 = require("./comments/entities/comment.entity");
 const contact_message_entity_1 = require("./contact-messages/contact-message.entity");
 const newsletter_subscriber_entity_1 = require("./newsletter/newsletter-subscriber.entity");
+const audit_log_entity_1 = require("./common/audit-log.entity");
+const audit_log_service_1 = require("./common/audit-log.service");
+const security_middleware_1 = require("./common/security.middleware");
 let AppModule = class AppModule {
+    configure(consumer) {
+        consumer.apply(security_middleware_1.SecurityMiddleware).forRoutes('*');
+    }
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
@@ -55,9 +61,11 @@ exports.AppModule = AppModule = __decorate([
                     comment_entity_1.Comment,
                     contact_message_entity_1.ContactMessage,
                     newsletter_subscriber_entity_1.NewsletterSubscriber,
+                    audit_log_entity_1.AuditLog,
                 ],
                 synchronize: true,
             }),
+            typeorm_1.TypeOrmModule.forFeature([audit_log_entity_1.AuditLog]),
             content_module_1.ContentModule,
             auth_module_1.AuthModule,
             dashboard_module_1.DashboardModule,
@@ -70,7 +78,8 @@ exports.AppModule = AppModule = __decorate([
             email_module_1.EmailModule,
         ],
         controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        providers: [app_service_1.AppService, audit_log_service_1.AuditLogService],
+        exports: [audit_log_service_1.AuditLogService],
     })
 ], AppModule);
 //# sourceMappingURL=app.module.js.map

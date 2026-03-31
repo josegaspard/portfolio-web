@@ -1,6 +1,5 @@
 import { Controller, Post, Body, Req, Get } from '@nestjs/common';
 import { AnalyticsService } from './analytics.service';
-import { EventType } from './entities/analytics-event.entity';
 import type { Request } from 'express';
 
 @Controller('analytics')
@@ -12,7 +11,7 @@ export class AnalyticsController {
         return this.analyticsService.trackEvent({
             ...body,
             userAgent: req.headers['user-agent'],
-            ip: req.ip || req.headers['x-forwarded-for'],
+            ip: req.ip || req.headers['x-forwarded-for'] as string,
         });
     }
 

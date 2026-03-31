@@ -22,7 +22,18 @@ export class EmailService {
     /**
      * Genera template HTML bonito para respuestas de emails
      */
+    private sanitizeHtml(str: string): string {
+        return str
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+    }
+
     private generateEmailTemplate(message: string, recipientName: string): string {
+        const safeName = this.sanitizeHtml(recipientName);
+        const safeMessage = this.sanitizeHtml(message).replace(/\n/g, '<br>');
         return `
 <!DOCTYPE html>
 <html lang="es">
@@ -36,7 +47,7 @@ export class EmailService {
         <tr>
             <td align="center">
                 <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    
+
                     <!-- Header con gradiente -->
                     <tr>
                         <td style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px 30px; text-align: center;">
@@ -48,9 +59,9 @@ export class EmailService {
                     <!-- Contenido -->
                     <tr>
                         <td style="padding: 40px 30px;">
-                            <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">Hola ${recipientName},</p>
-                            <div style="color: #555555; font-size: 15px; line-height: 1.8; margin-bottom: 30px;">${message.replace(/\n/g, '<br>')}</div>
-                            <p style="color: #555555; font-size: 15px; line-height: 1.6; margin: 30px 0 0 0;">¡Saludos! 👋</p>
+                            <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">Hola ${safeName},</p>
+                            <div style="color: #555555; font-size: 15px; line-height: 1.8; margin-bottom: 30px;">${safeMessage}</div>
+                            <p style="color: #555555; font-size: 15px; line-height: 1.6; margin: 30px 0 0 0;">Saludos,</p>
                         </td>
                     </tr>
 

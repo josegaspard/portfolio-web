@@ -5,4 +5,9 @@ export declare class User {
     password: string;
     role: string;
     createdAt: Date;
+    twoFactorSecret: string;
+    twoFactorEnabled: boolean;
+    knownIps: string[];
+    lastLoginAt: Date;
+    lastLoginIp: string;
 }
