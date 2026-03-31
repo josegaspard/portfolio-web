@@ -1,0 +1,66 @@
+.table-of-contents {
+    position: sticky;
+    top: 120px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    margin-bottom: 2rem;
+}
+
+.toc-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-item {
+    margin-bottom: 0.5rem;
+}
+
+.toc-item button {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    border-left: 2px solid transparent;
+    padding-left: 1rem;
+}
+
+.toc-item.toc-level-3 button {
+    padding-left: 2rem;
+    font-size: 0.85rem;
+}
+
+.toc-item button:hover {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+}
+
+.toc-item.active button {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    .table-of-contents {
+        position: relative;
+        top: 0;
+    }
+}

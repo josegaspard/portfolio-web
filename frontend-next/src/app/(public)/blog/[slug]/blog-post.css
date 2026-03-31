@@ -1,0 +1,337 @@
+/* ===================================
+   BLOG POST TEMPLATE - REDISEÑADO COMPACTO
+   =================================== */
+
+.blog-post-container {
+    background: var(--color-bg);
+    min-height: 100vh;
+    color: var(--color-text);
+}
+
+/* Hero Section - Compacto */
+.post-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+    margin-bottom: 3rem;
+}
+
+.post-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, var(--color-bg), transparent);
+    z-index: 2;
+}
+
+.post-hero .container {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.post-hero .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* Breadcrumbs */
+.post-breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.post-breadcrumbs a {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+}
+
+.post-breadcrumbs a:hover {
+    color: var(--color-primary);
+}
+
+.post-breadcrumbs span {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Post Title - Reducido */
+.post-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    max-width: 900px;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.post-subtitle {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    font-weight: 300;
+}
+
+/* Post Meta */
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    padding: 2px;
+}
+
+.author-avatar img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-details .author-name {
+    display: block;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.author-details .author-role {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post-stats {
+    display: flex;
+    gap: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+}
+
+/* Content Layout 3-Column - COMPACTO */
+.blog-content-wrapper {
+    margin-top: 0;
+    padding-bottom: 6rem;
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 60px 1fr 280px;
+    gap: 2rem;
+    align-items: start;
+    max-width: 1200px;
+}
+
+/* Sidebars - Sticky */
+.blog-sidebar-left,
+.blog-sidebar-right {
+    position: sticky;
+    top: 6rem;
+}
+
+/* Main Content Area - COMPACTO */
+.blog-main-content {
+    background: var(--color-bg-alt);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: var(--box-shadow-premium);
+    border: 1px solid var(--color-border);
+}
+
+.post-body {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+.post-body h2 {
+    font-size: 1.875rem;
+    margin: 3rem 0 1.5rem;
+    color: #fff;
+}
+
+.post-body h3 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1.25rem;
+    color: #fff;
+}
+
+.post-body p {
+    margin-bottom: 1.5rem;
+}
+
+.post-body img {
+    width: 100%;
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+
+.post-body blockquote {
+    border-left: 4px solid var(--color-primary);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #94a3b8;
+}
+
+.post-body ul,
+.post-body ol {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.post-body li {
+    margin-bottom: 0.75rem;
+}
+
+.post-body code {
+    background: rgba(99, 102, 241, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--color-primary);
+}
+
+.post-body pre {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.post-body pre code {
+    background: none;
+    padding: 0;
+    color: #e2e8f0;
+}
+
+/* Author Bio - COMPACTO */
+.author-bio {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border: 1px solid var(--color-glass-border);
+}
+
+.bio-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.bio-content h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.bio-content p {
+    font-size: 0.9375rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.bio-social {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.bio-social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    transition: all 0.3s;
+}
+
+.bio-social-link:hover {
+    background: var(--color-primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .blog-content-wrapper {
+        grid-template-columns: 1fr 260px;
+        gap: 1.5rem;
+    }
+
+    .blog-sidebar-left {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .blog-content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-sidebar-right {
+        display: none;
+    }
+
+    .blog-main-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .post-hero {
+        height: 40vh;
+        min-height: 350px;
+    }
+
+    .author-bio {
+        flex-direction: column;
+        text-align: center;
+    }
+}

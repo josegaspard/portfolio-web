@@ -1,0 +1,406 @@
+/* ===================================
+   COMPARISON TABLE SECTION
+   =================================== */
+
+.comparison-table-section {
+    padding: 8rem 0;
+    background: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.comparison-table-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 1200px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* ===================================
+   COMPARISON TABLE
+   =================================== */
+
+.comparison-table-container {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+.comparison-table {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+/* Header Row */
+.table-header {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem 1.5rem;
+    border-bottom: 2px solid rgba(99, 102, 241, 0.3);
+}
+
+.header-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-cell.metric-label {
+    justify-content: flex-start;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-cell.featured {
+    position: relative;
+}
+
+.header-cell.featured::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: -1.5rem;
+    right: -1.5rem;
+    bottom: -2rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+    border-radius: 16px;
+    z-index: -1;
+}
+
+/* Profile Badges */
+.profile-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    position: relative;
+}
+
+.profile-badge i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-badge span {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.profile-badge.solo-seo i {
+    color: #f59e0b;
+}
+
+.profile-badge.solo-dev i {
+    color: #3b82f6;
+}
+
+.profile-badge.hybrid {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%);
+    border: 2px solid rgba(99, 102, 241, 0.5);
+}
+
+.profile-badge.hybrid i {
+    color: #a855f7;
+    font-size: 2.5rem;
+}
+
+.elite-badge {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 900;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.5);
+}
+
+/* Table Rows */
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 1px;
+    padding: 1.5rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.table-row:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.metric-cell {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.metric-cell i {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    width: 24px;
+    text-align: center;
+}
+
+.value-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-cell.featured {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
+    border-radius: 8px;
+}
+
+/* Star Ratings */
+.rating {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.rating i {
+    font-size: 1.1rem;
+}
+
+.rating-1 i.fas {
+    color: #ef4444;
+}
+
+.rating-2 i.fas {
+    color: #f59e0b;
+}
+
+.rating-3 i.fas {
+    color: #eab308;
+}
+
+.rating-4 i.fas {
+    color: #84cc16;
+}
+
+.rating-5 i.fas {
+    color: #10b981;
+}
+
+.rating i.far {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer Row */
+.table-footer {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 1px;
+    padding: 2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 2px solid rgba(99, 102, 241, 0.3);
+}
+
+.footer-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-cell:first-child {
+    justify-content: flex-start;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-cell.featured {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+    border-radius: 8px;
+}
+
+/* Result Badges */
+.result-badge {
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.result-badge.partial {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+}
+
+.result-badge.elite {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%);
+    border: 2px solid rgba(99, 102, 241, 0.6);
+    color: #a855f7;
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+}
+
+/* ===================================
+   BENEFITS GRID
+   =================================== */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.benefit-card {
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.benefit-icon i {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+}
+
+.benefit-card:hover .benefit-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%);
+    border-color: rgba(99, 102, 241, 0.6);
+}
+
+.benefit-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+@media (max-width: 992px) {
+
+    .table-header,
+    .table-row,
+    .table-footer {
+        grid-template-columns: 1.5fr repeat(3, 1fr);
+    }
+
+    .metric-cell {
+        font-size: 0.9rem;
+    }
+
+    .metric-cell i {
+        font-size: 1rem;
+    }
+
+    .profile-badge span {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .comparison-table-section {
+        padding: 5rem 0;
+    }
+
+    .comparison-table-container {
+        padding: 0.5rem;
+    }
+
+    .table-header,
+    .table-row,
+    .table-footer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .header-cell,
+    .value-cell,
+    .footer-cell {
+        justify-content: flex-start;
+    }
+
+    .header-cell.metric-label,
+    .footer-cell:first-child {
+        display: none;
+    }
+
+    .table-row {
+        padding: 1rem;
+    }
+
+    .metric-cell {
+        grid-column: 1;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .value-cell::before {
+        content: attr(data-label);
+        font-weight: 600;
+        margin-right: 1rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

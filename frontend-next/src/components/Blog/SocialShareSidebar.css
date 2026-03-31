@@ -1,0 +1,38 @@
+.social-share-sidebar {
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.share-btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+.share-btn:hover {
+    background: var(--hover-color, var(--color-primary));
+    border-color: var(--hover-color, var(--color-primary));
+    color: white;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+@media (max-width: 1200px) {
+    .social-share-sidebar {
+        display: none;
+    }
+}

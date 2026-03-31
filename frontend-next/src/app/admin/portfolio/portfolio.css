@@ -1,0 +1,222 @@
+.portfolio-admin-page {
+    padding: 20px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #2a2a2a;
+}
+
+.page-header h2 {
+    font-size: 28px;
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+
+.page-header h2.admin-title-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-header h2 i {
+    margin-right: 10px;
+    color: #667eea;
+}
+
+.page-header p {
+    color: #888;
+    margin: 0;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #0a0a0a;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 12px;
+}
+
+.project-header h3 {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    flex: 1;
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.published {
+    background: #10b98120;
+    color: #10b981;
+}
+
+.status-badge.draft {
+    background: #f59e0b20;
+    color: #f59e0b;
+}
+
+.project-client,
+.project-category {
+    color: #888;
+    font-size: 14px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-client i,
+.project-category i {
+    color: #667eea;
+}
+
+.project-description {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+.project-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.btn-edit,
+.btn-view,
+.btn-delete {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-edit {
+    background: #667eea20;
+    color: #667eea;
+    flex: 1;
+}
+
+.btn-edit:hover {
+    background: #667eea30;
+}
+
+.btn-view {
+    background: #10b98120;
+    color: #10b981;
+    flex: 1;
+}
+
+.btn-view:hover {
+    background: #10b98130;
+}
+
+.btn-delete {
+    background: #ef444420;
+    color: #ef4444;
+}
+
+.btn-delete:hover {
+    background: #ef444430;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    border: 2px dashed #2a2a2a;
+}
+
+.empty-state i {
+    font-size: 64px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.empty-state p {
+    color: #888;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.loading {
+    text-align: center;
+    padding: 60px;
+    color: #888;
+    font-size: 18px;
+}

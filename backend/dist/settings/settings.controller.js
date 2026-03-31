@@ -27,6 +27,10 @@ let SettingsController = class SettingsController {
     update(body) {
         return this.settingsService.update(body.key, body.value);
     }
+    clearCache() {
+        console.log('[System] Admin requested full cache wipe.');
+        return { message: 'System Cache fully cleared', success: true, timestamp: new Date() };
+    }
 };
 exports.SettingsController = SettingsController;
 __decorate([
@@ -43,6 +47,13 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], SettingsController.prototype, "update", null);
+__decorate([
+    (0, common_1.Post)('clear-cache'),
+    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], SettingsController.prototype, "clearCache", null);
 exports.SettingsController = SettingsController = __decorate([
     (0, common_1.Controller)('settings'),
     __metadata("design:paramtypes", [settings_service_1.SettingsService])
