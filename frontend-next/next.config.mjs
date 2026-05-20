@@ -1,22 +1,24 @@
 /** @type {import('next').NextConfig} */
+// Si se hace deploy a GitHub Pages (DEPLOY_TARGET=github-pages), aplicar basePath.
+// Si se hace deploy a josegaspard.dev (Hostinger u otro) NO aplicar basePath.
+const isGitHubPages = process.env.DEPLOY_TARGET === 'github-pages';
+
 const nextConfig = {
-    // Configuración para GitHub Pages (Web 100% Estática)
+    // Exportación estática (compatible con GH Pages, Vercel static, Hostinger static)
     output: 'export',
-    basePath: process.env.NODE_ENV === 'production' ? '/portfolio-web' : '',
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio-web/' : '',
+    trailingSlash: true,
+    basePath: isGitHubPages ? '/portfolio-web' : '',
+    assetPrefix: isGitHubPages ? '/portfolio-web/' : '',
 
     // Optimización de imágenes apagada para exportación estática
     images: {
         unoptimized: true,
     },
 
-    // React Strict Mode
     reactStrictMode: true,
 
-    // Turbopack config (Next.js 16+)
     turbopack: {},
 
-    // Experimental features
     experimental: {
         optimizeCss: true,
         optimizePackageImports: [

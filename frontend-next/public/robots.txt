@@ -1,8 +1,63 @@
+# Robots policy — josegaspard.dev — Consultor SEO en México
+# Last updated: 2026-05-20
+
+# Bots de motores de búsqueda tradicionales
 User-agent: *
 Allow: /
-
 Disallow: /admin/
 Disallow: /login/
 Disallow: /api/
+Disallow: /_admin_disabled/
+Disallow: /_login_disabled/
+
+# Bots de motores generativos (GEO/AEO) — acceso explícito para citation
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
 
 Sitemap: https://josegaspard.dev/sitemap.xml
+Host: https://josegaspard.dev

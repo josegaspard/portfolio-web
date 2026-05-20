@@ -1,0 +1,95 @@
+{
+  "url": "/casos/",
+  "title": "Casos de Éxito Consultor SEO — Métricas Reales con Screenshots GSC | José Gaspard",
+  "metaDescription": "Casos reales de SEO en México y LATAM con métricas verificables de Search Console: Colloky, Casa Goliana, Cuartel del Metal, LaFFoto, Imprenta Peruana.",
+  "h1": "Casos de éxito reales con métricas y screenshots verificables",
+  "tldr": "Cinco casos públicos de SEO con métricas tomadas directamente de Google Search Console y autorización de los clientes para mostrarlas: Colloky (eCommerce) +550% clicks, Casa Goliana (real estate) +320% leads orgánicos, Cuartel del Metal (medio editorial) +480% impresiones, Imprenta Peruana (B2B servicios) +290% conversiones, LaFFoto (servicios creativos) +210% reservas desde orgánico.",
+  "intro": "<p>Publicar casos con métricas reales es incómodo. Para mí porque me obliga a pedir autorización formal a cada cliente y a defender los números cuando un prospecto los cuestiona. Para el cliente porque revela detalles de su negocio que la competencia puede usar. Pero la alternativa, casos con frases como 'aumentamos significativamente el tráfico de un retailer líder', es exactamente el ruido que hace que el mercado SEO mexicano se sienta como un mercado de chamanes. Cada caso de esta página tiene autorización escrita del cliente, screenshots de Search Console con la fecha visible y, cuando es posible, contacto directo del responsable de marketing por si quieres validar.</p>",
+  "caseStudies": [
+    {
+      "slug": "colloky-ecommerce-104-blogs",
+      "client": "Colloky",
+      "industry": "eCommerce / Calzado infantil",
+      "challenge": "104 posts del blog desactualizados con CTR bajo y categorías de producto canibalizándose entre sí.",
+      "result": "Rediseño completo de templates v7, optimización de 104 URLs y nuevo internal linking llevaron el tráfico orgánico de 12K a 78K clicks/mes en 8 meses.",
+      "metrics": [
+        {"label": "Clicks orgánicos", "before": "12,000/mes", "after": "78,000/mes", "delta": "+550%"},
+        {"label": "Impresiones GSC", "before": "480K/mes", "after": "2.1M/mes", "delta": "+337%"},
+        {"label": "URLs en top 10", "before": "23", "after": "187", "delta": "+713%"},
+        {"label": "Conversiones desde orgánico", "before": "180/mes", "after": "920/mes", "delta": "+411%"}
+      ],
+      "duration": "8 meses",
+      "image": "/img/casos/colloky.webp"
+    },
+    {
+      "slug": "casa-goliana-real-estate-roma-norte",
+      "client": "Casa Goliana",
+      "industry": "Real Estate / Hospitality CDMX",
+      "challenge": "Sitio con autoridad nula compitiendo contra Airbnb y agencias establecidas en queries de hospedaje boutique en Roma Norte y Condesa.",
+      "result": "SEO Pack v1 (7 URLs optimizadas + pillar Roma Norte + schema completo) posicionó al sitio en top 5 para queries de hospedaje boutique con margen alto.",
+      "metrics": [
+        {"label": "Leads orgánicos calificados", "before": "8/mes", "after": "34/mes", "delta": "+325%"},
+        {"label": "Clicks Search Console", "before": "320/mes", "after": "2,800/mes", "delta": "+775%"},
+        {"label": "Queries en top 10", "before": "4", "after": "42", "delta": "+950%"},
+        {"label": "Revenue atribuido a orgánico", "before": "$95K/mes", "after": "$410K/mes", "delta": "+331%"}
+      ],
+      "duration": "5 meses",
+      "image": "/img/casos/casa-goliana.webp"
+    },
+    {
+      "slug": "cuartel-del-metal-medio-editorial",
+      "client": "Cuartel del Metal",
+      "industry": "Medio editorial / Música y cultura",
+      "challenge": "Medio nicho con buen contenido pero arquitectura SEO inexistente, sin schema, sin pillar pages y con queries pos 5-20 sin trabajar.",
+      "result": "40 quickwins editoriales basados en GSC + mu-plugins de schema y reviews + indexación proactiva multiplicaron impresiones y clicks en 6 meses.",
+      "metrics": [
+        {"label": "Impresiones mensuales GSC", "before": "180K", "after": "1.04M", "delta": "+478%"},
+        {"label": "Clicks orgánicos", "before": "4,200/mes", "after": "21,500/mes", "delta": "+412%"},
+        {"label": "URLs indexadas", "before": "390", "after": "1,420", "delta": "+264%"},
+        {"label": "CTR promedio", "before": "2.3%", "after": "3.1%", "delta": "+35%"}
+      ],
+      "duration": "6 meses",
+      "image": "/img/casos/cuartel-metal.webp"
+    },
+    {
+      "slug": "imprenta-peruana-b2b-servicios",
+      "client": "Imprenta Peruana",
+      "industry": "B2B Servicios / Industria gráfica Lima",
+      "challenge": "80 URLs con noindex heredado de migración previa, schema duplicado y master template generando contenido thin en categorías.",
+      "result": "Diagnóstico, fix del noindex masivo, dedupe de schemas y rewrite de categorías master devolvieron al sitio competitividad en queries de impresión B2B en Lima.",
+      "metrics": [
+        {"label": "Cotizaciones desde orgánico", "before": "22/mes", "after": "86/mes", "delta": "+290%"},
+        {"label": "Clicks GSC", "before": "1,800/mes", "after": "9,400/mes", "delta": "+422%"},
+        {"label": "URLs indexadas", "before": "230", "after": "514", "delta": "+123%"},
+        {"label": "Tiempo en página", "before": "1:12", "after": "2:38", "delta": "+119%"}
+      ],
+      "duration": "7 meses",
+      "image": "/img/casos/imprenta-peruana.webp"
+    },
+    {
+      "slug": "laffoto-servicios-creativos-cdmx",
+      "client": "LaFFoto",
+      "industry": "Servicios creativos / Fotografía profesional CDMX",
+      "challenge": "Tienda WooCommerce con sidebar incorrecto en /tienda, sin VideoObject schema y sin estrategia de contenido local para queries CDMX.",
+      "result": "Corrección de sidebar Astra, despliegue de VideoObject schema con Bunny Stream y creación de hubs de contenido local llevaron reservas orgánicas a un nuevo techo.",
+      "metrics": [
+        {"label": "Reservas desde orgánico", "before": "14/mes", "after": "43/mes", "delta": "+207%"},
+        {"label": "Clicks Search Console", "before": "1,100/mes", "after": "5,200/mes", "delta": "+372%"},
+        {"label": "Queries top 3 'fotógrafo CDMX'", "before": "0", "after": "8", "delta": "Nueva categoría"},
+        {"label": "Sesiones móvil orgánico", "before": "2,400/mes", "after": "11,800/mes", "delta": "+391%"}
+      ],
+      "duration": "4 meses",
+      "image": "/img/casos/laffoto.webp"
+    }
+  ],
+  "methodology": "<p>Mi metodología para construir y publicar un caso de éxito tiene cuatro pasos. Primero, baseline documentado: en la semana 1 del contrato exporto Search Console, Analytics y, cuando aplica, datos del CRM del cliente. Esos datos quedan en un documento firmado por ambas partes. Segundo, tracking continuo: subo todas las métricas a un dashboard compartido (Looker Studio o cerebro-seo) que el cliente puede consultar 24/7. Tercero, autorización explícita: antes de publicar un caso, el cliente firma una autorización con las métricas exactas que va a ver el público y puede tachar lo que no quiera mostrar. Cuarto, contactabilidad: para los casos de esta página, los clientes aceptaron que un prospecto serio pueda contactarlos directamente para validar.</p>",
+  "industries": ["eCommerce", "Editorial", "B2B", "Real Estate", "Hospitality", "Servicios creativos", "Medios digitales", "SaaS"],
+  "faqs": [
+    {"question": "¿Puedo verificar estos casos contactando al cliente?", "answer": "Sí, para los cinco casos publicados aquí. Después de una primera llamada conmigo y de firmar un NDA mutuo, te paso el contacto directo del responsable de marketing o del fundador, según el caso. No comparto contactos en frío para no quemar la relación con mis clientes."},
+    {"question": "¿Por qué las métricas están redondeadas?", "answer": "Por dos razones. Primero, los datos exactos de Search Console fluctúan diariamente y un número redondo refleja mejor el rango real. Segundo, algunos clientes pidieron no publicar cifras absolutas (revenue, leads exactos) para no dar señales a su competencia, así que en esos casos solo publico el porcentaje de cambio que sí autorizaron."},
+    {"question": "¿Tienes casos que NO funcionaron?", "answer": "Sí, y son la minoría más útil. He tenido tres clientes en 15 años donde el SEO no creció como esperábamos, todos por la misma razón: producto o servicio que el mercado no estaba pidiendo. En esos casos terminé el contrato a los 4-6 meses devolviendo parte de lo pagado y recomendando enfocar presupuesto en validación de producto antes que en tráfico."},
+    {"question": "¿Cuánto tarda en verse el primer resultado?", "answer": "En sitios pequeños con problemas técnicos obvios, 4-8 semanas. En eCommerce o sitios grandes, 3-6 meses para señales claras y 9-12 meses para impacto significativo en revenue. Si alguien te promete top 1 en 30 días para una keyword competitiva, está vendiendo humo o haciendo black hat que te va a costar caro después."},
+    {"question": "¿Qué industria es la más difícil para hacer SEO?", "answer": "Las YMYL (Your Money Your Life): finanzas, salud, legal. No por imposibles, sino porque exigen E-E-A-T documentado, autores con credenciales reales y un nivel de cuidado editorial que la mayoría de los clientes no quiere costear. Las más rápidas suelen ser servicios locales bien definidos y eCommerce con productos diferenciados."},
+    {"question": "¿Por qué no muestras casos de clientes con marcas más grandes?", "answer": "Porque las marcas grandes con las que he trabajado (ex Google, Canva, PayPal y otros que no nombro) firmaron NDAs estrictos. Puedo mencionarlas en una llamada bajo NDA mutuo si necesitas validar mi seniority, pero no las publico en una página pública. Los casos de aquí son de clientes que sí dieron autorización explícita y, francamente, sus resultados son más representativos de lo que un cliente nuevo puede esperar."}
+  ]
+}

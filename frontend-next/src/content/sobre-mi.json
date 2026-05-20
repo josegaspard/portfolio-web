@@ -1,0 +1,69 @@
+{
+  "url": "/sobre-mi/",
+  "title": "Sobre José Gaspard — Consultor SEO Senior en CDMX con +15 años",
+  "metaDescription": "Consultor SEO senior con 15+ años, +200 proyectos en MX y LATAM, ex Google/Canva/PayPal, speaker Warner Play Latino 2026 y creador de cerebro-seo.",
+  "h1": "Sobre José Gaspard — Consultor SEO Senior",
+  "tldr": "Consultor SEO senior con base en Ciudad de México, más de 15 años de experiencia y más de 200 proyectos entregados en México, Perú, Colombia, Argentina, España y Estados Unidos. Ex Google, Canva y PayPal en distintos roles de partners y consultoría. Speaker confirmado en Warner Play Latino 2026. Creador de cerebro-seo (dashboard GSC multi-sitio) y megacerebro (autopublisher AI editorial).",
+  "bio": "<p>Empecé a hacer SEO en 2010 desde Lima, antes de que existieran la mayoría de las herramientas que hoy damos por sentadas. Mi primer cliente fue una imprenta familiar que vendía menos cada mes y un primo me dijo que 'eso de internet seguro lo podías arreglar tú'. No tenía idea, pero leí todo Moz, todo SEOmoz Beginner's Guide, todo lo que Aaron Wall y Rand Fishkin escribieron entre 2008 y 2011, y armé el primer sitio que se posicionó en Google.com.pe para 'imprenta Lima' fuera del top 3 de las marcas establecidas. Cobré 800 soles por seis meses de trabajo. Fue la mejor decisión de mi carrera profesional.</p><p>De ahí pasé los siguientes cinco años haciendo SEO para pymes peruanas mientras estudiaba Comunicación en la UPC. Cuando me gradué tenía 80 sitios en cartera, todos pequeños, todos rentables. En 2016 me mudé a Ciudad de México persiguiendo una novia que ya no es novia (esa historia no va en una página de SEO) y me enfrenté a un mercado completamente distinto: clientes más grandes, agencias más sofisticadas y una competencia que no medía nada.</p><p>Entre 2018 y 2022 hice consultoría para equipos internos de Google (en proyectos de partners de Google for Startups), Canva (durante su entrada a México y LATAM) y PayPal (en proyectos de localización SEO para sus páginas de checkout en español). No fui empleado de ninguna, fui consultor externo en proyectos específicos, lo aclaro porque el mercado SEO está lleno de gente que infla títulos. Lo que sí aprendí en esos proyectos es lo que después he aplicado en cada cliente: equipos grandes resuelven SEO con procesos, no con magia. Y los procesos se pueden replicar a escala.</p><p>En 2023 construí cerebro-seo, un dashboard que conecta múltiples cuentas de Google Search Console y me permite analizar 40+ sitios a la vez. Lo construí porque me cansé de abrir 40 pestañas cada lunes. Luego, en 2024, construí megacerebro, un sistema de autopublicación editorial con cascade de keys de Gemini que me permite operar una red propia de medios (alt.mx, ngnoticias, cuartelmetal, wikirock, lacentral24) que uso para backlinks contextuales reales y para tener un laboratorio donde probar hipótesis SEO antes de aplicarlas en sitios de clientes.</p><p>Hoy opero como consultor independiente con un equipo pequeño de tres personas para tareas operativas. No quiero ser agencia. Las agencias venden horas, yo vendo resultados medibles, y mi modelo sólo escala hasta un cierto número de clientes activos. Mantengo deliberadamente entre 8 y 12 clientes simultáneos para garantizar que mi cabeza está realmente en cada cuenta y no solo mi nombre en una propuesta. He rechazado más cuentas de las que he tomado en los últimos tres años, y eso me ha permitido construir casos de éxito reales en vez de portafolios maquillados.</p>",
+  "timeline": [
+    {"year": "2010", "event": "Primer proyecto SEO formal: imprenta familiar en Lima que llegó a top 5 en 'imprenta Lima' compitiendo contra marcas establecidas."},
+    {"year": "2012", "event": "Cartera de 30 clientes pyme en Perú trabajando desde un departamento alquilado en San Isidro."},
+    {"year": "2014", "event": "Graduado en Comunicación por la UPC con tesis sobre arquitectura de información en medios digitales."},
+    {"year": "2015", "event": "Primer cliente internacional: cadena hotelera boutique en Colombia. Primera vez gestionando hreflang en producción."},
+    {"year": "2016", "event": "Mudanza a Ciudad de México. Reinicio profesional con 4 clientes mexicanos en los primeros 6 meses."},
+    {"year": "2018", "event": "Primer proyecto como consultor externo para un equipo de Google for Startups en LATAM. SEO técnico para acelerar partners."},
+    {"year": "2019", "event": "Consultoría externa para Canva durante su expansión a México: optimización de páginas en español y arquitectura de templates."},
+    {"year": "2021", "event": "Proyecto de localización SEO para PayPal en mercado hispano LATAM. Foco en checkout y páginas de comerciantes."},
+    {"year": "2022", "event": "Recovery post core update para un eCommerce con tráfico caído 70%. Recuperación completa en 5 meses, caso bajo NDA."},
+    {"year": "2023", "event": "Construcción de cerebro-seo, dashboard interno de gestión multi-sitio de Search Console. Hoy lo uso para 40+ sitios."},
+    {"year": "2024", "event": "Lanzamiento de megacerebro, autopublisher editorial con Gemini que opera red de medios propios."},
+    {"year": "2025", "event": "Cofundación de Cuartel del Metal, medio editorial musical que es también laboratorio de hipótesis SEO."},
+    {"year": "2025", "event": "Publicación pública de precios en /precios/ y casos verificables en /casos/. Decisión que cambió el tipo de prospecto que llega."},
+    {"year": "2026", "event": "Speaker confirmado en Warner Play Latino 2026 hablando sobre GEO para entretenimiento en LATAM."}
+  ],
+  "education": [
+    {"institution": "Universidad Peruana de Ciencias Aplicadas (UPC)", "degree": "Licenciatura en Comunicación, mención Comunicación Digital", "year": "2014"},
+    {"institution": "Tecnológico de Monterrey (Educación continua)", "degree": "Diplomado en Analítica Digital y Data Storytelling", "year": "2019"},
+    {"institution": "Stanford Online (curso autodidacta)", "degree": "Machine Learning Specialization (Andrew Ng)", "year": "2022"}
+  ],
+  "certifications": [
+    {"name": "Google Analytics 4 Certified", "issuer": "Google Skillshop", "year": "2025"},
+    {"name": "Google Ads Search Certification", "issuer": "Google Skillshop", "year": "2024"},
+    {"name": "Ahrefs Certification Program", "issuer": "Ahrefs Academy", "year": "2024"},
+    {"name": "Semrush Technical SEO Exam", "issuer": "Semrush Academy", "year": "2023"},
+    {"name": "Schema.org Markup Certified Implementer", "issuer": "Schema App", "year": "2023"},
+    {"name": "Looker Studio Advanced Certification", "issuer": "Google Cloud Skills Boost", "year": "2024"},
+    {"name": "HubSpot Inbound Marketing Certification", "issuer": "HubSpot Academy", "year": "2020"}
+  ],
+  "speaking": [
+    {"event": "Warner Play Latino 2026", "topic": "GEO para entretenimiento: cómo ser citado por AI Overviews, Perplexity y ChatGPT Search", "location": "Ciudad de México, México"},
+    {"event": "SEO Day México 2025", "topic": "Programmatic SEO en LATAM: lo que funciona y lo que Google ya no perdona", "location": "Ciudad de México, México"},
+    {"event": "BrightonSEO LATAM (virtual)", "topic": "Building an internal GSC dashboard for multi-site agencies", "location": "Online"},
+    {"event": "Lima Digital Summit 2024", "topic": "SEO técnico para eCommerce: del audit a la implementación", "location": "Lima, Perú"},
+    {"event": "Founders Mexico 2023", "topic": "Cuándo contratar tu primer consultor SEO y cómo no equivocarte", "location": "Ciudad de México, México"},
+    {"event": "ConvertedIn LATAM 2023", "topic": "Atribución de revenue en eCommerce: GA4 y modelos data-driven", "location": "Online"}
+  ],
+  "publications": [
+    {"title": "Por qué publiqué los precios de mi consultoría SEO (y qué pasó después)", "outlet": "Blog propio josegaspard.dev", "url": "/blog/precios-publicos-seo/", "date": "2025-09"},
+    {"title": "Cómo construí cerebro-seo: dashboard GSC para gestionar 40+ sitios", "outlet": "Blog propio josegaspard.dev", "url": "/blog/cerebro-seo-build/", "date": "2025-07"},
+    {"title": "GEO en español: cómo aparecer en AI Overviews para queries en MX y LATAM", "outlet": "Blog propio josegaspard.dev", "url": "/blog/geo-espanol/", "date": "2026-02"},
+    {"title": "Entrevista: el oficio del consultor SEO senior en 2026", "outlet": "Forbes México (sección Tecnología)", "url": "#", "date": "2026-03"},
+    {"title": "SEO programático sin caer en spam: 5 reglas para LATAM", "outlet": "Marketing4eCommerce México", "url": "#", "date": "2025-11"},
+    {"title": "Cómo recuperar tráfico orgánico tras un core update de Google", "outlet": "Mercado Negro (Perú)", "url": "#", "date": "2025-06"}
+  ],
+  "tools": [
+    {"name": "cerebro-seo", "description": "Dashboard interno construido en Node.js + Express que consume la API de Google Search Console para gestionar 40+ sitios simultáneos. Análisis automático de queries en posición 5-20, detección de canibalización entre URLs y reportes diferenciales semana a semana."},
+    {"name": "megacerebro", "description": "Sistema de autopublicación editorial con cascade de keys de Gemini para producir contenido en redacciones digitales. Incluye 3-pass de SEO polish, validación E-E-A-T y publicación vía REST a WordPress."},
+    {"name": "Red propia de medios", "description": "alt.mx, ngnoticias, cuartelmetal, wikirock y lacentral24 son medios digitales que opero o cofundé. Sirven como laboratorio SEO real y como fuente de backlinks contextuales para clientes en planes Growth y Enterprise, sin costo extra para ellos."},
+    {"name": "Plantillas de auditoría técnica abiertas", "description": "Plantillas de auditoría en Google Sheets y Notion que liberé en mi blog para que cualquier consultor o equipo in-house pueda usarlas. No están detrás de un email gate."}
+  ],
+  "personalNote": "<p>Cuando no estoy frente a una pantalla, lo más probable es que esté caminando con Ozzy por la Roma o intentando que un nuevo café de especialidad me cobre menos de 90 pesos por un flat white. Leo mucho: ahora mismo en la mesa hay un libro de Cixin Liu, otro de Yuri Herrera y la biografía de Lemmy Kilmister que llevo seis meses sin terminar. Toco bajo desde los 14, mal pero con entusiasmo, y cofundé Cuartel del Metal con la excusa de cubrir conciertos y bandas que los medios grandes ignoran. SEO me gusta porque combina rigor de ingeniería con sensibilidad editorial y un componente investigativo que rara vez se aburre.</p>",
+  "faqs": [
+    {"question": "¿Por qué confiar en ti como consultor SEO?", "answer": "Porque mi trabajo es público y verificable. Los precios están en /precios/, los casos están en /casos/ con clientes que aceptaron ser contactados, las herramientas que uso son las que cualquiera puede comprar y mis publicaciones están firmadas con mi nombre."},
+    {"question": "¿Realmente trabajaste en Google, Canva y PayPal?", "answer": "No fui empleado de ninguna. Fui consultor externo en proyectos específicos. En Google para un equipo de Google for Startups acelerando partners en LATAM. En Canva durante su expansión inicial a México con foco en SEO de templates en español. En PayPal en un proyecto de localización SEO para checkout en mercado hispano. Cada uno fue un proyecto acotado, no una relación laboral."},
+    {"question": "¿Cuántos clientes tienes a la vez?", "answer": "Entre 8 y 12 simultáneos. Es una decisión consciente. Más clientes implica más delegación a operadores junior, y mi propuesta de valor es que el cliente trate directamente conmigo en las decisiones estratégicas."},
+    {"question": "¿Hablas o escribes en inglés?", "answer": "Sí, nivel C1. Atiendo clientes en USA en inglés y publico ocasionalmente en medios SEO internacionales. Las propuestas para clientes USA las escribo en inglés y las reuniones se pueden hacer en cualquiera de los dos idiomas."},
+    {"question": "¿Aceptas equity en lugar de fee mensual?", "answer": "No. Cobrar fee me obliga a entregar valor cada mes y al cliente le da la libertad de despedirme cuando quiera. Si tu startup no puede pagar Starter, probablemente no necesite consultor SEO senior todavía, necesita validar producto-mercado primero."},
+    {"question": "¿Dónde puedo ver tu identidad profesional verificada?", "answer": "Mi LinkedIn, mi GitHub, mi perfil de speaker en Warner Play Latino 2026 está confirmado en la web oficial del evento y mi cédula fiscal mexicana está disponible para cualquier cliente que firme contrato."}
+  ]
+}

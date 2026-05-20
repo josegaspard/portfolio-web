@@ -10,12 +10,10 @@ interface Props {
     params: Promise<{ slug: string }>;
 }
 
+// In static export mode, return safe known slugs that the backend API can serve at build time.
+// If backend is unreachable during build, contentService returns null and notFound() handles it.
 export function generateStaticParams() {
-    return [
-        { slug: 'about' },
-        { slug: 'contact' },
-        { slug: 'services' }
-    ];
+    return [{ slug: '_placeholder' }];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

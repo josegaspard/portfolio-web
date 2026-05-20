@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
+import '@/styles/pillar.css';
 import { OrganizationJsonLd, PersonJsonLd, WebSiteJsonLd, ProfessionalServiceJsonLd } from '@/components/seo/JsonLd';
+import { LanguageProvider } from '@/context/LanguageContext';
+import { ConfigProvider } from '@/context/ConfigContext';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://josegaspard.dev'),
@@ -106,7 +109,11 @@ export default function RootLayout({
         <ProfessionalServiceJsonLd />
       </head>
       <body>
-        {children}
+        <ConfigProvider>
+          <LanguageProvider>
+            {children}
+          </LanguageProvider>
+        </ConfigProvider>
       </body>
     </html>
   );

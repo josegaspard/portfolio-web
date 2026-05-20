@@ -68,8 +68,13 @@ export const contentService = {
     },
 
     async getBySlug(slug: string): Promise<Content | null> {
+        // Skip placeholder slugs used only to satisfy generateStaticParams in static export mode.
+        if (slug === '_placeholder') return null;
         try {
-            const res = await fetch(`${API_URL}/slug/${slug}`);
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 8000);
+            const res = await fetch(`${API_URL}/slug/${slug}`, { signal: controller.signal });
+            clearTimeout(timeoutId);
             if (!res.ok) return null;
             const text = await res.text();
             if (!text || text === 'null') return null;

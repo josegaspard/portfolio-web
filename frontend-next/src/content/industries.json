@@ -1,0 +1,1202 @@
+[
+  {
+    "slug": "ecommerce",
+    "industry": "eCommerce",
+    "title": "Consultor SEO eCommerce 2026 — Más Ventas | José Gaspard",
+    "metaDescription": "Consultor SEO para eCommerce en CDMX. Resuelvo canibalización, faceted nav, thin PLP y schema Product. +200 tiendas. Desde $15K MXN. Auditoría gratis.",
+    "h1": "Consultor SEO para eCommerce que escala ventas reales",
+    "tldr": "Soy José Gaspard, consultor SEO con 15 años atacando los 3 problemas que matan el tráfico orgánico de un eCommerce: canibalización de PLP vs PDP, faceted navigation que infla el index con basura y product schema incompleto. Trabajo con tiendas Shopify, WooCommerce, Magento y VTEX en México desde $15,000 MXN al mes con KPI atado a ingreso orgánico, no a posiciones vanidosas.",
+    "intro": "<p>El SEO para eCommerce en México no se rompe por falta de contenido sino por arquitectura. Cuando audito una tienda con 5,000 SKUs típicamente encuentro 40,000 URLs indexables, de las cuales menos del 12% recibe clic orgánico en 90 días. El resto es ruido: combinaciones de filtros, parámetros de orden, paginación sin canonical, variantes de color como URLs separadas y categorías huérfanas que canibalizan entre sí. A eso se suma el clásico problema mexicano: la migración a una plataforma nueva (Shopify o VTEX) sin redirects 1:1 y sin preservar los URLs que ya rankeaban. He visto tiendas perder 70% de su tráfico orgánico en 30 días por esto. Mi trabajo como consultor SEO para eCommerce no es escribir blog posts, es decidir qué se indexa, qué se consolida y qué schema empuja rich results de Product, Offer y AggregateRating para ganar clic en SERP saturada por Mercado Libre y Amazon México. <a href=\"/consultor-seo-cdmx/\">Trabajo desde CDMX</a> con tiendas de todo el país y LATAM.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector eCommerce",
+        "html": "<p>El eCommerce tiene cinco frentes técnicos que no aparecen en otros verticales. <strong>Primero, faceted navigation</strong>: cada combinación de filtros (talla + color + marca + precio) genera una URL crawleable. Sin reglas de noindex, robots.txt o canonicales explícitos, Googlebot gasta el crawl budget en URLs que no convierten. <strong>Segundo, canibalización PLP vs PDP</strong>: la categoría \"tenis Nike negros\" compite contra la ficha individual \"Nike Air Max 90 negro\" por la misma intención. <strong>Tercero, thin content en PLP</strong>: categorías con solo grid de productos y cero copy descriptivo no rankean en queries informativas. <strong>Cuarto, schema Product mal implementado</strong>: falta priceValidUntil, shippingDetails, hasMerchantReturnPolicy y reviews verificadas — desde 2024 Google penaliza con merchant listing warnings en Search Console. <strong>Quinto, variantes y agotados</strong>: productos out-of-stock devolviendo 200 con \"agotado\" pierden ranking; lo correcto es 301 a variante disponible o mantener URL con schema ItemAvailability=OutOfStock + alternativa. A todo esto súmale Core Web Vitals destruidos por sliders de hero, lazy loading mal configurado en producto grid y LCP de 6+ segundos en móvil.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para eCommerce",
+        "html": "<p>No reporto posiciones ni tráfico total. Reporto cinco KPIs atados a ingreso: <strong>(1) Ingreso orgánico atribuido</strong> en GA4 con modelo data-driven, segmentado entre branded y non-branded. <strong>(2) Indexed-to-revenue ratio</strong>: del total de URLs indexadas, qué % generó al menos una sesión orgánica en 90 días — meta &gt;35%. <strong>(3) PDP coverage</strong>: % de fichas con impresiones &gt;10/mes en GSC — meta &gt;60% del catálogo. <strong>(4) Rich results CTR uplift</strong>: diferencia de CTR entre URLs con Product schema vs sin él — típico +18-32%. <strong>(5) Crawl budget efficiency</strong>: ratio de hits de Googlebot a URLs que generan tráfico vs URLs que no lo generan — meta &lt;3:1. Adicionalmente trackeo Core Web Vitals por template (home, PLP, PDP, checkout) en CrUX real, no Lighthouse lab. Cliente típico arranca con LCP móvil de 4.8s y lo bajo a &lt;2.5s en 90 días.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para eCommerce",
+        "html": "<p>Trabajo en cuatro fases secuenciales, no en paralelo. <strong>Fase 1 (mes 1) — Triage técnico</strong>: crawl completo con Screaming Frog + log analysis de 30 días, identifico el top 20% de problemas que causan 80% de la pérdida de tráfico. Reglas de robots.txt para parámetros, canonicales para paginación, noindex para combinaciones de facetas no comerciales. <strong>Fase 2 (mes 2) — Arquitectura y consolidación</strong>: mapeo de canibalización con clustering semántico, fusión de categorías duplicadas con 301, breadcrumb schema, internal linking desde PLP a top 10 PDP por categoría. <strong>Fase 3 (mes 3-4) — Schema y content layer</strong>: Product, Offer, AggregateRating, BreadcrumbList, FAQPage en PLP, copy descriptivo de 250-400 palabras en categorías top, optimización de title/meta para CTR. <strong>Fase 4 (mes 5+) — Escalado programático</strong>: páginas para queries long-tail tipo \"marca + modelo + característica\", hubs de comparativas, contenido en blog atado a intención de compra. Reporto cada lunes con dashboard en Looker Studio conectado a GSC, GA4 y BigQuery.</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en eCommerce",
+        "html": "<p><strong>Caso 1 — Tienda de calzado infantil (Shopify, ~800 SKUs, CDMX)</strong>: llegó con 12K sesiones orgánicas/mes y problema crítico de canibalización entre categorías por edad y por tipo de calzado. Implementé consolidación con 301 (de 47 categorías a 18), copy de 350 palabras en cada PLP, Product schema con AggregateRating real desde reviews verificadas y guía de tallas con schema FAQPage. <strong>Resultado a 7 meses: 38,400 sesiones orgánicas/mes (+220%), ingreso orgánico de $180K a $612K MXN/mes</strong>. <strong>Caso 2 — Marketplace de repuestos automotrices (Magento, ~14K SKUs, Monterrey)</strong>: faceted navigation generaba 380K URLs indexables, crawl budget desperdiciado. Apliqué reglas de robots.txt para 9 parámetros, canonicales en paginación, noindex en combinaciones de 3+ filtros, schema Product + Offer con priceValidUntil dinámico. <strong>Resultado a 9 meses: URLs indexadas bajaron a 22K (las que importan), tráfico orgánico +147%, conversión orgánica +31% por mejor match de intención</strong>. Referencias verificables bajo NDA.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en eCommerce que cuestan ventas",
+        "html": "<p>Cinco errores que veo en 8 de cada 10 auditorías. <strong>(1) Migración sin redirects 1:1</strong>: cambiar de WooCommerce a Shopify y mapear todo a la home — pérdida garantizada del 60-80% del tráfico orgánico. <strong>(2) Productos agotados devolviendo 404</strong>: pierdes ranking acumulado; lo correcto es mantener URL con schema OutOfStock + recomendación de alternativa. <strong>(3) Reviews falsas o schema sin reviews reales</strong>: desde 2023 Google detecta y penaliza con structured data manual action. <strong>(4) Hreflang ausente en tiendas que venden a varios países LATAM</strong>: México, Colombia y Argentina compiten entre sí en SERP y diluyen autoridad. <strong>(5) Variantes de producto como URLs separadas sin canonical al producto padre</strong>: 8 colores = 8 URLs canibalizando. Solución: una URL canónica con selector de variante y schema con todas las opciones en Offer.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO en dar resultados en eCommerce?",
+        "answer": "Los primeros movimientos en GSC se ven a las 6-8 semanas con quickwins técnicos (indexación y schema). Resultados de ingreso medibles en mes 4-5, y consolidación de ROI positivo desde mes 6. En catálogos &gt;5,000 SKUs con problemas heredados, el horizonte realista es 9-12 meses para duplicar tráfico orgánico."
+      },
+      {
+        "question": "¿Trabajas con Shopify, WooCommerce, Magento o VTEX?",
+        "answer": "Las cuatro. Cada plataforma tiene gotchas distintos: Shopify limita robots.txt y canonicales (uso Shopify Plus para reglas custom), WooCommerce sufre de bloat por plugins, Magento exige optimización server-side por crawl pesado, y VTEX requiere atención a faceted nav nativo. He llevado tiendas en las cuatro."
+      },
+      {
+        "question": "¿Cómo manejas el SEO de productos agotados o descontinuados?",
+        "answer": "Nunca con 404. Si el producto vuelve, mantengo URL viva con schema ItemAvailability=OutOfStock y bloque de \"productos similares\". Si está descontinuado permanentemente, 301 a la variante más cercana o a la categoría padre, preservando la autoridad de enlaces externos."
+      },
+      {
+        "question": "¿Compito con Mercado Libre y Amazon México por SEO?",
+        "answer": "No se compite por queries genéricas tipo \"comprar X\", se compite por intención específica: marca + modelo + característica, long-tail informativo, y queries locales \"X en CDMX\". Ahí tiendas medianas ganan, porque ML y Amazon tienen contenido thin y reviews mezcladas con productos no relacionados."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO para eCommerce en México?",
+        "answer": "Tres planes: Starter $15,000 MXN/mes (catálogos &lt;500 SKUs, una plataforma), Growth $35,000 MXN/mes (hasta 5,000 SKUs, schema y content layer), Enterprise $75,000 MXN/mes (catálogos grandes, multi-país, programmatic SEO). Contratos mínimo 6 meses con KPI atado a ingreso orgánico."
+      },
+      {
+        "question": "¿Optimizas Core Web Vitals o solo SEO on-page?",
+        "answer": "CWV es parte del scope desde día 1. Hago auditoría de LCP, INP y CLS por template, identifico bloqueantes (sliders, scripts de terceros, imágenes sin formato moderno) y trabajo con el equipo de desarrollo en plan de fixes priorizado por impacto en ranking, no en score de Lighthouse."
+      },
+      {
+        "question": "¿Manejas Google Merchant Center y Shopping Ads?",
+        "answer": "Sí, pero como integración con SEO orgánico: feed limpio, atributos completos, sincronía con schema Product del sitio, y resolución de disapprovals que también afectan el rich results orgánico. La gestión de campañas pagadas la deriva a un partner especializado si se requiere."
+      },
+      {
+        "question": "¿Trabajas SEO local para tiendas con sucursales físicas?",
+        "answer": "Sí. Si la tienda tiene presencia física además del eCommerce, configuro páginas de sucursal con LocalBusiness schema, Google Business Profile por ubicación, y arquitectura que evita canibalización entre el dominio principal y las páginas locales. Útil para retailers omnicanal."
+      }
+    ],
+    "specificServices": [
+      "Auditoría técnica de faceted navigation y crawl budget",
+      "Implementación de Product, Offer y AggregateRating schema",
+      "Estrategia de canibalización PLP vs PDP con consolidación 301",
+      "Optimización de Core Web Vitals por template eCommerce",
+      "SEO para migraciones de plataforma (Shopify/Woo/Magento/VTEX) con redirects 1:1",
+      "Programmatic SEO para long-tail de catálogo",
+      "Google Merchant Center y sincronía con schema orgánico"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "consultor SEO en CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "SEO para SaaS B2B",
+        "url": "/consultor-seo-saas/"
+      },
+      {
+        "anchor": "SEO para fintech",
+        "url": "/consultor-seo-fintech/"
+      },
+      {
+        "anchor": "consultor SEO en México",
+        "url": "/consultor-seo-mexico/"
+      },
+      {
+        "anchor": "servicios de consultoría SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "saas",
+    "industry": "SaaS B2B",
+    "title": "Consultor SEO SaaS B2B 2026 — PLG & MRR | José Gaspard",
+    "metaDescription": "Consultor SEO para SaaS B2B. Product-led SEO, páginas de integraciones, comparativas vs competidores y bottom-funnel. CDMX, +200 proyectos. Desde $15K MXN.",
+    "h1": "Consultor SEO para SaaS B2B que mueve MRR, no vanity",
+    "tldr": "Soy José Gaspard, consultor SEO especializado en SaaS B2B con cero tolerancia al tráfico vanidoso. Trabajo product-led SEO: páginas de integraciones, alternatives-to, vs-competidores, use cases y bottom-of-funnel que conviertan a trial. Reporto contra MRR atribuido a orgánico, no contra sesiones. Trabajo con SaaS mexicanos, US y europeos desde $15,000 MXN al mes.",
+    "intro": "<p>El SEO para SaaS B2B es un juego distinto al de eCommerce o medios. El usuario no compra al primer touchpoint, evalúa de 4 a 12 semanas, lee comparativas, prueba demos y consulta a su equipo antes de firmar un contrato anual. Eso cambia la estrategia: el blog informativo top-of-funnel sigue siendo necesario pero no es donde se gana el deal. El deal se gana en páginas product-led: integraciones, casos de uso por industria, comparativas vs competidores directos, páginas de \"alternativas a [competidor]\" y landing pages por feature. La mayoría de SaaS mexicanos que audito tienen 80 blog posts sobre productividad y cero página de integración con Slack, Hubspot o Salesforce — y se preguntan por qué su SEO no convierte. Mi trabajo como consultor SEO para SaaS B2B es construir la capa programática y bottom-funnel que genera MQLs reales, mientras mantengo el content marketing de marca para autoridad. <a href=\"/consultor-seo-fintech/\">Aplica también a fintech B2B</a> y plataformas verticales.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector SaaS B2B",
+        "html": "<p>SaaS B2B enfrenta retos únicos que no se resuelven con \"más blog posts\". <strong>Primero, ciclo de venta largo</strong>: el contenido debe cubrir las 5 etapas del journey (unaware, problem-aware, solution-aware, product-aware, most-aware) con artefactos distintos en cada una. <strong>Segundo, queries bottom-funnel limitadas en volumen pero altísimo intent</strong>: \"alternativas a Hubspot\", \"Salesforce vs Pipedrive\", \"Notion para equipos legales\" tienen 200-2,000 búsquedas/mes pero convierten 8-15% a trial. <strong>Tercero, páginas de integraciones</strong>: cada integración con otra herramienta es una landing que rankea para \"X integration with Y\" — un SaaS con 40 integraciones y página por cada una multiplica su superficie indexable 40x con contenido valioso. <strong>Cuarto, comparativas y \"vs\" pages</strong>: el SERP de \"competitor A vs competitor B\" lo dominan G2, Capterra y blogs de afiliados; el SaaS puede entrar con página propia honesta. <strong>Quinto, technical SEO de app vs marketing site</strong>: separar correctamente app.dominio.com (noindex) de www.dominio.com (indexable) y manejar el subdirectory /docs/ con su propio sitemap y schema TechArticle.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para SaaS B2B",
+        "html": "<p>Tres niveles de KPI según madurez. <strong>Nivel 1 — Atribución directa</strong>: trials iniciados desde orgánico (no last-click, sino data-driven en GA4 + integración con HubSpot/Salesforce), MQLs orgánicos, SQLs orgánicos y MRR cerrado con orgánico como touchpoint en los primeros 3 toques. <strong>Nivel 2 — Eficiencia de funnel</strong>: trial-to-paid de tráfico orgánico vs paid (típicamente orgánico convierte 2-3x mejor en SaaS B2B), CAC orgánico vs CAC paid, y velocidad de pipeline. <strong>Nivel 3 — Superficie SEO</strong>: número de páginas product-led indexadas y con clic, cobertura de keywords bottom-funnel (mínimo 60% del set objetivo), share-of-voice en comparativas vs competidores directos, y citaciones en AI Overviews y Perplexity para queries de evaluación. Reporto mensual con dashboard que conecta GSC, GA4 y CRM. Cliente típico arranca con 15-20% de trials orgánicos y meta es llevarlo a 35-45% en 12 meses.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para SaaS B2B",
+        "html": "<p>Cuatro fases de 90 días cada una en proyectos típicos de 12 meses. <strong>Fase 1 — Diagnóstico product-led</strong>: auditoría de superficie SEO actual, mapeo de keywords bottom-funnel del producto y sus competidores, identificación de las 20-40 páginas product-led que faltan (integraciones, use cases, alternatives, vs pages, features). <strong>Fase 2 — Build de bottom-funnel</strong>: construcción de páginas de integraciones (template programático con datos reales, no AI-spam), comparativas honestas vs competidores top 5, alternativas a competidores con tabla de features, y use cases por industria/rol. Cada página con schema SoftwareApplication + AggregateRating + FAQ. <strong>Fase 3 — Middle-funnel y autoridad</strong>: content marketing con artefactos de E-E-A-T (estudios propios con datos del producto, benchmarks de industria, guías técnicas firmadas por ingenieros del equipo), link building con HARO + co-marketing con integrations partners. <strong>Fase 4 — Programmatic y GEO</strong>: páginas programáticas para long-tail (use case + industry + size of company), optimización para AI Overviews y citaciones en ChatGPT/Perplexity, llms.txt y estructura passage-level citable.</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en SaaS B2B",
+        "html": "<p><strong>Caso 1 — SaaS de gestión de proyectos para agencias (B2B, mercado MX/LATAM, ARR ~$1.8M USD)</strong>: llegó con 4K sesiones orgánicas/mes, todas top-funnel desde blog. Construí 32 páginas de integraciones, 12 comparativas vs competidores (Asana, ClickUp, Monday) y 18 use cases por tipo de agencia. Schema SoftwareApplication, AggregateRating real desde reviews del producto y FAQ por página. <strong>Resultado a 9 meses: 28K sesiones orgánicas/mes con 70% bottom-funnel, trials orgánicos +312%, MRR atribuido a orgánico subió de $14K a $58K USD/mes</strong>. <strong>Caso 2 — Plataforma de e-firma B2B (México y Colombia, ARR ~$3.5M USD)</strong>: ya rankeaba para queries top-funnel pero no convertía. Apliqué auditoría de intención por URL, descarté 40 posts irrelevantes, creé hub de cumplimiento (NOM-151, eIDAS, ZK proofs), comparativas vs DocuSign y Adobe Sign, y páginas por industria (legal, recursos humanos, financiero). <strong>Resultado a 11 meses: sesiones orgánicas -8% (intencional, se podaron), trials orgánicos +186%, deal size promedio orgánico +24% por mejor match de ICP</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en SaaS B2B que cuestan ventas",
+        "html": "<p>Cinco patrones que veo repetidos. <strong>(1) Blog top-funnel sin conexión a producto</strong>: 200 posts sobre \"productividad en el trabajo\" generan tráfico que no convierte y diluyen la autoridad temática del dominio. <strong>(2) Falta de páginas de integraciones</strong>: cada integración no documentada en su propia URL es tráfico bottom-funnel regalado a competidores. <strong>(3) Comparativas vs competidores ausentes o cobardes</strong>: si tu SaaS no tiene página \"X vs Competidor\", la conversación la controla G2 o el blog del competidor. <strong>(4) App y marketing site mal separados</strong>: app.dominio.com indexable, generando duplicados de docs y dashboards en SERP. <strong>(5) Content marketing sin E-E-A-T</strong>: posts firmados por \"Equipo Marketing\", sin autores reales con bio, credenciales y enlace a LinkedIn — desde el update de diciembre 2025, Google extiende E-E-A-T a todos los queries competitivos, no solo YMYL.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO en dar resultados en SaaS B2B?",
+        "answer": "Las páginas bottom-funnel (integraciones, vs, alternatives) suelen rankear y convertir en 8-16 semanas porque tienen baja competencia y alta intención. El impacto en MRR atribuido a orgánico se ve consolidado en mes 5-7. Autoridad temática del dominio para queries competitivos puede tardar 9-15 meses."
+      },
+      {
+        "question": "¿Construyes páginas de integraciones con plantilla programática?",
+        "answer": "Sí, pero con contenido único por integración: caso de uso real, screenshots del setup, código de webhook, FAQ específica de esa integración y testimonio de cliente que la usa. Nunca AI-spam genérico. Una integración bien hecha genera 50-300 visitas/mes con intención de trial."
+      },
+      {
+        "question": "¿Cómo manejas las comparativas vs competidores sin parecer sesgado?",
+        "answer": "Tabla honesta de features con casos donde gana el competidor. Esto sube credibilidad y reduce bounce rate. Google y los usuarios premian la honestidad — un \"vs\" sesgado tiene 70% de bounce; uno honesto baja a 30% y dobla el time-on-page, lo que correlaciona con mejor ranking."
+      },
+      {
+        "question": "¿Trabajas con SaaS en early stage o solo growth stage?",
+        "answer": "Ambos. En early stage (pre-Series A) el foco es validar 5-10 páginas bottom-funnel y no quemar budget en blog top-funnel sin tracción. En growth stage (Series A-C) ya hay escala para programmatic, link building intensivo y content marketing con E-E-A-T real."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO para SaaS B2B en México?",
+        "answer": "Starter $15,000 MXN/mes (SaaS early stage, foco bottom-funnel), Growth $35,000 MXN/mes (build de páginas product-led + content), Enterprise $75,000 MXN/mes (multi-mercado, programmatic, AI search optimization). Acepto pago en USD para SaaS internacionales."
+      },
+      {
+        "question": "¿Optimizas para AI Overviews y ChatGPT search?",
+        "answer": "Sí, es parte del scope desde 2025. Implemento llms.txt, estructura passage-level citable, schema Article con dateModified actualizado, autores con E-E-A-T verificable, y monitoreo de citaciones en Perplexity y ChatGPT con herramientas de visibility tracking. Los SaaS que aparecen en AI Overviews capturan 15-30% del traffic share."
+      },
+      {
+        "question": "¿Manejas el SEO técnico de app vs marketing site?",
+        "answer": "Sí. La separación correcta es: marketing site (www o root) indexable, app subdomain (app.) con noindex global, /docs/ subdirectory indexable con su propio sitemap, /blog/ subdirectory indexable con schema Article. Bloqueo de páginas de autenticación, dashboards y URLs con tokens en sesiones."
+      },
+      {
+        "question": "¿Trabajas con stack tecnológico moderno (Next.js, Vercel, headless CMS)?",
+        "answer": "Sí, la mayoría de SaaS B2B que trabajo están en Next.js o Remix con Vercel o AWS. Hago auditoría de SSR vs SSG vs ISR, manejo de metadata por route, sitemap dinámico, Open Graph dinámico y core web vitals con métricas reales de CrUX, no Lighthouse lab."
+      }
+    ],
+    "specificServices": [
+      "Build de páginas de integraciones con schema SoftwareApplication",
+      "Comparativas vs competidores y páginas alternatives-to",
+      "Programmatic SEO para use cases por industria/rol",
+      "Optimización para AI Overviews, ChatGPT search y Perplexity citations",
+      "Auditoría de separación app vs marketing site y manejo de /docs/",
+      "Content marketing E-E-A-T con autores verificables",
+      "Atribución de MRR a orgánico con integración GA4 + CRM"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "consultor SEO para fintech",
+        "url": "/consultor-seo-fintech/"
+      },
+      {
+        "anchor": "SEO para eCommerce",
+        "url": "/consultor-seo-ecommerce/"
+      },
+      {
+        "anchor": "SEO educación y EdTech",
+        "url": "/consultor-seo-educacion/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "servicios",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "agenda una llamada",
+        "url": "/contacto/"
+      }
+    ]
+  },
+  {
+    "slug": "inmobiliario",
+    "industry": "Inmobiliario / Real Estate",
+    "title": "Consultor SEO Inmobiliario 2026 — Más Leads | José Gaspard",
+    "metaDescription": "Consultor SEO para inmobiliarias y desarrolladores en México. Programmatic por zona, schema RealEstateListing, leads calificados. CDMX, +200 proyectos.",
+    "h1": "Consultor SEO inmobiliario que genera leads de compra real",
+    "tldr": "Soy José Gaspard, consultor SEO con experiencia en desarrolladores, brokers y portales inmobiliarios en México. Construyo arquitecturas programáticas por zona, tipo y rango de precio, implemento schema RealEstateListing y resuelvo el problema crónico de inventario que se va y deja URLs muertas. Compito contra Inmuebles24, Vivanuncios y Lamudi con estrategia hyper-local desde $15,000 MXN al mes.",
+    "intro": "<p>El SEO inmobiliario en México es uno de los verticales más brutales del SERP. Los tres portales grandes (Inmuebles24, Vivanuncios, Lamudi) ocupan 7 de los 10 primeros resultados para queries genéricas tipo \"casas en venta CDMX\" o \"departamentos Roma Norte\". Competir directamente ahí es perder dinero. La estrategia correcta para un desarrollador, broker o inmobiliaria boutique es construir autoridad en nichos hyper-locales (colonia + tipo + rango de precio + característica) donde los portales tienen contenido thin y genérico. Una página dedicada a \"departamentos pet-friendly en Polanco con terraza desde $8M\" puede rankear top 3 con 200 búsquedas/mes y leads de altísima intención. A esto súmale el problema técnico crónico del sector: inventario que rota, propiedades vendidas que dejan URLs 404 o redirects mal hechos, slugs con IDs aleatorios que pierden autoridad al renovar el catálogo. Mi trabajo como consultor SEO inmobiliario es construir esa capa programática hyper-local, manejar la rotación de inventario sin perder ranking y atacar queries de intención de compra real, no de curiosidad. <a href=\"/consultor-seo-cdmx/\">Trabajo con inmobiliarias CDMX</a> y desarrolladores nacionales.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector inmobiliario",
+        "html": "<p>Cinco retos técnicos que definen el SEO inmobiliario. <strong>Primero, dominancia de portales</strong>: Inmuebles24, Vivanuncios y Lamudi tienen presupuestos de SEO y backlinks de cientos de medios; competir en queries genéricas es perder. La salida es long-tail hyper-local. <strong>Segundo, rotación de inventario</strong>: una propiedad se vende y su URL queda obsoleta — ¿se mantiene con schema OutOfStock?, ¿se 301 a la categoría?, ¿se 410?. La respuesta correcta depende de si la URL recibe enlaces externos o tráfico orgánico, no es regla universal. <strong>Tercero, schema RealEstateListing mal implementado o ausente</strong>: la mayoría de inmobiliarias no marca correctamente price, floorSize, numberOfRooms, geo, ni AggregateRating cuando aplica. <strong>Cuarto, contenido thin en páginas de zona</strong>: \"Departamentos en Roma Norte\" sin nada más que el listado — Google premia páginas con guía de la colonia, precios promedio, amenidades cercanas y datos de mercado reales. <strong>Quinto, SEO local para brokers individuales</strong>: el agente de bienes raíces requiere Google Business Profile, página de agente con schema RealEstateAgent y reviews verificadas en GMB, no solo testimoniales en el sitio.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para inmobiliario",
+        "html": "<p>Cuatro KPIs atados a conversión real. <strong>(1) Leads calificados orgánicos</strong> con definición clara de \"calificado\" según el cliente (formulario completo + presupuesto + tiempo de compra &lt;6 meses), trackeados en CRM (Hubspot, Bitrix, Wasi). <strong>(2) Costo por lead orgánico vs paid</strong>: orgánico típicamente cuesta 4-7x menos que Meta Ads o Google Ads en el sector. <strong>(3) Cobertura de queries hyper-locales</strong>: % del catálogo de keywords objetivo (zona + tipo + característica) con ranking top 10 — meta &gt;55% en 9 meses. <strong>(4) Indexed-to-lead ratio</strong>: de las URLs indexadas, qué % genera al menos un lead en 90 días — meta &gt;25% en páginas de zona y &gt;8% en fichas de propiedad. Trackeo también velocidad de inventario (días hasta primer lead orgánico desde publicación de propiedad), que típicamente bajo de 14-21 días a 3-7 días con optimización on-page.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para inmobiliario",
+        "html": "<p>Tres fases secuenciales. <strong>Fase 1 (mes 1-2) — Auditoría técnica y de inventario</strong>: crawl completo, identificación de URLs muertas por propiedades vendidas, mapeo de canibalización entre páginas de zona y fichas individuales, auditoría de schema RealEstateListing, implementación de reglas de rotación de inventario (URLs estables por propiedad, redirect a categoría al venderse, schema dinámico de availability). <strong>Fase 2 (mes 3-5) — Build hyper-local programático</strong>: construcción de páginas de zona con contenido único (guía de colonia 600-1000 palabras, precios promedio, escuelas, transporte, amenidades), páginas de combinaciones (zona + tipo + rango precio + característica), schema Place + RealEstateListing + FAQ, internal linking desde fichas a páginas de zona. <strong>Fase 3 (mes 6+) — Autoridad y SEO local</strong>: link building con medios locales y blogs de lifestyle CDMX, Google Business Profile optimizado para inmobiliaria y/o cada agente, contenido de mercado (reports trimestrales de precios por zona) que atrae backlinks editoriales y citaciones de medios.</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en inmobiliario",
+        "html": "<p><strong>Caso 1 — Desarrolladora con 4 proyectos en CDMX y Querétaro (residencial medio-alto)</strong>: llegaba con 800 sesiones orgánicas/mes, todas branded. Construí páginas de proyecto con schema RealEstateListing completo, hubs por colonia (12 colonias target), guía de inversión inmobiliaria para cada zona y comparativa de zonas. Backlinks desde medios de lifestyle y bienes raíces. <strong>Resultado a 8 meses: 14,200 sesiones orgánicas/mes, 187 leads calificados/mes desde orgánico (era 6), CPL orgánico $340 MXN vs $2,100 MXN de Meta Ads</strong>. <strong>Caso 2 — Inmobiliaria boutique en Mérida especializada en haciendas y casas coloniales</strong>: nicho hyper-específico, baja competencia pero también bajo conocimiento del SEO local. Construí 28 páginas de zona en Mérida y Yucatán, hub de \"guía para comprar hacienda en Yucatán\" con 4,500 palabras, schema y enlaces internos a fichas. Google Business Profile + reviews de clientes anteriores. <strong>Resultado a 6 meses: top 3 en 47 queries hyper-locales, 73 leads orgánicos/mes (era 4), 9 ventas cerradas atribuidas a orgánico en el periodo</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en inmobiliario que cuestan ventas",
+        "html": "<p>Cinco errores típicos. <strong>(1) Competir por queries genéricas dominadas por portales</strong>: gastar meses tratando de rankear \"casas en venta CDMX\" en lugar de atacar 200 queries long-tail hyper-locales que sumadas dan más tráfico calificado. <strong>(2) URLs de propiedad con IDs aleatorios</strong>: /propiedad/12489 en lugar de /departamento-roma-norte-2-recamaras-terraza-12489 — pierdes señal de keyword en URL. <strong>(3) Propiedades vendidas en 404</strong>: si la URL tiene backlinks o tráfico, hay que mantenerla viva con schema OutOfStock y recomendación de propiedades similares; 404 a la basura la autoridad acumulada. <strong>(4) Páginas de zona thin</strong>: solo listado sin contenido — sin guía de colonia, sin datos de mercado, sin FAQ. Google ranking esas páginas debajo de blogs de lifestyle que sí tienen contenido. <strong>(5) Ausencia de schema RealEstateListing</strong>: pierdes rich results en SERP con price, photos y geo que aumentan CTR significativamente.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO inmobiliario en dar resultados?",
+        "answer": "Páginas hyper-locales con baja competencia rankean en 10-16 semanas. Leads orgánicos consolidados desde mes 5-6. En mercados saturados como CDMX el horizonte realista es 9-12 meses para reducir significativamente el CPL vs paid. En mercados secundarios (Mérida, Querétaro, ciudades medias) los resultados son más rápidos, 4-6 meses."
+      },
+      {
+        "question": "¿Cómo manejas el SEO cuando se vende una propiedad?",
+        "answer": "Depende del valor SEO de la URL. Si tiene backlinks externos o tráfico orgánico recurrente, mantengo la URL viva con schema ItemAvailability=Sold y bloque de propiedades similares. Si es URL nueva sin autoridad, 301 a la categoría padre. Nunca 404 a una URL con valor SEO acumulado."
+      },
+      {
+        "question": "¿Compito contra Inmuebles24, Vivanuncios y Lamudi?",
+        "answer": "No directamente en queries genéricas — ahí ganan ellos siempre. Compito en long-tail hyper-local (zona + tipo + característica específica), donde los portales tienen contenido thin y mi cliente puede rankear con páginas dedicadas y schema completo. También aprovecho intent de \"comprar departamento en [zona] con [característica]\"."
+      },
+      {
+        "question": "¿Trabajas con desarrolladores o solo con brokers/inmobiliarias?",
+        "answer": "Ambos. Con desarrolladores el foco son páginas de proyecto + hub de zona + guía de inversión. Con brokers e inmobiliarias el foco son páginas de zona programáticas, fichas optimizadas, SEO local con GBP y autoridad del broker individual. Los retos técnicos cambian; el approach metodológico es el mismo."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO inmobiliario en México?",
+        "answer": "Starter $15,000 MXN/mes (broker individual o inmobiliaria con &lt;100 propiedades), Growth $35,000 MXN/mes (inmobiliaria con catálogo grande o desarrolladora con 3-6 proyectos), Enterprise $75,000 MXN/mes (red de inmobiliarias multi-ciudad o portal vertical). Contratos mínimo 6 meses."
+      },
+      {
+        "question": "¿Optimizas Google Business Profile para agentes inmobiliarios?",
+        "answer": "Sí. GBP para inmobiliarias y agentes individuales con categoría correcta (Real Estate Agency vs Real Estate Agent), atributos completos, posts semanales, gestión de reviews y respuesta a preguntas. En el map pack de queries locales el GBP optimizado es decisivo."
+      },
+      {
+        "question": "¿Implementas schema RealEstateListing y Place?",
+        "answer": "Sí, en todas las fichas y páginas de zona. RealEstateListing con price, floorSize, numberOfRooms, numberOfBathrooms, geo, image array y datePosted. Place schema para páginas de colonia con geo, amenityFeature y description rica. Esto habilita rich results y mejor performance en SERP."
+      },
+      {
+        "question": "¿Trabajas SEO para portales inmobiliarios verticales?",
+        "answer": "Sí. Portales verticales tienen retos de programmatic SEO masivo (decenas de miles de URLs), manejo de canibalización entre categorías y filtros, schema dinámico, y crawl budget. He llevado portales con &gt;50K URLs activas, optimizando arquitectura, faceted nav y schema a escala."
+      }
+    ],
+    "specificServices": [
+      "Programmatic SEO por zona, tipo y rango de precio",
+      "Implementación de schema RealEstateListing y Place",
+      "Manejo SEO de rotación de inventario (vendidas/disponibles)",
+      "Google Business Profile para inmobiliarias y agentes individuales",
+      "Contenido de mercado (reports de precios por zona) para link building",
+      "Hubs de zona con guía de colonia 600-1000 palabras",
+      "Auditoría SEO técnica para portales inmobiliarios verticales"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "SEO para hoteles",
+        "url": "/consultor-seo-hoteles/"
+      },
+      {
+        "anchor": "SEO para legal y notarías",
+        "url": "/consultor-seo-legal/"
+      },
+      {
+        "anchor": "consultor SEO México",
+        "url": "/consultor-seo-mexico/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "salud",
+    "industry": "Salud / Healthcare",
+    "title": "Consultor SEO Salud y Healthcare 2026 | José Gaspard",
+    "metaDescription": "Consultor SEO para clínicas, hospitales y healthcare en México. YMYL, E-E-A-T médico, MedicalOrganization schema, COFEPRIS-compliant. Desde $15K MXN.",
+    "h1": "Consultor SEO en salud que cumple YMYL y trae pacientes",
+    "tldr": "Soy José Gaspard, consultor SEO especializado en healthcare, una vertical YMYL (Your Money Your Life) donde Google exige E-E-A-T médico verificable. Trabajo con clínicas, hospitales, médicos especialistas y plataformas de telemedicina implementando schema MedicalOrganization, contenido firmado por profesionales con cédula y SEO local para captar pacientes en queries de alta intención. Cumplimiento COFEPRIS y normativa publicitaria en salud incluido.",
+    "intro": "<p>El SEO en salud es la vertical más castigada por Google si no se hace bien. Es YMYL puro: una página mal informada sobre síntomas, tratamientos o medicamentos puede causar daño real, y Google lo sabe — desde Medic Update 2018 y reforzado en December 2025 update, exige E-E-A-T verificable con autor médico cedulado, revisión profesional fechada, fuentes citadas y schema MedicalOrganization completo. Una clínica que publica blog posts firmados por \"el equipo médico\" o por marketing sin autor real está autoeliminándose del ranking, sin importar cuán bueno sea el SEO técnico. A esto se suma el reto regulatorio mexicano: COFEPRIS y la Ley General de Salud restringen lo que se puede prometer en publicidad sanitaria, lo cual limita el copy agresivo de marketing. Mi trabajo como consultor SEO en salud es resolver los tres frentes simultáneos: E-E-A-T médico real (autores con cédula, revisión por pares), SEO técnico (schema, performance, arquitectura), y SEO local hyper-local cuando hay sucursales o consultorios (map pack es decisivo en \"dentista cerca de mí\" o \"ginecóloga Polanco\").</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector salud",
+        "html": "<p>Cinco retos únicos en healthcare. <strong>Primero, YMYL y E-E-A-T extremo</strong>: Google evalúa páginas de salud con su raters guideline más estricto. Contenido sin autor médico cedulado, sin fecha de revisión y sin citas a fuentes científicas (OMS, NIH, Mayo Clinic, IMSS) no rankea sin importar el SEO técnico. <strong>Segundo, restricciones de COFEPRIS</strong>: no se pueden prometer resultados de tratamiento, usar testimoniales en ciertas categorías ni anunciar medicamentos controlados con keywords directos — esto restringe el copy y obliga a contenido educativo neutral. <strong>Tercero, competencia con sitios institucionales</strong>: Mayo Clinic, MedlinePlus, IMSS, OMS dominan queries informativas con autoridad masiva. Clínicas privadas no compiten ahí; compiten en queries locales (\"clínica X en CDMX\", \"especialista en Y cerca de mí\") y en queries de procedimiento + ubicación. <strong>Cuarto, SEO local con map pack decisivo</strong>: el 78% de búsquedas \"X cerca de mí\" en salud termina en una de las primeras 3 entradas del map pack — GBP optimizado pesa más que el sitio web. <strong>Quinto, schema MedicalOrganization, Physician y MedicalProcedure</strong>: la mayoría de clínicas no implementa correctamente, dejando rich results en la mesa.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para salud",
+        "html": "<p>Cuatro KPIs atados a citas reales. <strong>(1) Citas agendadas desde orgánico</strong>: medidas con tracking de formulario, llamadas tracked (call tracking number) y bookings en plataformas tipo Doctoralia, integrados a un dashboard único. <strong>(2) CPL orgánico vs Google Ads</strong>: en salud, Google Ads en queries de alta intención cuesta $150-450 MXN por clic; orgánico bien hecho lleva CPL a $80-180 MXN. <strong>(3) Posicionamiento en map pack</strong>: % de queries locales objetivo donde la clínica aparece en top 3 del map pack — meta &gt;65% en 6 meses. <strong>(4) Cobertura de queries procedimiento + ubicación</strong>: rankings top 10 para \"procedimiento X en colonia Y\" — meta &gt;50% del set objetivo en 9 meses. Trackeo además share of voice en AI Overviews para queries informativas de salud — la presencia ahí, aunque no genere clic, construye autoridad de marca verificable.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para salud",
+        "html": "<p>Cuatro fases con énfasis en cumplimiento. <strong>Fase 1 (mes 1) — Auditoría YMYL y compliance</strong>: revisión de todo el contenido existente contra checklist E-E-A-T (autor médico, revisión fechada, fuentes citadas), auditoría legal de copy contra COFEPRIS, identificación de páginas que están dañando ranking por baja calidad y deben ser podadas o reescritas. <strong>Fase 2 (mes 2-3) — Schema y arquitectura</strong>: implementación de MedicalOrganization, Physician (uno por médico del equipo), MedicalProcedure por procedimiento ofrecido, MedicalCondition cuando aplica, FAQPage con preguntas reales de pacientes. Arquitectura con hubs por especialidad, ubicación y procedimiento. <strong>Fase 3 (mes 4-6) — Content E-E-A-T y SEO local</strong>: contenido firmado por médicos del equipo con bio, cédula, foto y enlace a perfil profesional. Optimización de Google Business Profile por sucursal, posts semanales, gestión de reviews y respuesta a preguntas. <strong>Fase 4 (mes 7+) — Autoridad y AI search</strong>: link building con medios de salud, asociaciones médicas y universidades. Optimización para AI Overviews y citaciones en herramientas de IA usadas por pacientes (Perplexity, ChatGPT).</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en salud",
+        "html": "<p><strong>Caso 1 — Clínica de fertilidad con 2 sucursales en CDMX</strong>: llegó con 1,200 sesiones orgánicas/mes y solo 8 citas/mes desde orgánico. Reescribí 34 páginas con autor médico real (3 especialistas con cédula), implementé MedicalOrganization + Physician + MedicalProcedure schema, creé hub de tratamientos (FIV, ICSI, ovodonación) con FAQ por tratamiento y optimicé GBP de ambas sucursales con 80+ reviews verificadas. <strong>Resultado a 10 meses: 18,400 sesiones orgánicas/mes, 94 citas/mes desde orgánico, CPL orgánico $96 MXN vs $380 MXN de Google Ads</strong>. <strong>Caso 2 — Hospital privado en Guadalajara (multi-especialidad)</strong>: arquitectura caótica con 1,400 URLs sin autor, contenido scrapeado de Mayo Clinic. Hice poda quirúrgica (eliminé 620 URLs sin valor), reescribí 180 páginas con médicos del staff hospitalario como autores, implementé Hospital schema con departamentos y procedure schema por servicio. <strong>Resultado a 12 meses: URLs indexadas bajaron pero tráfico orgánico +89%, citas agendadas desde web +156%, presencia en AI Overviews para 22 queries informativas de salud</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en salud que cuestan pacientes",
+        "html": "<p>Cinco errores que veo en cada auditoría. <strong>(1) Contenido sin autor médico</strong>: posts firmados por \"Marketing\" o sin bio — penalización YMYL automática, no hay SEO técnico que lo arregle. <strong>(2) Copy con promesas de resultados</strong>: \"garantizamos cura\", \"100% efectivo\" — además de violar COFEPRIS, Google detecta y degrada como contenido de baja calidad. <strong>(3) Páginas de procedimiento thin</strong>: \"Realizamos FIV — agenda tu cita\" sin explicar el procedimiento, riesgos, expectativas. Sin contenido educativo no hay ranking. <strong>(4) Google Business Profile descuidado</strong>: sin posts, sin respuesta a reviews negativas, sin fotos actualizadas — en salud el GBP es 50% del SEO local. <strong>(5) Plagio de contenido institucional</strong>: copiar definiciones de Mayo Clinic o IMSS — Google detecta y la página queda eliminada del index efectivo.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO en dar resultados en healthcare?",
+        "answer": "En SEO local con map pack los primeros movimientos se ven en 8-12 semanas. En contenido YMYL informativo el horizonte es 6-9 meses por la exigencia de E-E-A-T y la competencia institucional. Cita agendada como KPI consolidado típicamente desde mes 5-7."
+      },
+      {
+        "question": "¿Necesito autores médicos con cédula para que el SEO funcione?",
+        "answer": "Sí, no es negociable en YMYL desde 2018 y reforzado en diciembre 2025. Cada artículo de salud debe estar firmado por un profesional con cédula visible, bio completa, foto y enlace a perfil verificable. Sin esto, contenido excelente puede no rankear sin importar la inversión técnica."
+      },
+      {
+        "question": "¿Cómo manejas el cumplimiento COFEPRIS en el SEO?",
+        "answer": "Auditoría legal del copy contra normativa publicitaria en salud (Reglamento de la LGS en materia de Publicidad). Eliminamos promesas, garantías y testimoniales restringidos. Contenido educativo neutral con base en evidencia. Si la clínica tiene legal interno, trabajo en conjunto; si no, refiero a especialista."
+      },
+      {
+        "question": "¿Optimizas Google Business Profile para clínicas con múltiples sucursales?",
+        "answer": "Sí, GBP por sucursal con categoría correcta, atributos completos, posts semanales, gestión activa de reviews (respuesta a las negativas también), Q&A pobladas con preguntas reales, fotos actualizadas y servicios listados. En salud el map pack es decisivo y bien gestionado triplica leads de sucursal."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO en healthcare en México?",
+        "answer": "Starter $15,000 MXN/mes (consultorio individual o clínica pequeña con una sucursal), Growth $35,000 MXN/mes (clínica con 2-5 sucursales o especialidad de alta competencia), Enterprise $75,000 MXN/mes (hospital privado, red de clínicas o plataforma de telemedicina). Mínimo 6 meses."
+      },
+      {
+        "question": "¿Implementas schema MedicalOrganization, Physician y MedicalProcedure?",
+        "answer": "Sí, los tres son base del scope. MedicalOrganization para la clínica/hospital, Physician para cada médico del equipo con sameAs a perfiles profesionales, MedicalProcedure para cada procedimiento ofrecido con howPerformed, preparation y followup. Esto habilita rich results y mejora E-E-A-T señalado."
+      },
+      {
+        "question": "¿Trabajas con plataformas de telemedicina además de clínicas físicas?",
+        "answer": "Sí, plataformas tipo Doctoralia, Doctop y plataformas propias. Retos distintos: programmatic SEO por especialidad + ubicación, schema Physician masivo, manejo de perfiles médicos individuales, y autoridad del marketplace vs autoridad del médico individual."
+      },
+      {
+        "question": "¿Optimizas para AI Overviews en queries de salud?",
+        "answer": "Sí, con cautela. Las citaciones en AI Overviews para queries de salud requieren contenido extremadamente bien fuenteado, fechas de revisión recientes, y autoridad de dominio. Optimizamos llms.txt, schema Article con dateModified, passage-level citability y monitoreamos presencia en Perplexity y ChatGPT."
+      }
+    ],
+    "specificServices": [
+      "E-E-A-T médico con autores cedulados y bio verificable",
+      "Schema MedicalOrganization, Physician y MedicalProcedure",
+      "Auditoría de cumplimiento COFEPRIS en copy publicitario",
+      "SEO local y Google Business Profile por sucursal",
+      "Content marketing educativo con citas a fuentes científicas",
+      "Gestión de reviews y reputación online médica",
+      "Optimización para AI Overviews en queries de salud"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "SEO para dentistas y clínicas dentales",
+        "url": "/consultor-seo-dentistas/"
+      },
+      {
+        "anchor": "SEO para clínicas estéticas",
+        "url": "/consultor-seo-clinicas-esteticas/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "SEO para bufetes legales",
+        "url": "/consultor-seo-legal/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "legal",
+    "industry": "Bufetes / Abogados",
+    "title": "Consultor SEO para Abogados y Bufetes 2026 | José Gaspard",
+    "metaDescription": "Consultor SEO para bufetes y abogados en México. YMYL legal, E-E-A-T con cédula, schema LegalService, intent de alta conversión. Desde $15K MXN.",
+    "h1": "Consultor SEO para bufetes que trae casos calificados",
+    "tldr": "Soy José Gaspard, consultor SEO con experiencia en bufetes y abogados independientes en México. El SEO legal es YMYL, exige E-E-A-T verificable con cédula profesional, y compite en queries de altísima intención y CPC. Trabajo schema LegalService, contenido firmado por abogados con cédula, SEO local por área de práctica y ubicación, y captación de casos calificados con CPL 5-10x menor que Google Ads.",
+    "intro": "<p>El SEO para abogados en México es uno de los nichos más rentables y más castigados por Google a la vez. Es YMYL — un mal consejo legal puede costarle la libertad o el patrimonio a una persona, y Google evalúa estos sitios con su raters guideline más estricto. Necesita autoría verificable (cédula profesional visible, bio del abogado, área de especialidad), revisión fechada del contenido y citas a leyes y jurisprudencia, no a blogs aleatorios. Al mismo tiempo, las queries legales tienen CPC altísimo en Google Ads ($80-450 MXN por clic para queries de \"abogado divorcio CDMX\" o \"abogado penal urgente\"), lo que hace al SEO orgánico extraordinariamente rentable cuando se hace bien. El reto es triple: cumplir con E-E-A-T legal, competir contra portales tipo Justia y Lex Latin, y dominar el SEO local porque la mayoría de búsquedas legales tienen intención hyper-local (\"abogado laboralista en Polanco\", \"notario en Coyoacán\"). Mi trabajo como consultor SEO para bufetes es resolver los tres frentes y construir un funnel orgánico que reemplace o complemente al gasto en Google Ads. <a href=\"/consultor-seo-cdmx/\">Trabajo con bufetes CDMX</a> y firmas nacionales.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector legal",
+        "html": "<p>Cinco retos definen el SEO legal. <strong>Primero, YMYL legal y E-E-A-T</strong>: cada artículo de blog o página de servicio debe estar firmado por un abogado con cédula profesional visible, bio con áreas de práctica, foto, y revisión fechada. Sin esto, no hay ranking sostenible. <strong>Segundo, intent y CPC altísimo</strong>: queries como \"abogado divorcio\", \"defensa penal\", \"despido injustificado\" tienen CPC de $80-450 MXN en Ads — orgánico bien posicionado vale oro. <strong>Tercero, SEO hyper-local por área de práctica</strong>: la búsqueda típica es \"abogado [especialidad] en [ubicación]\", lo que multiplica el set de keywords objetivo (10 especialidades × 30 ubicaciones = 300 páginas locales con intención de contratar). <strong>Cuarto, competencia con portales y directorios</strong>: Justia, Lexlatin, Mil Abogados copan SERP en queries genéricas; el bufete compite en long-tail local + autoridad de marca. <strong>Quinto, schema LegalService y Attorney</strong>: la mayoría de bufetes no implementa, dejando rich results y mejor señalización E-E-A-T sin aprovechar.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para bufetes",
+        "html": "<p>Cuatro KPIs atados a casos. <strong>(1) Casos calificados orgánicos</strong>: definidos por el bufete (formulario con tipo de caso, presupuesto y urgencia), trackeados en CRM. <strong>(2) CPL orgánico vs Google Ads</strong>: en legal, ratios típicos son 6-10x menos costoso orgánico. Un caso de divorcio que cuesta $1,800 MXN de Ads cuesta $180-250 MXN orgánico. <strong>(3) Cobertura de queries hyper-locales</strong>: top 10 para \"abogado [especialidad] en [ubicación]\" — meta &gt;55% del set objetivo en 9 meses. <strong>(4) Map pack penetration</strong>: % de queries locales donde el bufete aparece en top 3 del map pack — meta &gt;60% en 6 meses. Trackeo también E-E-A-T health: % de páginas con autor cedulado visible y fecha de revisión actualizada — meta 100%. Reporto mensual con dashboard que conecta GSC, GA4, call tracking y CRM.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para bufetes",
+        "html": "<p>Tres fases. <strong>Fase 1 (mes 1) — Auditoría YMYL y arquitectura</strong>: inventario de contenido existente, auditoría de E-E-A-T por URL, identificación de páginas sin autor que están dañando autoridad. Diseño de arquitectura por especialidad × ubicación, mapping de URLs. <strong>Fase 2 (mes 2-4) — Build de páginas legales</strong>: creación de páginas por especialidad (laboral, familiar, penal, mercantil, fiscal, migratorio, amparo, etc.) con contenido educativo de 800-1500 palabras firmado por abogado del bufete, schema LegalService + FAQ. Páginas hyper-locales (especialidad + ubicación) para queries de captación. Hub de \"qué hacer si...\" con guías paso a paso. <strong>Fase 3 (mes 5+) — SEO local y autoridad</strong>: GBP del bufete (y de socios individuales si aplica), reviews verificadas, posts semanales con contenido legal de actualidad. Link building con medios de noticias jurídicas, colegios de abogados, universidades de derecho, y guest posts en blogs legales reconocidos.</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en legal",
+        "html": "<p><strong>Caso 1 — Bufete familia/laboral con 4 abogados en CDMX</strong>: tenían sitio con 600 sesiones orgánicas/mes, 3 leads/mes, gastaban $48K MXN/mes en Google Ads. Construí 18 páginas de especialidad + 24 páginas hyper-locales (4 especialidades × 6 colonias target), todo firmado por abogados del bufete con cédula visible, schema LegalService + Attorney, GBP optimizado, 60 reviews verificadas. <strong>Resultado a 9 meses: 9,800 sesiones orgánicas/mes, 47 casos calificados/mes desde orgánico, redujimos gasto en Ads en 60% manteniendo volumen total de leads</strong>. <strong>Caso 2 — Bufete penal-corporativo grande, 22 abogados, sucursales CDMX/Monterrey/Guadalajara</strong>: arquitectura caótica, contenido sin autor, canibalización entre socios. Hice consolidación con 301, reescribí 90 páginas con autoría real, implementé Person schema para cada abogado con sameAs a perfiles profesionales, hub de jurisprudencia con guías de procesos. <strong>Resultado a 12 meses: tráfico orgánico +112%, leads calificados +178%, 2 casos high-ticket (&gt;$2M MXN honorarios) atribuidos a orgánico</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en bufetes que cuestan casos",
+        "html": "<p>Cinco errores típicos. <strong>(1) Contenido sin autor abogado con cédula</strong>: posts firmados por \"Equipo Legal\" o sin bio — penalización YMYL inmediata. <strong>(2) Páginas de servicio thin</strong>: \"Servicios de divorcio — contáctanos\" sin contenido educativo, sin proceso explicado, sin FAQ. Google no rankea, usuarios rebotan. <strong>(3) Promesas de resultados</strong>: \"ganamos el 99% de casos\" — además de problemático ético/regulatorio, Google detecta como contenido de baja calidad. <strong>(4) GBP descuidado o sin atributos legales</strong>: sin posts de cambios legislativos, sin respuesta a reviews, sin categoría correcta (Law Firm o Notary Public según aplique). <strong>(5) Contenido scrapeado o reescrito de leyes oficiales sin valor añadido</strong>: copiar artículos de la LFT o el CCDF sin explicación práctica — Google detecta como contenido sin valor único.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO legal en dar resultados?",
+        "answer": "Primeras señales en GSC a las 8-12 semanas con quickwins de SEO local y schema. Casos calificados orgánicos consolidados desde mes 5-6. Reducción de dependencia de Google Ads típicamente desde mes 7-9. En firmas establecidas con autoridad de dominio, los resultados son más rápidos."
+      },
+      {
+        "question": "¿Cada artículo debe estar firmado por un abogado con cédula?",
+        "answer": "Sí, no es opcional en YMYL legal. Cédula profesional visible, bio con áreas de práctica, foto, fecha de revisión y enlace a perfil verificable. Esto aplica a páginas de servicio y a blog posts. Sin autoría real no hay ranking sostenible sin importar inversión técnica."
+      },
+      {
+        "question": "¿Compito contra portales legales como Justia o Lexlatin?",
+        "answer": "En queries genéricas ganan ellos por autoridad de dominio masiva. Compito en long-tail hyper-local (especialidad + ubicación), en contenido de \"qué hacer si...\" con guías prácticas, y en SEO local con GBP donde los portales no tienen presencia física. Es donde el bufete gana casos reales."
+      },
+      {
+        "question": "¿Trabajas con abogados independientes o solo bufetes?",
+        "answer": "Ambos. Con abogados independientes el foco es Person/Attorney schema, GBP personal, contenido especializado en su área y SEO local agresivo en su colonia/ciudad. Con bufetes es arquitectura multi-socio, hubs por especialidad y autoridad institucional."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO para abogados en México?",
+        "answer": "Starter $15,000 MXN/mes (abogado independiente o bufete pequeño con 1-3 especialidades), Growth $35,000 MXN/mes (bufete con 5+ especialidades o multi-sucursal), Enterprise $75,000 MXN/mes (firma grande multi-ciudad, portales legales o legaltech). Contratos mínimo 6 meses."
+      },
+      {
+        "question": "¿Implementas schema LegalService y Attorney?",
+        "answer": "Sí, base del scope. LegalService por área de práctica con serviceType, areaServed y provider. Attorney/Person para cada abogado con bar (cédula), areaOfLaw, sameAs y memberOf (colegios profesionales). LocalBusiness/Lawyer para el bufete. Esto habilita rich results y mejora señalización E-E-A-T."
+      },
+      {
+        "question": "¿Manejas reputación online y reviews para bufetes?",
+        "answer": "Sí, gestión de reviews en GBP, respuesta profesional a negativas (sin violar secreto profesional), generación de reviews verificadas de clientes, y monitoreo de menciones en directorios legales y foros. En legal una review negativa mal manejada puede costar varios casos."
+      },
+      {
+        "question": "¿Optimizas para AI Overviews en queries legales?",
+        "answer": "Sí, con énfasis en passage-level citability: secciones de \"qué hacer si...\" estructuradas, listas paso a paso, citas a artículos de ley con número, fechas de revisión actualizadas. Las firmas que aparecen en AI Overviews para queries legales construyen autoridad de marca y son consultadas más por leads informados."
+      }
+    ],
+    "specificServices": [
+      "E-E-A-T legal con autores cedulados y bio verificable",
+      "Schema LegalService, Attorney y LocalBusiness/Lawyer",
+      "Programmatic SEO por especialidad × ubicación",
+      "SEO local y Google Business Profile para bufetes y socios",
+      "Hub de guías prácticas \"qué hacer si...\" para captación",
+      "Link building con medios jurídicos y colegios de abogados",
+      "Gestión de reviews y reputación online legal"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "SEO en healthcare YMYL",
+        "url": "/consultor-seo-salud/"
+      },
+      {
+        "anchor": "SEO para fintech regulada",
+        "url": "/consultor-seo-fintech/"
+      },
+      {
+        "anchor": "SEO inmobiliario",
+        "url": "/consultor-seo-inmobiliario/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "restaurantes",
+    "industry": "Restaurantes",
+    "title": "Consultor SEO Restaurantes 2026 — Reservas Reales | José Gaspard",
+    "metaDescription": "Consultor SEO para restaurantes en México. Map pack, schema Restaurant + Menu, integración OpenTable y reservas orgánicas. CDMX, +200 proyectos.",
+    "h1": "Consultor SEO para restaurantes que llena mesas reales",
+    "tldr": "Soy José Gaspard, consultor SEO especializado en restaurantes y cadenas gastronómicas en México. En restaurantes el SEO se gana o se pierde en Google Business Profile y el map pack: 70% de búsquedas \"restaurante cerca de mí\" terminan ahí. Trabajo schema Restaurant + Menu + Review, integración con plataformas de reserva (OpenTable, ResY), optimización de fotos para Google Maps y gestión de reviews. Desde $15,000 MXN al mes.",
+    "intro": "<p>El SEO para restaurantes es un juego dominado por dos cosas: Google Business Profile (GBP) y plataformas como TripAdvisor, OpenTable, Resy y Yelp. La búsqueda típica del comensal — \"restaurantes en Polanco\", \"sushi cerca de mí\", \"brunch Roma Norte\" — termina en el map pack y la lista de Maps, no en una página web independiente. Esto cambia la prioridad del SEO completamente: el sitio web del restaurante importa, pero el GBP optimizado importa más. El restaurante que invierte 100% en su sitio web sin tocar GBP está dejando 70% del tráfico orgánico en la mesa. Al mismo tiempo, restaurantes con varias sucursales tienen retos adicionales: GBP por ubicación, páginas de sucursal sin canibalización, manejo de menús variantes y reservas centralizadas. Mi trabajo como consultor SEO para restaurantes es resolver el map pack primero, integrar reservas orgánicas con el sitio, y construir contenido evergreen tipo \"mejores X en [ciudad]\" que capture tráfico de descubrimiento. <a href=\"/consultor-seo-cdmx/\">Trabajo con restaurantes CDMX</a> y cadenas nacionales.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector restaurantes",
+        "html": "<p>Cinco retos definen el SEO en restaurantes. <strong>Primero, map pack como canal principal</strong>: 70% de búsquedas locales de restaurantes terminan en el map pack de Google Maps; el sitio web es secundario. GBP optimizado pesa más que cualquier blog post. <strong>Segundo, competencia con plataformas verticales</strong>: TripAdvisor, OpenTable, Yelp, Google Reviews ocupan los primeros resultados para \"mejores X en [zona]\". El restaurante compite con su propio sitio en queries específicas de marca + ubicación. <strong>Tercero, schema Restaurant + Menu + Review</strong>: la mayoría de restaurantes no implementa, perdiendo rich results con precios, fotos, ratings y horarios en SERP. <strong>Cuarto, multi-sucursal con páginas de ubicación</strong>: cadenas con 5+ sucursales sin páginas dedicadas pierden tráfico hyper-local; con páginas duplicadas (copy-paste de menú) canibalizan entre sí. <strong>Quinto, fotos como ranking factor en GBP</strong>: el algoritmo del map pack pondera fuertemente cantidad y calidad de fotos (del restaurante + de los usuarios), frecuencia de subida y diversidad (interior, platillos, fachada). Restaurantes con 20 fotos profesionales rankean 30-40% mejor que los que tienen 5 fotos antiguas.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para restaurantes",
+        "html": "<p>Cuatro KPIs atados a reservas y visitas. <strong>(1) Acciones desde GBP</strong>: llamadas, solicitudes de ruta, clics al sitio y reservas (si está integrado) — todos trackeados en GBP Insights. Meta es duplicar acciones totales en 6 meses. <strong>(2) Reservas orgánicas atribuidas</strong>: a través de OpenTable/Resy con UTM o llamadas con call tracking. <strong>(3) Posicionamiento en map pack</strong>: % de queries locales objetivo donde el restaurante aparece en top 3 — meta &gt;70% en 4 meses. <strong>(4) Mentions y reviews</strong>: número y rating promedio de reviews en GBP (meta &gt;4.4 con &gt;200 reviews) + menciones en blogs y medios gastronómicos (señal de autoridad). Trackeo además visitas físicas con Google Insights cuando el cliente tiene mediciones de footfall (algunos POS modernos integran tracking). Reporto mensual con dashboard GBP + GA4.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para restaurantes",
+        "html": "<p>Tres fases. <strong>Fase 1 (mes 1) — GBP y map pack first</strong>: auditoría y optimización completa de Google Business Profile (categoría primaria correcta — Mexican Restaurant, Sushi Restaurant, etc.), atributos completos (dine-in, takeout, delivery, vegan options, parking), 30+ fotos profesionales en categorías (interior, exterior, platillos, equipo), posts semanales con eventos y menús especiales, gestión activa de reviews, Q&A pobladas con preguntas reales. <strong>Fase 2 (mes 2-3) — Sitio web y schema</strong>: implementación de Restaurant schema con menu (Menu + MenuSection + MenuItem con precios), Review, OpeningHoursSpecification, y AcceptsReservations. Páginas por sucursal en cadenas, sin canibalización. Integración con plataforma de reservas (OpenTable, Resy, Mesa247). <strong>Fase 3 (mes 4+) — Content y autoridad</strong>: contenido evergreen tipo \"mejores tacos al pastor en [colonia]\", guías de zona, posts de eventos especiales (San Valentín, Día de Muertos, posadas) que capturan tráfico estacional alto. Link building con blogs gastronómicos, medios locales y guías tipo Time Out, Chilango.</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en restaurantes",
+        "html": "<p><strong>Caso 1 — Restaurante de cocina de autor en Polanco (single location)</strong>: GBP desatendido (categoría incorrecta, 8 fotos antiguas, sin posts, 24 reviews con 3.9 promedio). Reseteo completo de GBP: categoría correcta, atributos, 60 fotos profesionales, posts semanales, campaña de generación de reviews verificadas. Schema Restaurant + Menu en sitio. <strong>Resultado a 5 meses: acciones GBP de 280 a 1,840/mes, reservas atribuidas a orgánico de 12 a 89/mes, rating subió a 4.6 con 187 reviews</strong>. <strong>Caso 2 — Cadena de cafeterías con 12 sucursales en CDMX</strong>: páginas de sucursal duplicadas (copy-paste), GBPs sin gestión central, canibalización entre ubicaciones. Construí páginas únicas por sucursal con contenido hyper-local (entorno, transporte, especialidades por ubicación), Restaurant schema por sucursal, GBP optimizado en las 12 con calendar de posts centralizado. <strong>Resultado a 8 meses: tráfico orgánico +132%, acciones GBP totales +210%, ticket promedio +14% por mejor match de cliente</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en restaurantes que cuestan reservas",
+        "html": "<p>Cinco errores recurrentes. <strong>(1) GBP descuidado o sin gestión</strong>: categoría incorrecta, sin posts, sin respuesta a reviews, fotos antiguas — pierdes el 70% del tráfico orgánico de restaurantes. <strong>(2) Sin schema Restaurant + Menu</strong>: pierdes rich results con precios, fotos y horarios que aumentan CTR significativamente. <strong>(3) Páginas de sucursal duplicadas</strong>: copy-paste del mismo texto en 8 ubicaciones — canibalización y degradación de autoridad. <strong>(4) Menú solo en PDF descargable</strong>: Google no rankea contenido en PDFs efectivamente; menú debe estar en HTML con MenuItem schema. <strong>(5) No generación activa de reviews</strong>: 4.2 con 23 reviews vs 4.5 con 200 reviews — el segundo restaurante aparece más arriba en map pack independientemente del SEO del sitio.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO en restaurantes en dar resultados?",
+        "answer": "El map pack puede mejorar significativamente en 4-8 semanas con optimización agresiva de GBP. Reservas orgánicas consolidadas desde mes 3-4. Posicionamiento en queries de descubrimiento (\"mejores X en [zona]\") con contenido evergreen toma 6-9 meses. Es uno de los verticales más rápidos en mostrar ROI."
+      },
+      {
+        "question": "¿El sitio web del restaurante importa o solo Google Business Profile?",
+        "answer": "Ambos, en orden: GBP primero (70% del tráfico orgánico viene de ahí), sitio web después. El sitio web sirve para autoridad de marca, schema Restaurant + Menu, integración de reservas, contenido evergreen tipo \"mejores X\" y para queries de marca. Sin sitio web bien hecho, GBP no alcanza su potencial."
+      },
+      {
+        "question": "¿Cómo manejas el SEO para restaurantes con varias sucursales?",
+        "answer": "Una página dedicada por sucursal con contenido único (entorno, especialidades, eventos locales), Restaurant schema por sucursal con su geo y address, GBP por ubicación gestionado de forma centralizada pero con personalización local (posts, fotos del staff local). Nunca copy-paste de menú entre páginas."
+      },
+      {
+        "question": "¿Generas reviews verificadas para Google Business Profile?",
+        "answer": "Sí, con estrategia compliant: QR en mesa con enlace directo al review form, follow-up post-visita por SMS o email a comensales que dejaron sus datos en la reserva, training al staff para invitar al review al final del servicio. Nunca compra de reviews — Google detecta y suspende GBP."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO para restaurantes en México?",
+        "answer": "Starter $15,000 MXN/mes (single location o restaurante boutique), Growth $35,000 MXN/mes (cadena con 3-8 sucursales), Enterprise $75,000 MXN/mes (cadena nacional 15+ sucursales o grupo gastronómico). Mínimo 6 meses."
+      },
+      {
+        "question": "¿Integras plataformas de reserva tipo OpenTable o Resy?",
+        "answer": "Sí. Configuro Reserve with Google si está disponible, integro botones de reserva en GBP y sitio, schema AcceptsReservations + potentialAction Reservation, y tracking de reservas atribuidas a orgánico con UTM en links de OpenTable/Resy. En México también trabajo con Mesa247 y plataformas locales."
+      },
+      {
+        "question": "¿Optimizas fotos para Google Maps y GBP?",
+        "answer": "Sí, las fotos son ranking factor crítico en map pack. Auditoría de fotos existentes (cantidad, calidad, categorías cubiertas), brief para fotógrafo profesional o sesión guiada con celular bien iluminado, upload con categorización correcta (interior, exterior, food, team), calendarización de uploads semanales para mantener actividad."
+      },
+      {
+        "question": "¿Trabajas SEO para dark kitchens y restaurantes solo de delivery?",
+        "answer": "Sí, con approach distinto. Dark kitchens no tienen map pack porque no son sitio físico de consumo, así que se compite en queries de delivery (\"pizza delivery [zona]\"), en plataformas (Rappi, Uber Eats, Didi Food) con SEO interno de la app, y en sitio web propio con schema FoodService y zona de cobertura."
+      }
+    ],
+    "specificServices": [
+      "Optimización agresiva de Google Business Profile",
+      "Schema Restaurant + Menu + MenuItem con precios",
+      "Páginas únicas por sucursal en cadenas (sin canibalización)",
+      "Integración de reservas (OpenTable, Resy, Reserve with Google)",
+      "Generación de reviews verificadas compliant",
+      "Content evergreen tipo \"mejores X en [zona]\"",
+      "Gestión de fotos profesionales para Maps y GBP"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "SEO para hoteles",
+        "url": "/consultor-seo-hoteles/"
+      },
+      {
+        "anchor": "SEO para clínicas dentales",
+        "url": "/consultor-seo-dentistas/"
+      },
+      {
+        "anchor": "SEO para eCommerce",
+        "url": "/consultor-seo-ecommerce/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "dentistas",
+    "industry": "Dentistas / Clínicas dentales",
+    "title": "Consultor SEO Dentistas y Clínicas 2026 | José Gaspard",
+    "metaDescription": "Consultor SEO para dentistas y clínicas dentales en México. SEO local, map pack, schema Dentist, reviews y captación de pacientes. Desde $15K MXN.",
+    "h1": "Consultor SEO para dentistas que llena la agenda",
+    "tldr": "Soy José Gaspard, consultor SEO especializado en dentistas, ortodoncistas y clínicas dentales en México. En odontología el SEO se gana en el map pack y en queries hyper-locales tipo \"dentista cerca de mí\" o \"ortodoncia invisible Polanco\". Trabajo schema Dentist + MedicalProcedure, GBP optimizado con reviews verificadas y contenido por tratamiento. Desde $15,000 MXN al mes con KPI atado a citas reales agendadas.",
+    "intro": "<p>El SEO para dentistas es uno de los verticales con mayor ROI orgánico en healthcare, pero también uno de los más competidos en queries locales. La búsqueda típica del paciente — \"dentista cerca de mí\", \"ortodoncista en [colonia]\", \"limpieza dental económica [ciudad]\" — es 90% local con altísima intención (8 de cada 10 búsquedas resultan en una llamada o visita en 7 días). El map pack de Google Maps determina la mayor parte del tráfico orgánico, y dentro del map pack el ranking depende de cuatro factores: proximidad al usuario, relevancia de categoría en GBP, autoridad (reviews, antigüedad del perfil, menciones) y engagement (clics, llamadas, rutas). Una clínica que descuida GBP pierde antes de competir. A esto súmale que odontología es YMYL — exige autores con cédula profesional, schema Dentist correcto y contenido educativo de calidad por cada tratamiento. Mi trabajo como consultor SEO para dentistas es resolver el GBP primero, construir contenido por tratamiento con E-E-A-T real y atacar queries hyper-locales por colonia y especialidad odontológica.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector dental",
+        "html": "<p>Cinco retos específicos. <strong>Primero, map pack hyper-competido</strong>: en CDMX, Monterrey y Guadalajara hay clínicas dentales cada 3 cuadras compitiendo por el mismo radio de 2 km — GBP optimizado y reviews verificadas son decisivos. <strong>Segundo, YMYL odontológico</strong>: cada página de tratamiento debe estar firmada por dentista con cédula visible (CDP nacional o estatal), bio profesional, fotos del consultorio, fecha de revisión. <strong>Tercero, schema Dentist y MedicalProcedure</strong>: la mayoría de clínicas no implementa, dejando rich results y mejor señalización profesional sin aprovechar. <strong>Cuarto, contenido por tratamiento</strong>: las queries que convierten son específicas (\"implante dental costo CDMX\", \"ortodoncia invisible adultos Polanco\", \"blanqueamiento dental cuánto cuesta\") — sin página dedicada por tratamiento con FAQ y precios orientativos, no rankeas. <strong>Quinto, reviews y reputación</strong>: en odontología las reviews pesan más que en otros healthcare porque el paciente tiene miedo (especialmente niños y procedimientos dolorosos) — una clínica con 4.6 / 200 reviews captura el doble de leads que una con 4.2 / 40 reviews aunque el SEO técnico sea idéntico.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para dentistas",
+        "html": "<p>Cuatro KPIs atados a citas. <strong>(1) Citas agendadas desde orgánico</strong>: medidas con tracking de formulario, llamadas tracked y WhatsApp (con número específico para orgánico). <strong>(2) Acciones desde GBP</strong>: llamadas, rutas, clics al sitio — meta duplicar en 5 meses. <strong>(3) Posicionamiento en map pack</strong>: % de queries locales objetivo donde la clínica aparece en top 3 — meta &gt;70% en 4-6 meses. <strong>(4) Cobertura de queries de tratamiento</strong>: top 10 para \"tratamiento + ubicación\" (ortodoncia + colonia, implantes + ciudad, blanqueamiento + zona) — meta &gt;55% del set objetivo en 9 meses. Trackeo además rating promedio (meta &gt;4.4) y velocidad de generación de reviews (meta 8-15/mes para clínica activa). Reporto mensual con dashboard GBP Insights + GA4 + call tracking.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para dentistas",
+        "html": "<p>Tres fases con foco local. <strong>Fase 1 (mes 1) — GBP y map pack</strong>: optimización completa de Google Business Profile (categoría correcta — Dentist, Orthodontist, Pediatric Dentist según especialidad principal; categorías secundarias para otras), atributos completos, 30+ fotos profesionales (fachada, recepción, consultorio, equipo, antes/después con consentimiento), posts semanales con tips, gestión de reviews, Q&A pobladas. Sistema de generación de reviews verificadas (QR en sala de espera con link directo, follow-up por WhatsApp post-cita). <strong>Fase 2 (mes 2-4) — Schema y contenido por tratamiento</strong>: implementación de Dentist schema + MedicalProcedure por cada tratamiento + Physician para cada dentista del equipo con cédula. Páginas por tratamiento con contenido educativo de 600-1000 palabras firmado por dentista, FAQ por tratamiento, fotos antes/después con consentimiento, rangos de precio orientativos. <strong>Fase 3 (mes 5+) — Hyper-local y autoridad</strong>: páginas por colonia/zona (\"dentista en [colonia]\"), link building con blogs de salud y wellness, asociaciones odontológicas (CDP), y contenido para AI Overviews en queries informativas de odontología.</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en dental",
+        "html": "<p><strong>Caso 1 — Clínica dental boutique en Condesa, 3 dentistas</strong>: GBP descuidado (15 reviews, 4.1 promedio), sitio sin schema, sin páginas por tratamiento. Reseteo de GBP con 60 fotos profesionales y campaña de generación de reviews verificadas (QR en sala de espera + WhatsApp follow-up), construí 14 páginas por tratamiento firmadas por dentistas del equipo con cédula visible, schema Dentist + MedicalProcedure. <strong>Resultado a 6 meses: 145 reviews con 4.7 promedio, acciones GBP de 320 a 2,100/mes, citas orgánicas de 9 a 73/mes</strong>. <strong>Caso 2 — Red de clínicas dentales con 8 sucursales en zona metropolitana Monterrey</strong>: GBPs desatendidos en 5 de 8 sucursales, páginas de sucursal duplicadas. Optimización centralizada con personalización por sucursal, schema Dentist por ubicación, páginas únicas con dentistas del staff local, hub de tratamientos. <strong>Resultado a 9 meses: acciones GBP totales +245%, citas orgánicas totales +178%, costo de adquisición de paciente nuevo bajó de $620 a $185 MXN</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en dentistas que cuestan pacientes",
+        "html": "<p>Cinco errores típicos. <strong>(1) GBP sin gestión activa</strong>: categoría genérica, pocas fotos, reviews sin respuesta — pierdes el map pack. <strong>(2) Sin páginas por tratamiento</strong>: home con bloque de \"servicios\" listando 20 tratamientos sin página dedicada — no rankeas en queries de tratamiento + ubicación que son las que convierten. <strong>(3) Contenido sin autor dentista con cédula</strong>: penalización YMYL automática. <strong>(4) Fotos genéricas o stock</strong>: pacientes desconfían y CTR baja; fotos del consultorio real, del equipo y de procedimientos (con consentimiento) convierten 3-5x más. <strong>(5) Sin generación activa de reviews</strong>: una clínica con 4.5 / 200 reviews aparece arriba de una con 4.7 / 30 reviews en map pack porque el volumen de reviews es ranking factor.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO dental en dar resultados?",
+        "answer": "Map pack puede mejorar en 6-10 semanas con optimización agresiva de GBP. Citas orgánicas consolidadas desde mes 4-5. Posicionamiento en queries de tratamiento + ubicación toma 6-9 meses. Es uno de los verticales healthcare más rápidos en ROI medible."
+      },
+      {
+        "question": "¿Las clínicas dentales necesitan blog?",
+        "answer": "No tradicional. Necesitan páginas por tratamiento (no posts) con contenido educativo firmado por dentista del staff. Un \"blog\" puede ser útil para temas estacionales (\"qué comer después de una extracción\", \"cuándo llevar a tu hijo al dentista por primera vez\"), pero el motor de captación son las páginas de tratamiento + ubicación, no posts genéricos."
+      },
+      {
+        "question": "¿Cómo manejas el SEO para clínicas con varios dentistas/especialidades?",
+        "answer": "Cada dentista del staff tiene su Person/Physician schema con cédula, especialidad y bio. Páginas por dentista cuando son figuras conocidas (atrae búsquedas por nombre). Páginas por especialidad/tratamiento con assignment al dentista que lo realiza. GBP de la clínica con todas las categorías relevantes, no perfiles individuales por dentista salvo casos específicos."
+      },
+      {
+        "question": "¿Generas reviews verificadas para Google Business Profile?",
+        "answer": "Sí, sistema completo: QR en sala de espera con link directo al review form, follow-up por WhatsApp post-cita 24-48h después con mensaje personalizado, training al staff para invitar al review al despedirse. Nunca compra de reviews — Google detecta y suspende GBP, además de ser violación a guidelines."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO para dentistas en México?",
+        "answer": "Starter $15,000 MXN/mes (clínica individual o consultorio), Growth $35,000 MXN/mes (clínica con 2-5 sucursales o multi-especialidad), Enterprise $75,000 MXN/mes (red de clínicas o franquicia dental). Contratos mínimo 6 meses."
+      },
+      {
+        "question": "¿Implementas schema Dentist y MedicalProcedure?",
+        "answer": "Sí. Dentist (subclass de Physician/LocalBusiness) para la clínica con priceRange y openingHours, Physician para cada dentista del equipo con cédula, MedicalProcedure para cada tratamiento ofrecido con howPerformed, preparation, expectedPrognosis. Esto habilita rich results y mejora señalización E-E-A-T."
+      },
+      {
+        "question": "¿Usas fotos antes/después en SEO dental?",
+        "answer": "Sí, con consentimiento firmado del paciente (privacidad médica). Las fotos before/after son uno de los elementos de mayor conversión en odontología cosmética (blanqueamiento, ortodoncia, carillas, implantes). Las incorporo en página de tratamiento con marcado correcto y disclaimer de resultados individuales variables."
+      },
+      {
+        "question": "¿Optimizas SEO para servicios dentales premium tipo carillas o implantes?",
+        "answer": "Sí, son los servicios de mayor ticket donde el SEO orgánico tiene mayor ROI. Páginas dedicadas con contenido educativo profundo (proceso paso a paso, candidatos ideales, expectativas, cuidados post-tratamiento), schema MedicalProcedure, FAQ con preguntas reales y fotos antes/después con consentimiento."
+      }
+    ],
+    "specificServices": [
+      "Optimización agresiva de Google Business Profile dental",
+      "Schema Dentist, Physician y MedicalProcedure",
+      "Páginas por tratamiento con E-E-A-T odontológico",
+      "Sistema de generación de reviews verificadas",
+      "Páginas hyper-locales por colonia y especialidad",
+      "Content educativo firmado por dentistas cedulados",
+      "Gestión de fotos profesionales para GBP y sitio"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "SEO en healthcare YMYL",
+        "url": "/consultor-seo-salud/"
+      },
+      {
+        "anchor": "SEO para clínicas estéticas",
+        "url": "/consultor-seo-clinicas-esteticas/"
+      },
+      {
+        "anchor": "SEO para restaurantes",
+        "url": "/consultor-seo-restaurantes/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "hoteles",
+    "industry": "Hoteles / Hospitality",
+    "title": "Consultor SEO para Hoteles 2026 — Direct Booking | José Gaspard",
+    "metaDescription": "Consultor SEO para hoteles en México. Direct booking sin comisión OTA, schema Hotel + Room, parity, contenido destino. Desde $15K MXN al mes.",
+    "h1": "Consultor SEO para hoteles que recupera bookings de OTAs",
+    "tldr": "Soy José Gaspard, consultor SEO con experiencia en hoteles boutique, resorts y cadenas en México y Caribe. El SEO en hospitality se enfoca en una cosa: recuperar bookings que se van a Booking.com, Expedia y Hoteles.com pagando 15-25% de comisión. Trabajo schema Hotel + Room, contenido destino, parity de precios y arquitectura que captura intención post-OTA-research. Desde $15,000 MXN al mes con KPI atado a direct revenue.",
+    "intro": "<p>El SEO para hoteles es una guerra contra las OTAs (Booking.com, Expedia, Hoteles.com, Despegar). Estas plataformas dominan los primeros resultados orgánicos en cualquier query de hotel + destino, capturan la conversión, y le cobran al hotel 15-25% de comisión por cada booking. La industria hotelera mexicana sangra cientos de millones al año en comisiones OTA que podrían ser direct bookings. El SEO bien hecho no compite directamente con OTAs en queries genéricas tipo \"hoteles en CDMX\" — ahí ganan ellos siempre por autoridad y presupuesto. Compite en tres frentes alternativos: (1) queries de marca del hotel — el huésped que ya investigó en Booking quiere ver el sitio oficial, ahí el direct booking gana si la experiencia es buena, (2) queries hyper-específicas de tipo de habitación + amenidad + destino (\"hoteles con piscina infinity en Tulum adultos-only\"), y (3) contenido destino que captura inspiración antes de elegir hotel (\"qué hacer en Bacalar 3 días\"). Mi trabajo como consultor SEO para hoteles es construir esta capa que recupera direct bookings, optimizar el motor de reservas para conversión y mantener parity con OTAs sin canibalizar.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector hospitality",
+        "html": "<p>Cinco retos definen el SEO hotelero. <strong>Primero, dominancia OTA</strong>: Booking, Expedia y Hoteles.com ocupan 7-9 de los 10 primeros resultados para queries genéricas — competir ahí es imposible, hay que ganar en queries alternativos. <strong>Segundo, parity de precios y schema Offer</strong>: si el sitio oficial tiene precio más alto que las OTAs, el huésped reserva en OTA. Schema Offer con precio en tiempo real e indicación de \"Best Price Guaranteed\" en sitio oficial es crítico. <strong>Tercero, contenido destino para captura de intención temprana</strong>: el huésped no busca primero \"hotel\", busca \"qué hacer en [destino]\". Hoteles con blog destino fuerte (qué hacer, restaurantes, clima, transporte) capturan al usuario antes que las OTAs. <strong>Cuarto, schema Hotel + Room + ReservationPackage</strong>: pocos hoteles implementan correctamente; los que lo hacen ganan rich results en SERP con precio, rating, fotos y disponibilidad. <strong>Quinto, GBP del hotel con categoría correcta</strong>: Hotel, Resort, Bed &amp; Breakfast, Boutique Hotel — categoría incorrecta destruye visibilidad en map pack que es importante para huéspedes que llegan al destino.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para hoteles",
+        "html": "<p>Cuatro KPIs atados a direct revenue. <strong>(1) Direct bookings atribuidos a orgánico</strong>: medidos en motor de reservas (SiteMinder, SynXis, Booking Engine propio) con UTM tracking — meta es subir % de direct bookings del total (típico 15% a 35-50%). <strong>(2) Ahorro en comisiones OTA</strong>: calculado como direct revenue orgánico × % comisión OTA promedio (18%). Este número se reporta al GM del hotel como ROI directo. <strong>(3) Look-to-book ratio orgánico</strong>: sesiones orgánicas / bookings — meta &lt;120:1 con motor optimizado. <strong>(4) Cobertura de queries no-OTA</strong>: rankings top 10 para queries de tipo de habitación + amenidad + destino, contenido destino, y queries de marca — meta &gt;60% del set objetivo en 9 meses. Trackeo además ADR (Average Daily Rate) y RevPAR de direct bookings orgánicos vs OTA — orgánico típicamente tiene ADR 8-15% mayor por menor descuento promocional.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para hoteles",
+        "html": "<p>Tres fases. <strong>Fase 1 (mes 1-2) — Auditoría técnica y motor</strong>: revisión de schema Hotel + Room + Offer, parity check vs OTAs (con herramientas tipo OTA Insight o manual), auditoría del motor de reservas (UX, velocidad, integración con GA4 ecommerce), GBP del hotel optimizado con categoría correcta y fotos por categoría (rooms, lobby, amenities, restaurant, exterior). <strong>Fase 2 (mes 3-5) — Build de contenido alternativo a OTA</strong>: páginas por tipo de habitación con schema Room, páginas por experiencia/amenidad (\"adults-only\", \"all-inclusive\", \"pet-friendly\", \"con spa\"), hub de contenido destino con 15-25 posts de \"qué hacer en [destino]\", \"mejor época para visitar\", \"cómo llegar\", \"dónde comer\". Internal linking desde contenido destino hacia páginas de habitación y motor de reserva. <strong>Fase 3 (mes 6+) — Autoridad destino y direct booking optimization</strong>: link building con blogs de viajes, medios turísticos (Travel + Leisure, Condé Nast Traveler, Travesías), influencers de turismo. Optimización del motor de reserva (best price guarantee visible, beneficios exclusivos direct, comparativa OTA vs direct). Email marketing post-stay para reviews y bookings repetidos.</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en hospitality",
+        "html": "<p><strong>Caso 1 — Hotel boutique 22 habitaciones en San Miguel de Allende</strong>: 14% direct bookings, 86% vía OTAs, pagando ~$340K MXN/año en comisiones. Construí 15 páginas de experiencia (escapada romántica, retiros wellness, gastronomía local, etc.), hub destino con 28 posts (\"qué hacer en SMA\", \"mejor época\", \"restaurantes\", \"festivales\"), schema Hotel + Room + Offer con parity, GBP optimizado. <strong>Resultado a 10 meses: direct bookings subieron a 42%, ahorro en comisiones $186K MXN/año, ADR orgánico 11% mayor que ADR OTA</strong>. <strong>Caso 2 — Resort all-inclusive 280 habitaciones en Riviera Maya</strong>: arquitectura caótica, schema ausente, contenido destino thin. Implementación de schema Hotel + Room por categoría + ReservationPackage, hub destino con 60 posts (zona, actividades, transporte, gastronomía, animales), optimización del motor multi-idioma (ES/EN). <strong>Resultado a 12 meses: direct bookings orgánicos +210%, RevPAR de direct vs OTA +14%, presencia en AI Overviews para 18 queries informativas de destino</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en hoteles que cuestan direct bookings",
+        "html": "<p>Cinco errores típicos. <strong>(1) Pelear contra OTAs en queries genéricas</strong>: \"hoteles en [ciudad]\" lo dominan ellos siempre; gastar meses tratando de rankear ahí es perder dinero. La salida es queries alternativas (marca, experiencia, destino). <strong>(2) Disparity de precios</strong>: sitio oficial con precio mayor que OTAs por mala configuración del PMS — el huésped reserva en OTA y se pierde la comisión. <strong>(3) Motor de reservas lento o roto</strong>: sesiones que llegan a fase de booking y se caen por UX deficiente — typical look-to-book de 250:1 cuando debería ser 80-120:1. <strong>(4) Sin contenido destino</strong>: hotel solo con páginas de habitación, sin captura de intención early-stage. <strong>(5) GBP categoría incorrecta o sin gestión</strong>: hoteles boutique catalogados como \"Hotel\" genérico pierden ranking vs \"Boutique Hotel\" específico; pocos posts; sin respuesta a reviews.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO hotelero en dar resultados?",
+        "answer": "Quickwins de schema y GBP en 8-12 semanas. Crecimiento de direct bookings orgánicos consolidado desde mes 5-7. Contenido destino con autoridad construida toma 9-15 meses, pero es el moat más sostenible vs OTAs. ROI típico (ahorro en comisiones &gt; fee mensual) desde mes 6."
+      },
+      {
+        "question": "¿Puedo realmente competir contra Booking.com y Expedia?",
+        "answer": "No en queries genéricas tipo \"hoteles en [ciudad]\". Sí en queries de marca del hotel, queries específicas de tipo de habitación + amenidad + destino, y contenido destino que captura al huésped antes de que llegue a una OTA. La estrategia es flanqueo, no enfrentamiento directo."
+      },
+      {
+        "question": "¿Cómo manejas el parity de precios entre sitio oficial y OTAs?",
+        "answer": "Auditoría con herramientas (OTA Insight, RateGain) o manual semanal. Si hay disparity, trabajo con el revenue manager para corregir en el PMS/channel manager. Schema Offer con precio en tiempo real y badge de \"Mejor Precio Garantizado\" en sitio oficial. Sin parity, el SEO no convierte direct."
+      },
+      {
+        "question": "¿Trabajas con resorts all-inclusive o solo hoteles tradicionales?",
+        "answer": "Ambos. Resorts all-inclusive tienen retos adicionales: arquitectura multi-paquete (familia, romántico, wellness, golf), schema ReservationPackage con beneficios, contenido sobre experiencia incluida vs add-ons. Hoteles tradicionales se centran más en habitación, ubicación y servicios. Approach metodológico es el mismo."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO hotelero en México?",
+        "answer": "Starter $15,000 MXN/mes (hotel boutique &lt;30 habitaciones, single property), Growth $35,000 MXN/mes (hotel mediano o boutique multi-property), Enterprise $75,000 MXN/mes (resort grande, cadena hotelera o grupo). Mínimo 6 meses por la naturaleza estacional del booking."
+      },
+      {
+        "question": "¿Implementas schema Hotel, Room y Offer?",
+        "answer": "Sí, base del scope. Hotel/LodgingBusiness con starRating, amenityFeature array completo y aggregateRating real. Room por categoría con bed type, capacity, view. Offer con priceCurrency, price, validFrom/validThrough en tiempo real desde el PMS. ReservationPackage en resorts all-inclusive con beneficios incluidos."
+      },
+      {
+        "question": "¿Construyes contenido destino para hoteles?",
+        "answer": "Sí, es el moat más fuerte contra OTAs. Hub de 20-40 posts por destino (qué hacer, restaurantes, clima, transporte, presupuesto, mejor época, eventos), con internal linking estratégico hacia páginas de habitación. Las OTAs no compiten ahí porque su modelo es transaccional, no destino-content."
+      },
+      {
+        "question": "¿Optimizas el motor de reservas para conversión orgánica?",
+        "answer": "Sí, auditoría del booking engine (SiteMinder, SynXis, Booking Engine propio): velocidad, mobile UX, número de pasos, claridad de precio total (con impuestos), trust signals (best price guarantee, secure booking, reviews verificadas), recovery de carrito abandonado. Look-to-book ratio es el KPI técnico clave."
+      }
+    ],
+    "specificServices": [
+      "Schema Hotel, Room, Offer y ReservationPackage",
+      "Parity check vs OTAs y corrección con revenue manager",
+      "Hub de contenido destino para captura early-stage",
+      "Optimización del motor de reservas para conversión",
+      "Google Business Profile con categoría hotelera correcta",
+      "Páginas por experiencia/amenidad para queries específicas",
+      "Tracking de ahorro en comisiones OTA como ROI"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "SEO para restaurantes",
+        "url": "/consultor-seo-restaurantes/"
+      },
+      {
+        "anchor": "SEO inmobiliario",
+        "url": "/consultor-seo-inmobiliario/"
+      },
+      {
+        "anchor": "SEO para eCommerce",
+        "url": "/consultor-seo-ecommerce/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "clinicas-esteticas",
+    "industry": "Clínicas estéticas",
+    "title": "Consultor SEO Clínicas Estéticas 2026 | José Gaspard",
+    "metaDescription": "Consultor SEO para clínicas estéticas y medspa en México. YMYL, antes/después, schema MedicalSpa, fotos con consentimiento. Desde $15K MXN al mes.",
+    "h1": "Consultor SEO para clínicas estéticas que califica leads",
+    "tldr": "Soy José Gaspard, consultor SEO con experiencia en clínicas estéticas, medspa y cirugía plástica en México. Es vertical YMYL: Google exige E-E-A-T con cédula médica para procedimientos invasivos y mínimo-invasivos. Trabajo schema MedicalSpa/MedicalClinic + MedicalProcedure, contenido con fotos antes/después (consentimiento), SEO local y captación de leads calificados con presupuesto y plazo de decisión claros. Desde $15,000 MXN al mes.",
+    "intro": "<p>El SEO para clínicas estéticas y medspa en México opera en la intersección de tres mundos complejos: YMYL healthcare (procedimientos médicos requieren E-E-A-T), publicidad regulada en salud (COFEPRIS prohíbe promesas de resultados), y queries de altísima intención con tickets altos ($8K MXN por toxina botulínica hasta $180K MXN por rinoplastia o liposucción). Esto hace al SEO orgánico extraordinariamente rentable cuando se hace bien, pero brutal cuando se hace mal. El paciente típico investiga 4-8 semanas antes de agendar consulta, compara 5-12 clínicas, lee reviews, busca fotos antes/después y consulta foros como RealSelf antes de decidir. El SEO debe cubrir ese journey completo: contenido educativo de calidad firmado por médicos cedulados, fotos antes/después con consentimiento firmado, FAQ profundas, schema MedicalProcedure, GBP optimizado con reviews verificadas y página por procedimiento con precios orientativos. Mi trabajo como consultor SEO para clínicas estéticas es construir esta capa de confianza orgánica y captar leads ya pre-calificados (con presupuesto, plazo y tipo de procedimiento claros).</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector estético",
+        "html": "<p>Cinco retos específicos. <strong>Primero, YMYL estético con E-E-A-T extremo</strong>: procedimientos invasivos y mínimo-invasivos exigen autores con cédula y especialidad (cirujano plástico vs dermatólogo vs medicina estética); contenido sin esto se hunde. <strong>Segundo, restricciones COFEPRIS</strong>: no se pueden prometer resultados, garantizar éxito, usar testimoniales para ciertos procedimientos, ni mostrar fotos antes/después sin disclaimer de \"resultados individuales variables\". <strong>Tercero, ciclo de decisión largo</strong>: el contenido debe cubrir 6+ semanas de investigación con artefactos distintos (educativo, comparativo, social proof, FAQ). <strong>Cuarto, fotos antes/después como factor de conversión crítico</strong>: pero requieren consentimiento firmado, marcado correcto y schema. Sin antes/después, la conversión se desploma; con fotos mal gestionadas (sin consentimiento), riesgo legal. <strong>Quinto, competencia con foros y plataformas</strong>: RealSelf, ZocDoc, Doctoralia dominan SERP en queries genéricas como \"mejor cirujano plástico\"; la clínica compite en queries hyper-locales y de marca de doctor.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para clínicas estéticas",
+        "html": "<p>Cuatro KPIs atados a consultas y procedimientos. <strong>(1) Consultas agendadas orgánicas calificadas</strong>: con definición explícita de \"calificada\" (formulario con procedimiento de interés, presupuesto, plazo, datos verificables). <strong>(2) Costo por consulta orgánica vs Meta Ads</strong>: en estética, Meta Ads cuesta típicamente $450-1,200 MXN por lead calificado; orgánico bien hecho lleva CPL a $120-280 MXN. <strong>(3) Procedimientos cerrados atribuidos a orgánico</strong>: tracking desde consulta inicial a cierre de procedimiento, con valor económico (ARPU). <strong>(4) Cobertura de queries de procedimiento + ubicación</strong>: rankings top 10 para procedimientos clave (toxina botulínica, rellenos, criolipólisis, blefaroplastia, rinoplastia, abdominoplastia, etc.) por colonia/ciudad — meta &gt;55% del set objetivo en 9 meses. Trackeo además rating en GBP (meta &gt;4.5) y velocidad de generación de reviews verificadas.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para clínicas estéticas",
+        "html": "<p>Cuatro fases. <strong>Fase 1 (mes 1) — Auditoría YMYL y compliance</strong>: revisión de contenido vs E-E-A-T (autores con cédula y especialidad), auditoría de copy vs normativa COFEPRIS, revisión de consentimientos para fotos antes/después existentes, identificación de páginas que dañan ranking. <strong>Fase 2 (mes 2-3) — Schema y contenido por procedimiento</strong>: implementación de MedicalSpa o MedicalClinic schema, MedicalProcedure por cada procedimiento ofrecido con howPerformed, preparation, expectedPrognosis y recovery time, Physician schema para cada médico del equipo con cédula y especialidad. Páginas por procedimiento con contenido educativo de 1000-1800 palabras firmado por médico, FAQ profunda, fotos antes/después con consentimiento. <strong>Fase 3 (mes 4-6) — SEO local y reviews</strong>: GBP optimizado con categoría correcta (Medical Spa, Plastic Surgeon, Cosmetic Dentist según aplique), sistema de generación de reviews verificadas, gestión activa de reputación. Páginas hyper-locales por procedimiento + colonia/zona. <strong>Fase 4 (mes 7+) — Autoridad y AI search</strong>: link building con blogs de belleza y wellness, medios femeninos (Vogue, Marie Claire, Glamour), influencers de wellness con criterio. Optimización para AI Overviews en queries informativas de procedimientos estéticos.</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en clínicas estéticas",
+        "html": "<p><strong>Caso 1 — Clínica de medicina estética en Polanco (3 médicos, especializada en facial)</strong>: tráfico orgánico de 2,100 sesiones/mes, 14 consultas/mes desde web. Reescribí 22 páginas de procedimiento firmadas por médicos del equipo con cédula y especialidad, agregué 180 fotos antes/después con consentimiento firmado, implementé MedicalSpa + Physician + MedicalProcedure schema, optimicé GBP con 240 reviews verificadas. <strong>Resultado a 9 meses: 18,400 sesiones orgánicas/mes, 112 consultas calificadas/mes desde orgánico, CPL $140 MXN vs $680 MXN de Meta Ads</strong>. <strong>Caso 2 — Cirujano plástico con consultorio propio + alianza con hospital privado en Guadalajara</strong>: dependencia 92% de referidos y Ads, presencia orgánica casi nula. Construí 12 páginas por procedimiento quirúrgico con contenido profundo (proceso pre/intra/postoperatorio, riesgos, recovery), galería antes/después por procedimiento, Person schema con sameAs a publicaciones académicas, hub de \"cómo elegir un cirujano plástico\". <strong>Resultado a 11 meses: 8,200 sesiones orgánicas/mes desde 180, 38 consultas orgánicas calificadas/mes desde 2, 9 procedimientos quirúrgicos cerrados atribuidos a orgánico ($1.8M MXN de revenue)</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en clínicas estéticas que cuestan procedimientos",
+        "html": "<p>Cinco errores recurrentes. <strong>(1) Contenido sin autor médico cedulado</strong>: penalización YMYL automática; ningún SEO técnico lo arregla. <strong>(2) Promesas de resultados o testimoniales sin disclaimer</strong>: \"100% efectivo\", \"resultados garantizados\" — viola COFEPRIS y Google detecta como contenido de baja calidad. <strong>(3) Sin fotos antes/después o con fotos sin consentimiento</strong>: el primer caso destruye conversión (la estética se compra por evidencia visual); el segundo expone a riesgo legal grave. <strong>(4) Página única \"servicios\" con bloque de 20 procedimientos</strong>: necesitas página dedicada por procedimiento con MedicalProcedure schema y contenido educativo profundo, no listas. <strong>(5) GBP sin reviews o con rating bajo</strong>: en estética el rating en GBP es decisivo; 4.2 vs 4.8 puede ser la diferencia entre ser considerado o ser descartado en los primeros 3 segundos.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO en clínicas estéticas en dar resultados?",
+        "answer": "Quickwins de SEO local y GBP en 8-12 semanas. Consultas orgánicas calificadas consolidadas desde mes 5-7. Posicionamiento en queries de procedimiento + ubicación toma 6-10 meses por la competencia y la exigencia YMYL. Procedimientos quirúrgicos atribuidos al SEO típicamente desde mes 7-9."
+      },
+      {
+        "question": "¿Las fotos antes/después necesitan consentimiento legal?",
+        "answer": "Sí, sin excepción. Consentimiento firmado del paciente con uso específico (web, redes, materiales) y disclaimer obligatorio de \"resultados individuales variables\" en cada foto. Sin consentimiento documentado hay riesgo legal grave (privacidad médica + COFEPRIS). Yo no acepto trabajar con clínicas que pretendan usar fotos sin consentimiento."
+      },
+      {
+        "question": "¿Cómo manejas el contenido para cumplir con COFEPRIS?",
+        "answer": "Auditoría legal de copy contra normativa publicitaria en salud. Eliminamos promesas (\"100% efectivo\", \"garantizado\"), testimoniales restringidos para ciertos procedimientos, comparativas peyorativas. Contenido educativo neutral con evidencia, fotos con disclaimer, mención explícita de riesgos cuando aplica. Si la clínica tiene legal interno, trabajo en conjunto."
+      },
+      {
+        "question": "¿Trabajas con medicina estética (no invasivos) y cirugía plástica?",
+        "answer": "Ambos. Medicina estética (toxina botulínica, rellenos, peelings, láser) tiene ticket menor pero volumen alto y ciclo de decisión corto. Cirugía plástica (rinoplastia, abdominoplastia, mamoplastia) tiene ticket alto y ciclo largo. Estrategia distinta pero metodología compartida; muchas clínicas hacen ambos y los unifico arquitecturalmente."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO para clínicas estéticas en México?",
+        "answer": "Starter $15,000 MXN/mes (clínica con un médico o medspa pequeña), Growth $35,000 MXN/mes (clínica con 3-6 médicos o multi-procedimiento), Enterprise $75,000 MXN/mes (red de clínicas o cirujanos plásticos de alto perfil con producción de contenido intensiva). Mínimo 6 meses."
+      },
+      {
+        "question": "¿Implementas schema MedicalSpa, Physician y MedicalProcedure?",
+        "answer": "Sí. MedicalSpa (o MedicalClinic / Hospital según el caso) para la clínica. Physician para cada médico del equipo con cédula visible, especialidad y sameAs a perfiles académicos o asociaciones. MedicalProcedure por cada procedimiento con howPerformed, preparation, expectedPrognosis, recoveryTime. Esto habilita rich results y mejora E-E-A-T señalado."
+      },
+      {
+        "question": "¿Generas reviews verificadas para Google Business Profile en estética?",
+        "answer": "Sí, con sistema compliant: invitación por WhatsApp 24-48h post-procedimiento, QR en sala de espera con link directo, follow-up email a un mes con foto del antes y solicitud de review honesta. Sin compra de reviews — Google detecta y en estética las reviews falsas son señaladas por usuarios reales que detectan inconsistencias."
+      },
+      {
+        "question": "¿Optimizas para AI Overviews en queries de procedimientos estéticos?",
+        "answer": "Sí, con énfasis en passage-level citability: contenido estructurado en \"qué es / cómo se hace / candidatos ideales / riesgos / recovery / costo orientativo\", autores con cédula y especialidad verificables, citas a literatura médica (PubMed, journals dermatológicos), fechas de revisión actualizadas. Las clínicas que aparecen en AI Overviews construyen autoridad de marca y leads más informados."
+      }
+    ],
+    "specificServices": [
+      "E-E-A-T estético con médicos cedulados y especialidad verificable",
+      "Schema MedicalSpa, Physician y MedicalProcedure",
+      "Gestión de fotos antes/después con consentimiento firmado",
+      "Auditoría de cumplimiento COFEPRIS en publicidad estética",
+      "Páginas por procedimiento con FAQ profunda y precios orientativos",
+      "SEO local y GBP optimizado para clínicas y medspa",
+      "Sistema de generación de reviews verificadas compliant"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "SEO healthcare YMYL",
+        "url": "/consultor-seo-salud/"
+      },
+      {
+        "anchor": "SEO para dentistas y clínicas dentales",
+        "url": "/consultor-seo-dentistas/"
+      },
+      {
+        "anchor": "SEO para hoteles",
+        "url": "/consultor-seo-hoteles/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "educacion",
+    "industry": "Educación / EdTech / Cursos",
+    "title": "Consultor SEO Educación y EdTech 2026 | José Gaspard",
+    "metaDescription": "Consultor SEO para escuelas, universidades y EdTech en México. Programmatic por carrera, schema Course, captación de inscripciones. Desde $15K MXN.",
+    "h1": "Consultor SEO educación que llena inscripciones reales",
+    "tldr": "Soy José Gaspard, consultor SEO con experiencia en universidades, escuelas K-12, EdTech y cursos online en México. Construyo programmatic SEO por carrera/curso, implemento schema Course y EducationalOrganization, trabajo SEO local para campus físicos y compito contra plataformas tipo Coursera, Udemy y Domestika con estrategia de autoridad temática y AI search optimization. Desde $15,000 MXN al mes.",
+    "intro": "<p>El SEO para educación en México abarca cuatro subverticales muy distintos: universidades privadas (UVM, Anáhuac, Tec, Ibero), escuelas K-12, EdTech y cursos online (Crehana, Domestika, Platzi style), y bootcamps profesionales. Cada uno tiene retos específicos pero comparten el patrón base: ciclo de decisión largo (4-12 semanas para una carrera, 1-3 semanas para un curso), alto componente emocional en universitario (decisión de carrera + ubicación + costo), competencia con plataformas verticales que dominan SERP y queries de altísima intención con ticket alto (carrera completa: $400K-1.5M MXN). El SEO debe cubrir el journey completo: queries informativas (\"qué estudiar\", \"mejores carreras 2026\"), queries comparativas (\"UVM vs Anáhuac\", \"Crehana vs Domestika\"), queries de oferta (\"licenciatura X en [ciudad]\", \"curso Y online certificado\"), y queries de marca + objeción (\"becas UVM\", \"costo Tec\"). Mi trabajo como consultor SEO para educación es construir esta arquitectura de captación y atacar la totalidad del journey con contenido E-E-A-T (autores académicos), schema Course y EducationalOccupationalCredential, y SEO local agresivo para campus físicos.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector educación",
+        "html": "<p>Cinco retos en educación. <strong>Primero, ciclo de decisión largo en universitario</strong>: el aspirante a licenciatura investiga 4-12 semanas, consulta padres/familia, compara 3-7 universidades, evalúa costo + becas + ubicación + reputación. El SEO debe cubrir todas las etapas con artefactos distintos. <strong>Segundo, competencia con plataformas y portales</strong>: en cursos online, Coursera, Udemy, Domestika y Platzi dominan SERP. En universitario, portales tipo UniversidadesMéxico o EducaWeb capturan queries informativos. EdTech mexicano compite contra brands globales con presupuesto masivo. <strong>Tercero, schema Course y EducationalOccupationalCredential</strong>: pocos implementan correctamente; los que lo hacen ganan rich results con duración, modalidad, costo, prerrequisitos. <strong>Cuarto, multi-modalidad y multi-campus</strong>: una universidad con 12 carreras × 3 campus × 2 modalidades (presencial/online) genera 72 páginas potenciales con riesgo de canibalización si no se arquitecta correctamente. <strong>Quinto, E-E-A-T académico</strong>: contenido firmado por profesores con credenciales (PhD, posdoc, publicaciones), no por \"Equipo Marketing\".</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para educación",
+        "html": "<p>Cuatro KPIs atados a inscripciones. <strong>(1) Inscripciones orgánicas atribuidas</strong>: medidas en CRM educativo (Hubspot, Salesforce Education Cloud, sistemas propios) con tracking multi-touch porque el journey es largo y orgánico aparece típicamente en 3-5 touchpoints. <strong>(2) Leads calificados por carrera/curso</strong>: definidos con tipo de programa de interés, modalidad, plazo de inicio. <strong>(3) Cobertura de queries por programa</strong>: rankings top 10 para \"carrera X en [ciudad]\", \"licenciatura Y online\", \"curso Z certificado\" — meta &gt;55% del set objetivo en 9 meses. <strong>(4) Costo por inscripción orgánico vs paid</strong>: en universitario, Google Ads cuesta típicamente $1,200-3,400 MXN por lead calificado; orgánico lleva a $250-450 MXN. Trackeo además presencia en AI Overviews para queries informativas tipo \"qué estudiar si me gusta X\" — la presencia ahí construye autoridad de marca temprano en el journey.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para educación",
+        "html": "<p>Cuatro fases. <strong>Fase 1 (mes 1-2) — Auditoría y arquitectura</strong>: inventario de programas (carreras, cursos, bootcamps, posgrados), mapping de URLs sin canibalización, auditoría de schema, identificación de páginas thin que están dañando autoridad temática. <strong>Fase 2 (mes 3-5) — Build de páginas de programa</strong>: páginas dedicadas por carrera/curso con contenido profundo (plan de estudios, profesores con bio académica, costo + becas, perfil de egreso, salida laboral, testimoniales de egresados), schema Course + EducationalOccupationalCredential + Person para profesores. Páginas por campus en universidades multi-sede con SEO local (LocalBusiness/School schema). <strong>Fase 3 (mes 6-8) — Content hub y autoridad</strong>: hub de orientación vocacional, comparativas entre carreras (\"licenciatura A vs B\"), guías de admisión, contenido para padres en educación K-12, blog académico firmado por profesores con credenciales. Link building con medios educativos, EdSurge, asociaciones académicas (ANUIES, FIMPES). <strong>Fase 4 (mes 9+) — AI search y conversión</strong>: optimización para AI Overviews en queries de orientación, llms.txt, mejora de funnel de admisión orgánico.</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en educación",
+        "html": "<p><strong>Caso 1 — Universidad privada mediana con 4 campus en CDMX, Edomex y Puebla (18 carreras, presencial + online)</strong>: tráfico orgánico de 24K sesiones/mes, dependencia 78% en Google Ads y referidos. Construí páginas dedicadas por carrera × campus × modalidad (sin canibalización), schema Course + EducationalOrganization, hub de orientación vocacional con 32 posts firmados por profesores, comparativas de carreras, guías de admisión y becas. <strong>Resultado a 11 meses: 142K sesiones orgánicas/mes, inscripciones orgánicas atribuidas +280%, ahorro en Google Ads $1.4M MXN en el periodo</strong>. <strong>Caso 2 — Plataforma EdTech mexicana de cursos de marketing digital (~80 cursos)</strong>: competía contra Crehana, Domestika, Coursera sin posicionamiento orgánico significativo. Implementé schema Course en los 80 cursos, construí 24 páginas de hub temático (\"aprender X\"), comparativas honestas \"Plataforma vs Crehana/Domestika\", contenido SEO firmado por instructores con credenciales. <strong>Resultado a 9 meses: tráfico orgánico de 8K a 86K sesiones/mes, inscripciones orgánicas +340%, presencia en AI Overviews para 18 queries de aprendizaje</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en educación que cuestan inscripciones",
+        "html": "<p>Cinco errores típicos. <strong>(1) Página única \"Carreras\" con bloque de 20 programas</strong>: necesitas página dedicada por carrera (× campus × modalidad cuando aplica) con Course schema y contenido profundo. <strong>(2) Contenido sin autor académico</strong>: blog firmado por \"Equipo Marketing\" — pierde autoridad temática frente a contenido firmado por profesores con PhD y publicaciones. <strong>(3) Sin schema Course o EducationalOccupationalCredential</strong>: pierdes rich results con duración, modalidad, costo y prerrequisitos. <strong>(4) Canibalización entre presencial/online de la misma carrera</strong>: dos URLs compitiendo entre sí por la misma query. <strong>(5) GBP de campus desatendidos</strong>: universidades con 5 campus físicos y GBPs sin gestión pierden visibilidad en map pack de queries locales tipo \"universidad en [zona]\".</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO en educación en dar resultados?",
+        "answer": "Quickwins de schema y arquitectura en 8-12 semanas. Leads orgánicos consolidados desde mes 5-7. Inscripciones atribuidas a orgánico se ven consolidadas en mes 8-12 por el ciclo de decisión largo (especialmente en universitario). El ROI típico vs Google Ads se materializa desde mes 9-10."
+      },
+      {
+        "question": "¿Trabajas con universidades, K-12, EdTech o todos?",
+        "answer": "Los cuatro subverticales. Universidades requieren arquitectura compleja (carrera × campus × modalidad), K-12 requiere SEO local agresivo y contenido para padres, EdTech compite contra plataformas globales con autoridad temática, bootcamps necesitan demostrar salida laboral con datos verificables. Approach metodológico es el mismo; énfasis cambia."
+      },
+      {
+        "question": "¿Cómo manejas la canibalización entre carrera presencial y online?",
+        "answer": "Dos approaches válidos según el caso: (1) URL única con selector de modalidad y schema Course con courseInstance para cada modalidad, o (2) URLs separadas con canonical y targeting de queries distintos (\"licenciatura X online\" vs \"licenciatura X presencial Polanco\"). Decisión depende de volumen de búsqueda y autoridad del dominio."
+      },
+      {
+        "question": "¿Compito contra Coursera, Udemy y Domestika en EdTech?",
+        "answer": "No en queries genéricas tipo \"curso de marketing digital\" — ahí ganan ellos por autoridad. Compito en queries específicos (\"curso de marketing digital con certificado y mentoring\"), comparativas (\"Plataforma X vs Crehana\"), autoridad temática (hubs de \"aprender X\") y AI Overviews. EdTech mexicano puede ganar nichos verticales con contenido superior."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO en educación en México?",
+        "answer": "Starter $15,000 MXN/mes (escuela K-12 single-campus o EdTech con &lt;20 cursos), Growth $35,000 MXN/mes (universidad pequeña multi-campus o EdTech con catálogo grande), Enterprise $75,000 MXN/mes (universidad grande multi-ciudad, sistema educativo o EdTech con producción masiva de contenido). Mínimo 6 meses."
+      },
+      {
+        "question": "¿Implementas schema Course y EducationalOccupationalCredential?",
+        "answer": "Sí. Course con name, description, provider, courseMode (online/onsite/blended), educationalCredentialAwarded, hasCourseInstance con duración y precio. EducationalOrganization para la institución con sameAs a acreditaciones (SEP, FIMPES). Person para profesores con qualifications académicas y publicaciones."
+      },
+      {
+        "question": "¿Optimizas Google Business Profile para campus de universidades?",
+        "answer": "Sí, GBP por campus físico con categoría correcta (University, Private University, College según aplique), atributos completos, fotos del campus, posts de eventos académicos, gestión activa de reviews (incluyendo respuesta a críticas). En queries locales tipo \"universidad en [zona]\" el map pack es decisivo."
+      },
+      {
+        "question": "¿Optimizas para AI Overviews en queries educativos?",
+        "answer": "Sí, especialmente en queries informativas tipo \"qué estudiar si me gusta X\", \"mejor carrera para Y\", \"cómo elegir universidad\". Contenido estructurado en passage-level, autores académicos verificables, citas a fuentes oficiales (SEP, OCDE, ANUIES), fechas de revisión actualizadas. La presencia en AI Overviews captura al aspirante en etapa temprana del journey."
+      }
+    ],
+    "specificServices": [
+      "Schema Course, EducationalOccupationalCredential y EducationalOrganization",
+      "Páginas por carrera × campus × modalidad sin canibalización",
+      "Content hub de orientación vocacional con autores académicos",
+      "SEO local y GBP para campus universitarios",
+      "Comparativas honestas vs plataformas EdTech globales",
+      "Programmatic SEO por curso/carrera en catálogos grandes",
+      "Optimización para AI Overviews en queries de orientación"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "SEO para SaaS B2B",
+        "url": "/consultor-seo-saas/"
+      },
+      {
+        "anchor": "SEO para fintech",
+        "url": "/consultor-seo-fintech/"
+      },
+      {
+        "anchor": "SEO para eCommerce",
+        "url": "/consultor-seo-ecommerce/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "fintech",
+    "industry": "Fintech",
+    "title": "Consultor SEO Fintech 2026 — YMYL Regulado | José Gaspard",
+    "metaDescription": "Consultor SEO para fintech en México. YMYL financiero, E-E-A-T regulado, schema FinancialService, CNBV compliance, captación calificada. Desde $15K MXN.",
+    "h1": "Consultor SEO fintech con cumplimiento regulatorio mexicano",
+    "tldr": "Soy José Gaspard, consultor SEO con experiencia en fintech mexicano: neobanks, plataformas de inversión, crédito digital, remesas y pagos B2B. Es vertical YMYL puro con regulación CNBV/Banxico, exige E-E-A-T extremo, autores con credenciales financieras y disclaimers correctos. Trabajo schema FinancialService, contenido educativo regulatorio-compliant, comparativas vs competidores y captación de usuarios calificados con CPL 4-8x menor que paid. Desde $15K MXN al mes.",
+    "intro": "<p>El SEO para fintech en México es la intersección más compleja de YMYL: combina las restricciones de healthcare (E-E-A-T extremo, autores con credenciales verificables) con regulación financiera específica (CNBV, Banxico, CONDUSEF, Ley Fintech 2018), competencia con bancos tradicionales con autoridad de dominio masiva (BBVA, Banamex, Santander), y CPC altísimo en Google Ads para queries de alta intención (\"abrir cuenta digital\", \"crédito en línea\", \"invertir en Cetes\" — CPC de $80-280 MXN). Esto hace al SEO orgánico extraordinariamente rentable cuando se hace con rigor, y catastrófico cuando se hace mal — un mal consejo financiero en una página de fintech regulada puede activar revisión CNBV además de penalización Google. El paciente típico (el usuario evaluando una fintech) investiga 2-6 semanas, lee comparativas, consulta reviews en Trustpilot y reseñas, verifica regulación (autorización CNBV, supervisión Banxico), antes de subir información financiera personal. Mi trabajo como consultor SEO para fintech es construir esta capa de confianza orgánica con cumplimiento regulatorio, atacar queries de altísima intención y reducir dependencia de paid ads que en México fintech ya es marginal por costo y prohibición creciente en plataformas.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector fintech",
+        "html": "<p>Cinco retos únicos en fintech. <strong>Primero, YMYL financiero con E-E-A-T extremo</strong>: cada artículo debe estar firmado por profesional con credenciales financieras (CFA, contador público con cédula, asesor financiero certificado AMIB), bio verificable, fechas de revisión actualizadas. Sin esto, contenido excelente no rankea. <strong>Segundo, regulación CNBV / Banxico / CONDUSEF</strong>: prohibiciones específicas en publicidad de productos financieros (no se pueden prometer rendimientos, hay disclaimers obligatorios para inversión, leyendas requeridas para crédito). <strong>Tercero, competencia con bancos tradicionales</strong>: BBVA, Banamex, Santander tienen autoridad de dominio masiva y dominan SERP en queries genéricas. Fintech compite en queries de \"alternativa a banco\", \"sin comisiones\", \"100% digital\" y comparativas. <strong>Cuarto, schema FinancialService y FinancialProduct</strong>: la mayoría de fintech no implementa correctamente, perdiendo señalización de regulación y rich results. <strong>Quinto, trust signals críticos</strong>: usuarios verifican autorización CNBV, supervisión Banxico, depósitos en IPAB, reviews verificadas, equipo con LinkedIn — sin estos elementos visibles, el SEO trae tráfico que rebota.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para fintech",
+        "html": "<p>Cuatro KPIs atados a usuarios calificados. <strong>(1) Onboardings orgánicos completados</strong>: usuarios que completan KYC y activan cuenta/producto desde tráfico orgánico, medidos con tracking integrado a back-end (no solo formularios). <strong>(2) Volumen transado por usuario orgánico</strong>: GMV/AUM/originación de crédito generado por usuarios atribuidos a orgánico vs paid. <strong>(3) CAC orgánico vs paid</strong>: en fintech mexicano, paid CAC típico es $800-3,500 MXN por onboarding completado; orgánico bien hecho lleva CAC a $180-450 MXN. <strong>(4) Cobertura de queries bottom-funnel</strong>: rankings top 10 para queries de alta intención (producto + característica, alternativa a banco/competidor, comparativas) — meta &gt;55% del set objetivo en 9 meses. Trackeo además presencia en AI Overviews para queries informativas tipo \"qué es CETES\" o \"cómo elegir cuenta digital\" — la presencia ahí construye autoridad temprano en el journey.</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para fintech",
+        "html": "<p>Cuatro fases con énfasis en compliance. <strong>Fase 1 (mes 1) — Auditoría YMYL, compliance y E-E-A-T</strong>: revisión de contenido vs E-E-A-T (autores con credenciales financieras verificables), auditoría legal de copy contra Ley Fintech, CNBV, Banxico y CONDUSEF, revisión de disclaimers obligatorios, identificación de páginas que dañan autoridad. <strong>Fase 2 (mes 2-3) — Schema y trust signals</strong>: implementación de FinancialService o BankOrCreditUnion (según aplique), FinancialProduct por producto ofrecido (cuenta, crédito, inversión, remesa) con feesAndCommissionsSpecification, Organization con sameAs a CNBV/Banxico/IPAB. Visibilización de trust signals en sitio (autorización CNBV en header/footer, equipo con bio y LinkedIn, certificaciones). <strong>Fase 3 (mes 4-6) — Content educativo y comparativas</strong>: hub educativo firmado por profesionales con credenciales (qué es X, cómo funciona Y, cómo elegir Z), comparativas vs competidores y bancos tradicionales (honestas), guías de uso de productos. <strong>Fase 4 (mes 7+) — AI search y conversión orgánica</strong>: optimización para AI Overviews en queries informativos, llms.txt, mejora del funnel de onboarding desde orgánico, link building con medios financieros (El CEO, Bloomberg México, Forbes México, Expansión).</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en fintech",
+        "html": "<p><strong>Caso 1 — Neobank mexicano enfocado en self-employed (~120K usuarios)</strong>: tráfico orgánico de 18K sesiones/mes, dependencia 82% de paid ads con CAC subiendo. Construí hub educativo de 38 posts firmados por economista del equipo (CFA), 14 comparativas vs bancos tradicionales y otras neobanks, schema FinancialService + FinancialProduct, visibilización de trust signals (CNBV, IPAB) en sitio. <strong>Resultado a 10 meses: 92K sesiones orgánicas/mes, onboardings orgánicos +340%, CAC orgánico $220 MXN vs $1,400 MXN paid, ahorro en CAC $4.2M MXN en el periodo</strong>. <strong>Caso 2 — Plataforma de inversión en CETES y bonos gubernamentales (B2C, México)</strong>: competía contra GBM+, Kuspit, Bursanet sin presencia orgánica. Construí hub de educación financiera (qué son CETES, cómo invertir, comparativa CETES vs ahorro, fiscalidad), comparativas honestas vs competidores, schema FinancialProduct, autores con credenciales (asesores AMIB, CFA). <strong>Resultado a 9 meses: tráfico orgánico de 4K a 64K sesiones/mes, AUM atribuido a orgánico +280%, presencia en AI Overviews para 22 queries de inversión</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en fintech que cuestan onboardings",
+        "html": "<p>Cinco errores típicos. <strong>(1) Contenido sin autor con credenciales financieras</strong>: blog firmado por \"Equipo Marketing\" — penalización YMYL automática en queries financieros. <strong>(2) Promesas de rendimientos o falta de disclaimers</strong>: \"gana 12% anual garantizado\" — viola CNBV/Ley Fintech y Google detecta como contenido de baja calidad. <strong>(3) Trust signals invisibles o ausentes</strong>: usuarios sin ver autorización CNBV, equipo con LinkedIn, depósito IPAB — rebotan antes de onboarding. <strong>(4) Sin comparativas vs competidores y bancos</strong>: dejas la conversación a Trustpilot y blogs de afiliados; el SEO debe controlar la narrativa de comparación. <strong>(5) Competencia frontal vs bancos tradicionales en queries genéricas</strong>: gastar meses tratando de rankear \"abrir cuenta bancaria\" es perder dinero; la estrategia es queries de \"alternativa a\", \"sin comisiones\", \"100% digital\" donde fintech tiene ventaja narrativa.</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO fintech en dar resultados?",
+        "answer": "Quickwins de schema y trust signals en 8-12 semanas. Onboardings orgánicos consolidados desde mes 5-7. Posicionamiento en queries YMYL competitivos toma 9-12 meses por la exigencia de E-E-A-T y autoridad. Reducción significativa de CAC vs paid típicamente desde mes 8-10."
+      },
+      {
+        "question": "¿Necesito autores con credenciales financieras (CFA, AMIB, CPA)?",
+        "answer": "Sí, no es opcional en YMYL financiero desde 2018, reforzado en diciembre 2025. Cada artículo debe estar firmado por profesional con credenciales verificables (CFA, asesor financiero AMIB, contador público con cédula, abogado fiscalista cuando aplica), bio completa, fecha de revisión. Sin esto, contenido excelente no rankea."
+      },
+      {
+        "question": "¿Cómo manejas el cumplimiento CNBV, Banxico y CONDUSEF?",
+        "answer": "Auditoría legal de copy contra Ley Fintech (LRITF), Circular Única de la CNBV en materia de publicidad, lineamientos CONDUSEF. Eliminamos promesas de rendimiento, agregamos disclaimers obligatorios, leyendas requeridas para crédito (\"CAT promedio sin IVA X% para fines informativos\"). Trabajo con legal de la fintech si existe; si no, refiero a especialista."
+      },
+      {
+        "question": "¿Compito contra bancos tradicionales tipo BBVA o Banamex?",
+        "answer": "No en queries genéricas (\"abrir cuenta\", \"crédito personal\") — autoridad de dominio bancaria es masiva. Compito en queries de \"alternativa a [banco]\", \"sin comisiones\", \"100% digital\", comparativas y queries de marca. Ahí fintech tiene ventaja narrativa y SERP space disponible."
+      },
+      {
+        "question": "¿Trabajas con fintech B2C, B2B o ambos?",
+        "answer": "Ambos. B2C (neobanks, crédito personal, inversión retail, remesas) tiene foco en SEO masivo de queries de alto volumen y CAC bajo. B2B (pagos corporativos, lending B2B, infrastructure-as-a-service financiera) tiene foco product-led similar a SaaS (ver mi página de SaaS B2B), con queries de baja volumetría pero altísima intención y deal size."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO para fintech en México?",
+        "answer": "Starter $15,000 MXN/mes (fintech early stage con un producto principal), Growth $35,000 MXN/mes (fintech con varios productos o vertical específica), Enterprise $75,000 MXN/mes (neobank, plataforma multi-producto, fintech grande con producción masiva de contenido). Mínimo 6 meses."
+      },
+      {
+        "question": "¿Implementas schema FinancialService y FinancialProduct?",
+        "answer": "Sí. FinancialService o BankOrCreditUnion según aplique para la entidad. FinancialProduct (BankAccount, LoanOrCredit, Investment) por cada producto con feesAndCommissionsSpecification, interestRate, requiredCollateral. Organization con sameAs a registros CNBV/Banxico/IPAB para señalización de regulación."
+      },
+      {
+        "question": "¿Optimizas para AI Overviews en queries financieros?",
+        "answer": "Sí, con énfasis en passage-level citability: contenido estructurado en \"qué es / cómo funciona / cómo invertir o usar / riesgos / fiscalidad\", autores con credenciales verificables, citas a fuentes oficiales (Banxico, CNBV, SAT, INEGI), fechas de revisión actualizadas. La presencia en AI Overviews para queries de educación financiera captura al usuario en etapa temprana del journey."
+      }
+    ],
+    "specificServices": [
+      "E-E-A-T fintech con autores con credenciales (CFA, AMIB, CPA)",
+      "Auditoría de cumplimiento CNBV, Banxico y CONDUSEF en copy",
+      "Schema FinancialService, FinancialProduct y trust signals",
+      "Comparativas vs bancos tradicionales y otras fintech",
+      "Hub de educación financiera para captura early-stage",
+      "Optimización del funnel de onboarding desde orgánico",
+      "Optimización para AI Overviews en queries financieros"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "SEO para SaaS B2B",
+        "url": "/consultor-seo-saas/"
+      },
+      {
+        "anchor": "SEO para bufetes legales",
+        "url": "/consultor-seo-legal/"
+      },
+      {
+        "anchor": "SEO para eCommerce",
+        "url": "/consultor-seo-ecommerce/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  },
+  {
+    "slug": "automotriz",
+    "industry": "Automotriz / Concesionarios",
+    "title": "Consultor SEO Automotriz y Concesionarios 2026 | José Gaspard",
+    "metaDescription": "Consultor SEO para concesionarios, marcas y refaccionarias en México. Schema Vehicle, inventory dinámico, SEO local, captación de test drives. Desde $15K MXN.",
+    "h1": "Consultor SEO automotriz que llena agencias de prospectos",
+    "tldr": "Soy José Gaspard, consultor SEO con experiencia en concesionarios multi-marca, marcas automotrices, refaccionarias, talleres mecánicos y marketplaces de seminuevos. Trabajo schema Vehicle + Car + AutoDealer, manejo de inventory rotativo (autos vendidos), programmatic SEO por marca × modelo × ubicación y compito contra MercadoLibre Vehículos y Kavak con estrategia hyper-local. Desde $15,000 MXN al mes con KPI atado a test drives y cotizaciones.",
+    "intro": "<p>El SEO automotriz en México combina dos retos brutales: manejo de inventario rotativo (un auto se vende y su URL queda obsoleta — ¿se mantiene?, ¿se redirect?, ¿se 410?) y competencia con marketplaces masivos como MercadoLibre Vehículos, Kavak, Seminuevos.com y AutoCosmos que dominan SERP en queries genéricas. Un concesionario tradicional o multi-marca no compite con ellos en \"autos seminuevos CDMX\" — pierde siempre. Compite en queries de marca + modelo + ubicación (\"Toyota Corolla seminuevo Polanco\"), en queries de financiamiento (\"crédito auto sin enganche\"), en queries de servicio (\"taller Toyota autorizado\") y en queries hyper-locales con map pack (\"agencia Honda cerca de mí\"). A esto se suma que el sector automotriz tiene ciclos de decisión largos (4-12 semanas), múltiples touchpoints (web, llamada, visita a piso, test drive, financiamiento) y CPC altísimo en Google Ads ($35-180 MXN por clic para queries de alta intención), lo que hace al SEO orgánico altamente rentable. Mi trabajo como consultor SEO automotriz es resolver el inventario, construir la capa programática por modelo × ubicación, atacar queries de servicio y refacciones (que son recurrentes y de alto LTV) y optimizar el mapa pack de cada sucursal.</p>",
+    "sections": [
+      {
+        "h2": "Retos SEO específicos del sector automotriz",
+        "html": "<p>Cinco retos definen el SEO automotriz. <strong>Primero, inventario rotativo</strong>: un auto se vende, ¿qué pasa con su URL? Si tiene backlinks o tráfico orgánico, mantener URL con schema availability=Sold + recomendación de alternativas. Si es URL nueva, 301 a categoría de modelo. Nunca 404 si hay valor SEO acumulado. <strong>Segundo, competencia con marketplaces masivos</strong>: MercadoLibre Vehículos, Kavak, Seminuevos.com dominan queries genéricas. Concesionarios compiten en queries hyper-locales (marca × modelo × ubicación), servicio autorizado, y queries de financiamiento. <strong>Tercero, multi-marca y multi-sucursal</strong>: un grupo automotriz con 5 marcas × 8 sucursales × 20 modelos genera arquitectura compleja con riesgo de canibalización. <strong>Cuarto, schema Vehicle/Car y AutoDealer</strong>: pocos implementan; los que lo hacen ganan rich results con price, modelYear, mileage, transmission y fuelType. <strong>Quinto, servicio post-venta y refacciones</strong>: el LTV de un cliente de servicio (mantenimiento + refacciones recurrentes durante 8-10 años) supera al margen de la venta inicial — el SEO de servicio es decisivo y muchos concesionarios lo descuidan.</p>"
+      },
+      {
+        "h2": "KPIs que mido en SEO para automotriz",
+        "html": "<p>Cuatro KPIs atados a leads automotrices. <strong>(1) Test drives agendados desde orgánico</strong>: medidos con formulario + call tracking + WhatsApp tracking. <strong>(2) Cotizaciones de financiamiento orgánicas</strong>: leads que solicitan cálculo de mensualidad con datos verificables. <strong>(3) Citas de servicio orgánicas</strong>: agendamientos de mantenimiento o reparación desde web — KPI clave para LTV. <strong>(4) Posicionamiento en map pack</strong>: % de queries locales objetivo donde la agencia/taller aparece en top 3 — meta &gt;65% en 6 meses. Trackeo además ventas atribuidas a orgánico con tracking multi-touch (el ciclo es largo y orgánico aparece típicamente en 3-6 touchpoints), CPL orgánico vs Google Ads (típicamente 4-7x menor en automotriz), y revenue de servicio + refacciones atribuido a orgánico (más estable y predecible que ventas de auto nuevo).</p>"
+      },
+      {
+        "h2": "Mi metodología SEO para automotriz",
+        "html": "<p>Cuatro fases. <strong>Fase 1 (mes 1-2) — Auditoría técnica e inventario</strong>: crawl completo, identificación de URLs muertas por autos vendidos, mapeo de canibalización entre marca-modelo y sucursales, auditoría de schema, definición de reglas de manejo de inventario (URLs por VIN/stock number con manejo de availability dinámico). <strong>Fase 2 (mes 3-5) — Build programático y schema</strong>: páginas por marca × modelo × año (sin canibalización con fichas individuales), schema Vehicle/Car con price, modelYear, mileage, vehicleTransmission, fuelType, vehicleEngine. Páginas por sucursal con AutoDealer schema. Hub de financiamiento con calculadora interactiva, hub de servicio por marca. <strong>Fase 3 (mes 6-8) — SEO local agresivo</strong>: GBP por sucursal (concesionario + taller separados cuando aplique) con categoría correcta (Car Dealer, Auto Repair Shop, Auto Parts Store), atributos completos, fotos profesionales del piso, posts semanales con promociones, gestión de reviews. Páginas hyper-locales por marca + sucursal. <strong>Fase 4 (mes 9+) — Content y autoridad</strong>: hub de reviews/comparativas de modelos (\"Toyota Corolla vs Honda Civic\"), guías de mantenimiento por modelo, contenido de financiamiento. Link building con medios automotrices (Motor1, AutoMotor, Auto Tv).</p>"
+      },
+      {
+        "h2": "2 mini-casos de éxito en automotriz",
+        "html": "<p><strong>Caso 1 — Concesionario Toyota con 3 sucursales en CDMX/Edomex</strong>: tráfico orgánico de 4,200 sesiones/mes, dependencia 78% en Google Ads, CPL paid $1,400 MXN. Construí páginas por modelo Toyota × sucursal (sin canibalización), schema Vehicle/Car con datos dinámicos del DMS, optimicé GBP de 3 sucursales con 80+ reviews verificadas, hub de servicio Toyota con páginas por servicio (afinación, frenos, suspensión). <strong>Resultado a 9 meses: 38,200 sesiones orgánicas/mes, test drives orgánicos +240%, citas de servicio orgánicas +180%, CPL orgánico $220 MXN vs $1,400 MXN paid</strong>. <strong>Caso 2 — Grupo automotriz multi-marca (5 marcas, 12 sucursales en Bajío)</strong>: arquitectura caótica, canibalización entre marcas, GBPs desatendidos. Hice consolidación con 301, arquitectura por marca × sucursal × modelo, schema completo, optimización centralizada de 12 GBPs. <strong>Resultado a 12 meses: tráfico orgánico +156%, leads totales orgánicos +210%, presencia en map pack top 3 en 78% de queries locales objetivo, ahorro estimado en Ads $1.8M MXN/año</strong>.</p>"
+      },
+      {
+        "h2": "Errores SEO comunes en automotriz que cuestan ventas",
+        "html": "<p>Cinco errores típicos. <strong>(1) Autos vendidos en 404</strong>: si la URL tiene backlinks o tráfico, hay que mantenerla viva con schema Sold y recomendación de alternativas. <strong>(2) Sin schema Vehicle/Car</strong>: pierdes rich results con price, año, kilometraje y transmisión que aumentan CTR significativamente. <strong>(3) Pelear contra MercadoLibre y Kavak en queries genéricas</strong>: pierdes siempre; la salida es queries hyper-locales (marca + modelo + ubicación) y servicio autorizado. <strong>(4) Descuidar SEO de servicio y refacciones</strong>: el LTV del cliente de servicio supera el margen de venta inicial; sin SEO de servicio dejas dinero recurrente en la mesa. <strong>(5) GBP por sucursal sin gestión</strong>: agencias con 5 sucursales y GBPs desatendidos pierden el map pack que es decisivo en \"agencia [marca] cerca de mí\".</p>"
+      }
+    ],
+    "industryFaqs": [
+      {
+        "question": "¿Cuánto tarda el SEO automotriz en dar resultados?",
+        "answer": "Map pack y schema Vehicle pueden mejorar en 8-12 semanas. Test drives y citas de servicio consolidados desde mes 5-7. Reducción significativa de dependencia de Google Ads típicamente desde mes 7-9. Es uno de los verticales donde el ROI vs paid es más rápido y medible."
+      },
+      {
+        "question": "¿Cómo manejas el SEO cuando se vende un auto?",
+        "answer": "Depende del valor SEO de la URL. Si tiene backlinks externos o tráfico orgánico recurrente, mantengo la URL viva con schema ItemAvailability=Sold y bloque de \"autos similares disponibles\". Si es URL nueva sin autoridad, 301 a la categoría de marca-modelo. Nunca 404 a una URL con valor acumulado."
+      },
+      {
+        "question": "¿Compito contra MercadoLibre Vehículos, Kavak y Seminuevos.com?",
+        "answer": "No en queries genéricas (\"autos seminuevos\", \"camionetas en venta\") — ahí ganan ellos. Compito en queries hyper-locales (\"Toyota Corolla seminuevo [colonia/ciudad]\"), servicio autorizado (\"taller Toyota autorizado [zona]\"), financiamiento específico y queries de marca + sucursal. Ahí el concesionario tiene ventaja."
+      },
+      {
+        "question": "¿Trabajas con concesionarios, refaccionarias o talleres independientes?",
+        "answer": "Los tres. Concesionarios necesitan inventario dinámico, multi-sucursal y multi-marca. Refaccionarias necesitan eCommerce SEO con Product schema y compatibility data (qué refacción para qué modelo/año). Talleres independientes necesitan SEO local agresivo, GBP y servicios listados por marca/tipo de reparación."
+      },
+      {
+        "question": "¿Cuánto cobras por SEO automotriz en México?",
+        "answer": "Starter $15,000 MXN/mes (concesionario single-sucursal o taller independiente), Growth $35,000 MXN/mes (concesionario multi-sucursal o grupo con 2-3 marcas), Enterprise $75,000 MXN/mes (grupo automotriz grande multi-marca multi-ciudad, marketplace de seminuevos, marca con red de concesionarios). Mínimo 6 meses."
+      },
+      {
+        "question": "¿Implementas schema Vehicle, Car y AutoDealer?",
+        "answer": "Sí, base del scope. Vehicle/Car por cada auto en inventario con price, modelYear, mileageFromOdometer, vehicleTransmission, fuelType, vehicleEngine, numberOfDoors, color. AutoDealer para cada sucursal con LocalBusiness inheritance. AutoRepair para talleres autorizados. Esto habilita rich results y mejora señalización."
+      },
+      {
+        "question": "¿Optimizas SEO para servicio post-venta y refacciones?",
+        "answer": "Sí, es donde está el LTV. Páginas por servicio (afinación, frenos, suspensión, transmisión) × marca, schema AutoRepair, calculadora de costo orientativo, integración con sistema de citas online. Refacciones con Product schema, datos de compatibilidad por modelo/año, search interno optimizado por número de parte y nombre."
+      },
+      {
+        "question": "¿Manejas SEO para marcas automotrices (no solo concesionarios)?",
+        "answer": "Sí, pero con scope distinto. Marcas trabajan en autoridad de modelo (páginas oficiales de modelo con configurador), comparativas vs competencia directa, contenido de tecnología y características, y SEO de localización por país. La red de concesionarios se conecta arquitecturalmente sin canibalizar con el sitio de marca."
+      }
+    ],
+    "specificServices": [
+      "Schema Vehicle, Car, AutoDealer y AutoRepair",
+      "Manejo SEO de inventario rotativo (autos vendidos)",
+      "Programmatic SEO por marca × modelo × ubicación",
+      "SEO local y GBP para concesionarios y talleres",
+      "Hub de servicio post-venta y refacciones (LTV)",
+      "Comparativas de modelos y guías de financiamiento",
+      "Optimización para marketplaces de seminuevos verticales"
+    ],
+    "internalLinks": [
+      {
+        "anchor": "SEO para eCommerce",
+        "url": "/consultor-seo-ecommerce/"
+      },
+      {
+        "anchor": "SEO inmobiliario",
+        "url": "/consultor-seo-inmobiliario/"
+      },
+      {
+        "anchor": "SEO para fintech",
+        "url": "/consultor-seo-fintech/"
+      },
+      {
+        "anchor": "consultor SEO CDMX",
+        "url": "/consultor-seo-cdmx/"
+      },
+      {
+        "anchor": "servicios SEO",
+        "url": "/servicios/"
+      },
+      {
+        "anchor": "casos de éxito",
+        "url": "/casos/"
+      }
+    ]
+  }
+]

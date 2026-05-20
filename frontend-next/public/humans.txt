@@ -1,0 +1,19 @@
+/* TEAM */
+Consultor SEO Senior: José Gaspard
+Sitio: https://josegaspard.dev
+WhatsApp: +52 55 3121 2956
+Email: hola@josegaspard.dev
+LinkedIn: linkedin.com/in/josegaspard
+GitHub: github.com/josegaspard
+Ubicación: Ciudad de México, MX
+
+/* THANKS */
+A los clientes que autorizaron publicar sus métricas reales en /casos/.
+A la comunidad SEO hispanohablante por compartir conocimiento abierto.
+
+/* SITE */
+Última actualización: 2026-05-20
+Stack: Next.js 15 + React 19 + TypeScript
+Optimizado para: GEO/AEO, Core Web Vitals, accesibilidad
+Idiomas: ES (canonical), EN (próximamente)
+Components: SSG con métricas reales

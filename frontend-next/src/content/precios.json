@@ -1,0 +1,151 @@
+{
+  "url": "/precios/",
+  "title": "Precios Consultor SEO en México 2026 — Paquetes Públicos | José Gaspard",
+  "metaDescription": "Precios públicos de consultoría SEO en México: Starter $15K, Growth $35K, Enterprise $75K MXN/mes. Sin letra chica. Add-ons y comparativa real.",
+  "h1": "Precios transparentes de consultoría SEO en México",
+  "tldr": "Tres paquetes públicos de consultoría SEO en México: Starter a $15,000 MXN/mes para negocios locales, Growth a $35,000 MXN/mes para eCommerce y SaaS en crecimiento, y Enterprise a $75,000 MXN/mes para marcas con presencia nacional o multi-mercado. Todos incluyen reporting con datos de Search Console reales, no estimaciones de terceros.",
+  "intro": "<p>Publico los precios porque me cansé de ver a clientes pasar tres reuniones, dos NDAs y una cotización por correo antes de saber si pueden costear un consultor SEO senior. Si vas a invertir entre 180,000 y 900,000 pesos al año en tráfico orgánico, mereces saber el rango antes de agendar una llamada. La opacidad del mercado SEO mexicano beneficia a las agencias que cobran por horas que nadie audita y a los freelancers que ajustan la cotización al apellido del cliente. Yo cobro lo mismo a una panadería de la Roma que a una marca cotizada en BMV, porque el costo de mi tiempo no cambia según quién esté del otro lado del Zoom. Lo que cambia es el alcance del trabajo, y eso lo defines tú con base en el paquete que necesitas. Cada paquete lista entregables concretos, KPIs medibles y, lo más importante, lo que NO incluye.</p>",
+  "packages": [
+    {
+      "name": "SEO Starter",
+      "price": "$15,000",
+      "currency": "MXN",
+      "period": "mes",
+      "ideal": "Negocios locales, emprendedores y sitios con menos de 50 URLs que necesitan dejar de improvisar SEO.",
+      "deliverables": [
+        "Auditoría técnica inicial de hasta 200 URLs (Screaming Frog + Search Console)",
+        "Configuración o auditoría de Google Search Console, GA4 y Bing Webmaster",
+        "Optimización on-page de 8 URLs prioritarias al mes (titles, metas, H1-H6, internal linking)",
+        "Implementación de Schema.org básico (Organization, LocalBusiness, FAQ, Article)",
+        "Investigación de keywords con clusters semánticos y prioridad por intención de búsqueda",
+        "Brief mensual de 2 contenidos nuevos (tú o tu equipo redactan)",
+        "Reporte mensual con clicks, impresiones, CTR y posición desde Search Console",
+        "Llamada de revisión mensual de 60 minutos por Google Meet",
+        "Acceso a mi dashboard cerebro-seo para ver tus métricas en tiempo real",
+        "Soporte por WhatsApp en horario laboral CDMX (lunes a viernes 9-19h)"
+      ],
+      "kpis": [
+        "Crecimiento de clicks orgánicos mensual reportado en GSC",
+        "Posición promedio de keywords objetivo del cluster prioritario",
+        "URLs indexadas vs URLs publicadas (cobertura)",
+        "Core Web Vitals dentro de umbrales verdes"
+      ],
+      "duration": "Contrato mínimo 3 meses",
+      "notIncluded": [
+        "Redacción de contenidos (puedo brief, no escribo notas masivas en este plan)",
+        "Link building activo ni outreach a medios",
+        "Desarrollo web ni cambios de código fuera de WordPress estándar"
+      ]
+    },
+    {
+      "name": "SEO Growth",
+      "price": "$35,000",
+      "currency": "MXN",
+      "period": "mes",
+      "ideal": "eCommerce, SaaS, medios y marcas con entre 100 y 2,000 URLs que ya facturan y quieren escalar tráfico orgánico de forma sostenida.",
+      "deliverables": [
+        "Todo lo de Starter sin límite de URLs auditadas",
+        "Optimización on-page de 20 URLs al mes y supervisión de 50 más",
+        "Estrategia de contenido programático cuando aplica (hasta 200 URLs nuevas/mes)",
+        "Redacción y publicación de 4 artículos pillar al mes con E-E-A-T (1,500-2,500 palabras)",
+        "Implementación avanzada de Schema (Product, BreadcrumbList, HowTo, Video, Speakable)",
+        "Migración o rediseño asistido si aplica (sin costo extra si ocurre durante el contrato)",
+        "Internal linking automatizado y silos temáticos con tracking",
+        "Análisis de competencia trimestral (3 competidores directos)",
+        "Setup de IndexNow y submission proactivo a Bing/Yandex",
+        "Reporte quincenal y llamada semanal de 45 minutos",
+        "Acceso a megacerebro para autopublish de contenido editorial cuando aplica",
+        "Soporte por WhatsApp con respuesta en menos de 4 horas hábiles"
+      ],
+      "kpis": [
+        "Crecimiento de sesiones orgánicas trimestral con baseline documentado",
+        "Conversiones asistidas y atribuidas desde tráfico orgánico (GA4)",
+        "Share of voice en cluster prioritario vs 3 competidores",
+        "Páginas top-10 en SERPs (Google.com.mx)"
+      ],
+      "duration": "Contrato mínimo 6 meses",
+      "notIncluded": [
+        "Gestión de Google Ads, Meta Ads u otra paid media",
+        "Link building masivo (incluyo hasta 4 backlinks contextuales/mes desde mi red, más es add-on)",
+        "Producción audiovisual ni fotografía de producto"
+      ]
+    },
+    {
+      "name": "SEO Enterprise",
+      "price": "$75,000",
+      "currency": "MXN",
+      "period": "mes",
+      "ideal": "Marcas con presencia nacional, multi-mercado LATAM, sitios con 5,000+ URLs, IPOs próximas o equipos in-house que necesitan dirección estratégica senior.",
+      "deliverables": [
+        "Todo lo de Growth sin límites operativos",
+        "Director SEO fraccional con 25-30 horas dedicadas al mes",
+        "Roadmap SEO 12 meses con OKRs trimestrales y revisión ejecutiva",
+        "Auditoría técnica trimestral profunda + auditoría de competencia mensual",
+        "GEO (Generative Engine Optimization) para AI Overviews, Perplexity, ChatGPT Search",
+        "Hreflang e internacionalización (hasta 5 mercados)",
+        "Link building activo con 8-12 backlinks contextuales/mes desde mi red propia",
+        "Pitching a medios tier 1-2 (Reforma, Forbes, Expansión, El Economista) — 2 menciones/trimestre objetivo",
+        "Capacitación a tu equipo interno (workshops mensuales de 2 horas)",
+        "Integraciones a medida con tu stack (Looker Studio, BigQuery, DataForSEO)",
+        "Dashboard personalizado con datos de GSC, GA4, Ahrefs y CRM",
+        "Disponibilidad para juntas C-level y reportes a consejo trimestral"
+      ],
+      "kpis": [
+        "Revenue atribuido a SEO con modelo de atribución acordado",
+        "Pipeline o leads SQL desde orgánico (B2B/SaaS)",
+        "Share of search vs competidores directos",
+        "Visibilidad en AI Overviews y citaciones en motores generativos"
+      ],
+      "duration": "Contrato mínimo 12 meses",
+      "notIncluded": [
+        "Reemplazo de un equipo SEO in-house completo (soy director fraccional, no operador 24/7)",
+        "Producción masiva de contenido especializado (legal, médico, financiero) — requiere redactores especialistas como add-on",
+        "Compra de backlinks pagados o tácticas que violen las guidelines de Google"
+      ]
+    }
+  ],
+  "addons": [
+    {"name": "Auditoría SEO técnica única", "price": "$25,000 MXN", "duration": "2 semanas"},
+    {"name": "Auditoría de competencia profunda (3 competidores)", "price": "$18,000 MXN", "duration": "10 días hábiles"},
+    {"name": "Migración SEO (cambio de dominio, CMS o estructura)", "price": "Desde $45,000 MXN", "duration": "3-6 semanas"},
+    {"name": "Implementación de Schema.org avanzada", "price": "$12,000 MXN", "duration": "1 semana"},
+    {"name": "Setup completo de Search Console + GA4 + Tag Manager", "price": "$8,000 MXN", "duration": "5 días hábiles"},
+    {"name": "Backlinks contextuales desde mi red de medios (pack 5)", "price": "$15,000 MXN", "duration": "2-3 semanas"},
+    {"name": "Workshop privado para equipo in-house (4 horas)", "price": "$20,000 MXN", "duration": "1 día"},
+    {"name": "Recovery post-core update (diagnóstico + plan)", "price": "$35,000 MXN", "duration": "3 semanas"}
+  ],
+  "comparison": {
+    "headers": ["Característica", "Starter", "Growth", "Enterprise"],
+    "rows": [
+      ["Precio mensual MXN", "$15,000", "$35,000", "$75,000"],
+      ["Contrato mínimo", "3 meses", "6 meses", "12 meses"],
+      ["Auditoría técnica inicial", "Hasta 200 URLs", "Sin límite", "Sin límite + competencia"],
+      ["URLs optimizadas on-page/mes", "8", "20 + supervisión 50", "Sin límite"],
+      ["Contenidos pillar redactados/mes", "0 (solo briefs)", "4", "Definido por roadmap"],
+      ["Schema.org implementado", "Básico", "Avanzado", "Avanzado + GEO"],
+      ["Internal linking", "Manual prioritario", "Automatizado con tracking", "Automatizado + silos custom"],
+      ["Link building incluido", "No", "Hasta 4/mes red propia", "8-12/mes + pitching tier 1-2"],
+      ["GEO / AI Overviews", "No", "Diagnóstico", "Estrategia completa"],
+      ["Hreflang multi-mercado", "No", "Hasta 2 mercados", "Hasta 5 mercados"],
+      ["Llamadas de revisión", "Mensual 60 min", "Semanal 45 min", "Semanal + ejecutiva trimestral"],
+      ["Reporte", "Mensual", "Quincenal", "Quincenal + dashboard custom"],
+      ["Respuesta WhatsApp", "Horario laboral", "Menos de 4h hábiles", "Disponibilidad C-level"],
+      ["Acceso a cerebro-seo dashboard", "Sí", "Sí", "Sí + custom"],
+      ["Acceso a megacerebro autopublisher", "No", "Sí cuando aplica", "Sí + integraciones"],
+      ["Workshops a equipo interno", "No", "1 por trimestre", "Mensual"]
+    ]
+  },
+  "faqs": [
+    {"question": "¿Por qué publicas tus precios?", "answer": "Porque la opacidad solo beneficia a quien quiere cobrarte distinto según cómo te vea vestido en la primera reunión. Publicar precios filtra a clientes que no encajan antes de gastar tiempo de ambos lados, y obliga a que mi propuesta de valor justifique el número sin esconderse detrás de una llamada de descubrimiento de 90 minutos."},
+    {"question": "¿Manejas IVA? ¿Facturas?", "answer": "Sí. Facturo como persona física con actividad empresarial en México (PFAE). Los precios listados son antes de IVA. Acepto transferencia SPEI, depósito bancario y, para clientes internacionales, pago vía Wise o transferencia USD."},
+    {"question": "¿Cobras setup inicial además de la mensualidad?", "answer": "En Starter no. En Growth cobro un setup único de $20,000 MXN si el sitio nunca ha tenido SEO formal (incluye auditoría base, configuración de herramientas y roadmap inicial). En Enterprise el setup es de $50,000 MXN y arranca con un sprint de 4 semanas. Lo aclaro en la propuesta antes de firmar."},
+    {"question": "¿Qué pasa si quiero cancelar antes del contrato mínimo?", "answer": "Puedes cancelar cuando quieras pagando los meses restantes del compromiso mínimo o el 50% de ellos, lo que sea menor. Sin penalizaciones ocultas. El contrato mínimo existe porque SEO necesita 3-6 meses para mostrar señales reales y no quiero comprometerme a resultados que dependen de continuidad si tú puedes irte a la semana."},
+    {"question": "¿Puedo cambiar de paquete a mitad del contrato?", "answer": "Hacia arriba sí, en cualquier momento, prorrateando el mes en curso. Hacia abajo solo al cumplir el contrato mínimo del paquete actual. Esto evita que alguien contrate Enterprise por un mes para arrancar y baje a Starter, que es operativamente inviable."},
+    {"question": "¿Garantizas posiciones o tráfico?", "answer": "No, y desconfía de quien lo haga. Lo que sí garantizo es entregables específicos, calidad documentada y reportes auditables. Si después de 6 meses en Growth no hay mejoras medibles en clicks orgánicos sobre tu baseline (asumiendo que sigues mis recomendaciones), te devuelvo el último mes pagado."},
+    {"question": "¿Trabajas con clientes fuera de México?", "answer": "Sí. Tengo clientes en Perú, Colombia, Argentina, España y Estados Unidos. Para clientes USA cotizo en USD con un equivalente aproximado: Starter US$850, Growth US$2,000, Enterprise US$4,300. Para resto de LATAM mantengo el precio en MXN o equivalente local."},
+    {"question": "¿Reemplazas a una agencia o trabajas con la mía?", "answer": "Las dos opciones funcionan. He reemplazado agencias completas (con su consentimiento o sin él) y también he trabajado como SEO senior dentro de equipos de agencia que necesitan profundidad técnica. Lo definimos en la primera llamada."},
+    {"question": "¿Qué herramientas usas y quién las paga?", "answer": "Ahrefs, Screaming Frog, DataForSEO, Looker Studio, Schema App y mis dashboards propios (cerebro-seo y megacerebro). Yo pago todas las licencias core. Si necesitas herramientas específicas a tu stack (Conductor, BrightEdge, etc.), las paga el cliente."},
+    {"question": "¿Quién hace el trabajo: tú o un junior?", "answer": "Yo hago la estrategia, auditorías técnicas, schemas avanzados, link building tier 1 y la relación con el cliente. Tengo un equipo de 3 personas (un redactor SEO senior, un implementador WordPress y una analista de datos) para tareas operativas en Growth y Enterprise. Starter lo opero solo. En la primera llamada te presento al equipo si aplica."}
+  ],
+  "ctaSection": "<p>Si los precios te encajan, agendemos una llamada de 30 minutos sin compromiso. No es una llamada de ventas disfrazada: traes tu Search Console, revisamos juntos qué paquete te conviene y te digo si puedo ayudarte o si lo tuyo es más bien un problema de producto, de paid media o de equipo interno. Puedes escribirme directo por WhatsApp al +52 55 3121 2956 o agendar en mi calendario público. Si prefieres correo, hola@josegaspard.dev responde en menos de 24 horas hábiles.</p>"
+}

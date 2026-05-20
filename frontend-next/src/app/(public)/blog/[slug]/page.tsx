@@ -19,11 +19,8 @@ interface Props {
 }
 
 export function generateStaticParams() {
-    return [
-        { slug: 'seo-2026' },
-        { slug: 'nextjs-guide' },
-        { slug: 'technical-seo' }
-    ];
+    // Backend serves blog posts at runtime; in static export return only a placeholder.
+    return [{ slug: '_placeholder' }];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
