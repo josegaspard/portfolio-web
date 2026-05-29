@@ -17,8 +17,18 @@ interface PillarRendererProps {
   sections: Section[];
   faqs: FAQ[];
   breadcrumbs?: { name: string; url: string }[];
+  updated?: string;
   ctaText?: string;
   ctaHref?: string;
+}
+
+const MONTHS_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+function formatUpdated(iso?: string): string | null {
+  if (!iso) return null;
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+  if (!m) return null;
+  const [, y, mo, d] = m;
+  return `${parseInt(d, 10)} de ${MONTHS_ES[parseInt(mo, 10) - 1]} de ${y}`;
 }
 
 export default function PillarPageRenderer({
@@ -27,6 +37,7 @@ export default function PillarPageRenderer({
   sections,
   faqs,
   breadcrumbs,
+  updated,
   ctaText = 'Agendar diagnóstico gratuito de 30 minutos',
   ctaHref = 'https://wa.me/525531212956?text=Hola%20Jos%C3%A9%2C%20quiero%20agendar%20un%20diagn%C3%B3stico%20SEO%20gratuito',
 }: PillarRendererProps) {
@@ -47,6 +58,12 @@ export default function PillarPageRenderer({
             </nav>
           )}
           <h1 className="pillar-h1" itemProp="headline">{h1}</h1>
+          {formatUpdated(updated) && (
+            <p className="pillar-updated">
+              <span className="pillar-updated-dot" aria-hidden="true" />
+              Actualizado el <time dateTime={updated} itemProp="dateModified">{formatUpdated(updated)}</time>
+            </p>
+          )}
           <div className="tldr speakable" data-speakable="true">
             <strong>TL;DR — </strong>{tldr}
           </div>

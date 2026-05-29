@@ -59,6 +59,7 @@ export default function ConsultorSEOPillarPage() {
       <PillarPageRenderer
         h1={pillar.h1}
         tldr={pillar.tldr}
+        updated={pillar.updated}
         sections={pillar.sections}
         faqs={pillar.faqs}
         breadcrumbs={[
@@ -74,6 +75,7 @@ export default function ConsultorSEOPillarPage() {
           url: URL,
           name: pillar.title,
           description: pillar.metaDescription,
+          dateModified: pillar.updated,
           inLanguage: 'es-MX',
           isPartOf: { '@id': 'https://josegaspard.dev/#website' },
           about: { '@id': 'https://josegaspard.dev/#person' },

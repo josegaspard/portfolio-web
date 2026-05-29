@@ -6,13 +6,13 @@ import { BreadcrumbJsonLd, ServiceJsonLd, FAQPageJsonLd } from '@/components/seo
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Servicio de SEO Profesional | Consultor SEO en México - José Gaspard',
-  description: 'Servicio de SEO técnico y posicionamiento web. Consultor SEO con +15 años. Agencia SEO especializada en link building, optimización SEO y Core Web Vitals. Empresa de SEO en México.',
-  keywords: ['servicio de seo', 'agencia seo', 'consultor seo', 'optimización seo', 'posicionamiento web', 'seo técnico', 'link building', 'empresa de seo', 'seo en méxico'],
+  title: 'Servicio de SEO Profesional y Posicionamiento Web | José Gaspard',
+  description: 'Servicio de SEO técnico y posicionamiento web: auditoría, optimización on-page, link building y Core Web Vitals. +15 años de experiencia. Diagnóstico gratuito.',
+  keywords: ['servicio de seo', 'posicionamiento web', 'optimización seo', 'seo técnico', 'link building', 'auditoría seo', 'core web vitals'],
   alternates: { canonical: 'https://josegaspard.dev/services/seo/' },
   openGraph: {
-    title: 'Servicio de SEO Profesional | Consultor SEO en México',
-    description: 'Servicio de SEO técnico y posicionamiento web. Consultor SEO con +15 años. Agencia SEO especializada en link building, optimización SEO y Core Web Vitals.',
+    title: 'Servicio de SEO Profesional y Posicionamiento Web | José Gaspard',
+    description: 'Servicio de SEO técnico y posicionamiento web: auditoría, optimización on-page, link building y Core Web Vitals. +15 años de experiencia.',
     type: 'website',
     url: 'https://josegaspard.dev/services/seo/',
   },
@@ -160,10 +160,10 @@ export default function SEOServicePage() {
           <div className="container hero-content text-center" style={{ maxWidth: 900, margin: '0 auto' }}>
             <span className="section-badge">Servicio de SEO Profesional</span>
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 800, lineHeight: 1.1, marginBottom: '1.5rem' }}>
-              Servicio de <span style={{ color: '#3b82f6' }}>SEO Profesional</span> — Consultor SEO en México con +15 Años de Experiencia
+              Servicio de <span style={{ color: '#3b82f6' }}>SEO Profesional</span> y Posicionamiento Web con +15 Años de Experiencia
             </h1>
             <p className="hero-subtitle" style={{ margin: '0 auto', maxWidth: 750, fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.8 }}>
-              Como <strong>consultor SEO</strong> y <strong>agencia SEO</strong> especializada en <strong>posicionamiento web</strong>, ofrezco un <strong>servicio de SEO</strong> integral que combina <strong>SEO técnico</strong> avanzado, <strong>link building</strong> estratégico y <strong>optimización SEO</strong> basada en datos. Mi enfoque como <strong>empresa de SEO en México</strong> se centra en resultados medibles y crecimiento sostenido.
+              Un <strong>servicio de SEO</strong> integral que combina <strong>SEO técnico</strong> avanzado, <strong>link building</strong> estratégico y <strong>optimización SEO</strong> basada en datos, con foco en resultados medibles y crecimiento sostenido. ¿Buscas un <Link href="/consultor-seo/">consultor SEO en México</Link>? Conoce la metodología completa, casos y precios públicos.
             </p>
 
             {/* Stats */}

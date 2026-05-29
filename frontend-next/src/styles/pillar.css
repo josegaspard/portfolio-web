@@ -521,3 +521,62 @@
   .pillar-h1 { font-size: 32px; }
   .pkg-featured { transform: none; }
 }
+
+/* === Mega-SEO 2026-05-29: freshness badge, definition block, pricing table === */
+.pillar-updated {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #34d399;
+  letter-spacing: 0.01em;
+}
+.pillar-updated-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 0 4px rgba(52,211,153,0.18);
+}
+.definition-block {
+  border-left: 3px solid #3b82f6;
+  padding: 14px 18px;
+  background: rgba(59,130,246,0.06);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 18px;
+}
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 22px 0;
+  font-size: 15px;
+}
+.pricing-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 700;
+  color: var(--fg, #e2e8f0);
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.pricing-table th,
+.pricing-table td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  min-width: 0;
+}
+.pricing-table thead th {
+  color: #93c5fd;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(59,130,246,0.4);
+}
+.pricing-table tbody tr:hover { background: rgba(255,255,255,0.03); }
+.pricing-table td:nth-child(2) { font-weight: 700; color: #34d399; white-space: nowrap; }
+
+@media (max-width: 640px) {
+  .pricing-table { font-size: 13px; }
+  .pricing-table th, .pricing-table td { padding: 9px 8px; }
+}
